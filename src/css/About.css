@@ -1,5 +1,9 @@
-.about-container {
-  padding-top: 6vw;
+.about-header {
+  background: linear-gradient(rgba(224, 224, 224, 0.6), rgba(224, 224, 224, 0.6)), url("../images/pvs-2-crop.jpeg");
+  background-size: cover;
+  height: 60vh;
+  padding-top: 8vw;
+  position: relative;
 }
 
 .about-section-1 {

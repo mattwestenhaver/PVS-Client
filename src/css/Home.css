@@ -19,7 +19,8 @@
 }
 
 .home-section-2 p {
-  width: 70%;
+  font-family: 'Lato', sans-serif;
+  width: 60%;
   margin: 0 auto;
   text-align: left;
   font-size: 1.2em;
@@ -27,8 +28,9 @@
 }
 
 .home-section-3 {
-  background-color: rgb(54, 54, 54);
-  color: whitesmoke;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  background-color: rgb(20, 20, 20);
   text-align: left;
   width: 100%;
   margin: 0 auto;
@@ -54,4 +56,10 @@
 
 .home-section-3 ul {
   margin-bottom: 20px;
+}
+
+.home-section-3 img {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
 }

@@ -1,5 +1,7 @@
 .navbar {
-  background-color: rgba(34, 34, 34, 0.2);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  background-color: rgba(34, 34, 34, 0);
   color: white;
   border-radius: 0;
   border: 0;
@@ -18,10 +20,11 @@
 }
 
 .opaque {
-  background-color: rgba(34, 34, 34, 0.8);
+  background-color: rgba(212, 212, 212, 0.95)!important;
+  color: black!important;
 }
 
-.whitefont {
+.white-text {
   color: white!important;
   -webkit-transition-property: color transform -webkit-transform color;
   -webkit-transition-duration: 0.25s;
@@ -31,8 +34,18 @@
   transition-timing-function: ease-in-out;
 }
 
+.dark-text {
+  color: rgb(41, 41, 41)!important;
+  -webkit-transition-property: color transform -webkit-transform color;
+  -webkit-transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: color transform -webkit-transformv color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+}
+
 .navbar:hover {
-  background-color: rgba(34, 34, 34, .6);
+  background-color: rgba(34, 34, 34, .4);
   color: white;
 }
 
@@ -75,9 +88,17 @@
   color: lightgray;
 }
 
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+  background-color: rgba(65, 65, 65, 0.7);
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+  background-color: rgba(65, 65, 65, 0.7);
+}
+
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
   background-color: rgba(53, 53, 53, 0);
-  color: black;
+  color: rgb(71, 71, 71);
   text-decoration: underline;
 }
 

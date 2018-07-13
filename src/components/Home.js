@@ -4,6 +4,7 @@ import { Button } from 'semantic-ui-react'
 
 import navOpacity from '../navBar.js'
 import logo from '../images/logo.png'
+import section3Image from '../images/pvs-5.jpg'
 
 class Home extends React.Component {
 
@@ -19,9 +20,8 @@ class Home extends React.Component {
           <Link to='/quote'><Button color='black' size='massive'>Request A Quote</Button></Link>
         </div>
         <div className='home-section-2'>
-          <p>At Premiere Valet Parking Service we provide the Highest Standard of Private Valet Parking and Valet Parking Management Services. If you are looking for a Los Angeles valet parking service, Hollywood valet parking service, Beverly Hills valet parking service, Orange County valet parking service, Ventura County valet parking service we are ready to meet your valet parking attendant needs.</p>
-          <p>For over 25 years Premiere Valet Service, Inc., has served all of Southern California with valet parking service. With offices in Los Angeles and Laguna Beach we provide valet service with locally based valet parking attendants for all of Los Angeles County, Orange County , Ventura County  and Riverside County.  Our valet parking service provides both male and female valet parking attendants.</p>
-          <p>Not all Los Angeles Valet Parking Companies are the same and we take pride in the level of Valet Parking Service we provide.  Our commitment to quality is why we are considered the Premiere Valet Company in Los Angeles, Malibu, Newport Coast, Laguna Beach, Orange County, etc.  Whether you are searching for a Beverly Hills Valet company to provide Beverly Hills Valet Parking Service or a Riverside Valet Company to provide Riverside Valet Parking Service Premiere Valet Service is ready to assist with all of your valet parking needs.</p>
+          <p>At Premiere Valet Parking Service we provide the Highest Standard of Private Valet Parking and Valet Parking Management Services. If you are looking for valet services in Los Angeles, Hollywood, Beverly Hills, Orange County, or Ventura County we are ready to meet your valet parking attendant needs.</p>
+          <p>For over 25 years Premiere Valet Service, Inc., has served all of Southern California with valet parking service. With offices in Los Angeles and Laguna Beach we provide valet service with locally based valet parking attendants for all of Los Angeles County, Orange County, Ventura County  and Riverside County.</p>
         </div>
         <div className='home-section-3'>
           <div>
@@ -49,7 +49,7 @@ class Home extends React.Component {
             </ul>
           </div>
           <div>
-            <h4>image here</h4>
+            <img src={section3Image} alt='Santiago Image' />
           </div>
         </div>
       </div>

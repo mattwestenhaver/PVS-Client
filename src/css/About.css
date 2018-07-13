@@ -1,0 +1,13 @@
+.about-container {
+  padding-top: 6vw;
+}
+
+.about-section-1 {
+  width: 100%;
+}
+
+.about-section-1 p {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+}

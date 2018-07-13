@@ -18,17 +18,23 @@ class NavOpacity {
 
   changingMenuBar() {
     $('.navbar').removeClass('opaque');
-    var offset_val = 100
+    var offset_val = 120
     function navSlide() {
       var scroll_top = $(window).scrollTop();
       if (scroll_top >= offset_val) { // the detection!
         $('.navbar').addClass('opaque');
-        $('.navbar-inverse .navbar-brand').addClass('whitefont');
-        $('.navbar-inverse .navbar-nav>li>a').addClass('whitefont');
+        $('.dropdown-menu').addClass('opaque');
+        $('.dropdown-menu>li>a').addClass('dark-text')
+        
+        // $('.navbar-inverse .navbar-brand').addClass('whitefont');
+        // $('.navbar-inverse .navbar-nav>li>a').addClass('whitefont');
       } else {
         $('.navbar').removeClass('opaque');
-        $('.navbar-inverse .navbar-brand').removeClass('whitefont');
-        $('.navbar-inverse .navbar-nav>li>a').removeClass('whitefont');
+        $('.dropdown-menu').removeClass('opaque');
+        $('.dropdown-menu>li>a').removeClass('dark-text')
+        
+        // $('.navbar-inverse .navbar-brand').removeClass('whitefont');
+        // $('.navbar-inverse .navbar-nav>li>a').removeClass('whitefont');
       }
     }
     $(window).scroll(navSlide);

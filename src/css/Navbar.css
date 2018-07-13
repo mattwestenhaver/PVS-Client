@@ -86,6 +86,7 @@
 
 .dropdown-menu>li>a {
   color: lightgray;
+  font-size: 1.1em;
 }
 
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
@@ -98,7 +99,7 @@
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
   background-color: rgba(53, 53, 53, 0);
-  color: rgb(71, 71, 71);
+  color: rgb(41, 41, 41);
   text-decoration: underline;
 }
 

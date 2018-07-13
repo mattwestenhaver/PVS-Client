@@ -1,0 +1,57 @@
+.home-section-1 {
+  background: linear-gradient(rgba(224, 224, 224, 0.6), rgba(224, 224, 224, 0.6)), url("../images/pvs-1-crop.jpeg");
+  /* background-image: url("./images/home-background.jpg"); */
+  background-size: cover;
+  height: 100vh;
+  padding-top: 8vw;
+  position: relative;
+}
+
+.home-section-1 img {
+  width: 70%;
+  margin-bottom: 5%;
+}
+
+.home-section-2 {
+  color: white;
+  background-color: rgb(20, 20, 20);
+  padding: 2%;
+}
+
+.home-section-2 p {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.2em;
+  padding: 1%;
+}
+
+.home-section-3 {
+  background-color: rgb(54, 54, 54);
+  color: whitesmoke;
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2% 12%;
+  overflow: auto;
+}
+
+.home-section-3 div {
+  width: 40%;
+  float: left;
+  padding: 10px;
+  margin: 0 5%;
+}
+
+.home-section-3 h3 {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+.home-section-3 h4 {
+  font-size: 1.2em;
+}
+
+.home-section-3 ul {
+  margin-bottom: 20px;
+}

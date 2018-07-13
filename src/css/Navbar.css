@@ -1,0 +1,88 @@
+.navbar {
+  background-color: rgba(34, 34, 34, 0.2);
+  color: white;
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030; 
+  font-size: 1.3em;
+  -webkit-transition-property: background-color transform -webkit-transform background-color;
+  -webkit-transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: background-color transform -webkit-transformv background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out; 
+}
+
+.opaque {
+  background-color: rgba(34, 34, 34, 0.8);
+}
+
+.whitefont {
+  color: white!important;
+  -webkit-transition-property: color transform -webkit-transform color;
+  -webkit-transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: color transform -webkit-transformv color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+}
+
+.navbar:hover {
+  background-color: rgba(34, 34, 34, .6);
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 1.4em;
+}
+
+.navbar-header>.active {
+  color: black;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+  color: black;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu>.dropdown-menu {
+  right: 10em;
+}
+
+.dropdown-menu {
+  background-color: rgba(34, 34, 34, 0.5);
+  border: 0;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color: gray;
+  color: whitesmoke;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+  background-color: gray;
+  color: whitesmoke;
+}
+
+.dropdown-menu>li>a {
+  color: lightgray;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: rgba(53, 53, 53, 0);
+  color: black;
+  text-decoration: underline;
+}
+
+/*
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+  background-color: rgb(82, 82, 82);
+} */
+

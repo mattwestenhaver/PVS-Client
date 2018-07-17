@@ -25,7 +25,9 @@ class Home extends React.Component {
         </div>
         <div className='home-section-3'>
           <div>
-            <h3>We proudly provide Valet Parking Attendants for:</h3>
+            <div className='header-2'>
+              <h3>We proudly provide Valet for:</h3>
+            </div>
             <h4>Private Events:</h4>
             <ul>
               <li>Weddings</li>

@@ -38,16 +38,19 @@
   overflow: auto;
 }
 
-.home-section-3 div {
+.home-section-3>div {
   width: 40%;
   float: left;
   padding: 10px;
   margin: 0 5%;
 }
 
+.home-section-3 .header-2 {
+  margin-left: 0;
+}
+
 .home-section-3 h3 {
   font-size: 1.4em;
-  margin-bottom: 20px;
 }
 
 .home-section-3 h4 {

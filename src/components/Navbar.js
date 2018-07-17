@@ -2,13 +2,15 @@ import React from 'react'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 
+import smallLogo from '../images/logo-2.png'
+
 class NavBar extends React.Component {
   render() {
     return (
       <Navbar inverse collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <LinkContainer to='/'><a>Premiere Valet Services</a></LinkContainer>
+            <LinkContainer to='/'><img className='navbar-logo' src={smallLogo} alt='PVS logo'/></LinkContainer>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

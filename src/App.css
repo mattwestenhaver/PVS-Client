@@ -1,9 +1,18 @@
 @import url('./css/Navbar.css');
 @import url('./css/Home.css');
 @import url('./css/About.css');
+@import url('./css/Services.css');
+@import url('./css/Insurance.css');
+@import url('./css/Testimonials.css');
+@import url('./css/Footer.css');
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+:root {
+  --background: rgb(20, 20, 20);
+}
 
 html,body {
   height: 100%;
@@ -11,4 +20,53 @@ html,body {
 
 .App {
   text-align: center;
+}
+
+.header-1 {
+  height: 70vh;
+  padding-top: 15vw;
+}
+
+.header-1 h1 {
+  font-size: 4.5em;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+
+.header-2 {
+  width: fit-content!important;
+	height: fit-content!important;
+	-webkit-transform: skew(-12deg);
+	   -moz-transform: skew(-12deg);
+	     -o-transform: skew(-12deg);
+  background: white;
+  margin-left: 16%;
+  border-radius: 4px;
+  float: none!important;
+  margin-bottom: 10px;
+}
+
+.header-2 h2 {
+  padding: 10px 15px;
+  color: black;
+  -webkit-transform: skew(12deg);
+	   -moz-transform: skew(12deg);
+	     -o-transform: skew(12deg);
+}
+
+.header-2 h3 {
+  padding: 10px 15px!important;
+  color: black;
+  -webkit-transform: skew(12deg);
+	   -moz-transform: skew(12deg);
+       -o-transform: skew(12deg);
+  text-decoration: none;
+}
+
+.header-2 p {
+  padding: 10px 15px!important;
+  color: black;
+  -webkit-transform: skew(12deg);
+	   -moz-transform: skew(12deg);
+       -o-transform: skew(12deg);
 }

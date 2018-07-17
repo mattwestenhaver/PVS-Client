@@ -11,6 +11,7 @@ import Testimonials from './components/Testimonials.js'
 import Staff from './components/Staff.js'
 import Contact from './components/Contact.js'
 import Quote from './components/Quote.js'
+import Footer from './components/Footer.js'
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
             <Route path='/contact' component={Contact} />
             <Route path='/quote' component={Quote} />
           </div>
+          <Footer />
         </div>
       </Router>
     );

@@ -14,7 +14,7 @@
 
 .home-section-2 {
   color: white;
-  background-color: rgb(20, 20, 20);
+  background-color: var(--background);
   padding: 2%;
 }
 
@@ -30,7 +30,7 @@
 .home-section-3 {
   font-family: 'Lato', sans-serif;
   color: white;
-  background-color: rgb(20, 20, 20);
+  background-color: var(--background);
   text-align: left;
   width: 100%;
   margin: 0 auto;

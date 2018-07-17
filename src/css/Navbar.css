@@ -10,7 +10,7 @@
   right: 0;
   left: 0;
   z-index: 1030; 
-  font-size: 1.3em;
+  font-size: 1.2em;
   -webkit-transition-property: background-color transform -webkit-transform background-color;
   -webkit-transition-duration: 0.25s;
   -webkit-transition-timing-function: ease-in-out;
@@ -20,7 +20,7 @@
 }
 
 .opaque {
-  background-color: rgba(212, 212, 212, 0.95)!important;
+  background: linear-gradient(rgba(212, 212, 212, 1), rgba(212, 212, 212, 0.8))!important;
   color: black!important;
 }
 
@@ -45,12 +45,17 @@
 }
 
 .navbar:hover {
-  background-color: rgba(34, 34, 34, .4);
+  background-color: rgba(34, 34, 34, .6);
   color: white;
 }
 
 .navbar-brand {
-  font-size: 1.4em;
+  padding: 8px 8px 8px 40px;
+  font-size: 1.3em;
+}
+
+.navbar-brand img {
+  /* max-width: 100%; */
 }
 
 .navbar-header>.active {
@@ -70,7 +75,7 @@
 }
 
 .dropdown-menu {
-  background-color: rgba(34, 34, 34, 0.5);
+  background-color: rgba(34, 34, 34, 0.7);
   border: 0;
 }
 

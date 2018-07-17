@@ -1,0 +1,35 @@
+.services-header {
+  background: linear-gradient(rgba(224, 224, 224, 0.6), rgba(224, 224, 224, 0.6)), url("../images/pvs-3-crop.jpeg");
+  background-size: cover;
+  position: relative;
+}
+
+.services-section-1 {
+  width: 100%;
+  background-color: var(--background);
+  padding: 2%;
+  overflow: auto;
+}
+
+.services-section-1 div {
+  float: left;
+  width: 33%;
+}
+
+.services-section-1 h3 {
+  font-family: 'PT Sans', sans-serif;
+  text-align: left;
+  margin: 2% auto 0 auto;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.services-section-1 p {
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 1%;
+  font-size: 1.1em;
+}

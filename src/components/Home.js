@@ -52,7 +52,7 @@ class Home extends React.Component {
             </ul>
           </div>
           <div>
-            <img src={section3Image} alt='Santiago Image' />
+            <img src={section3Image} alt='' />
           </div>
         </div>
       </div>

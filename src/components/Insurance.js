@@ -22,7 +22,7 @@ class Insurance extends React.Component {
         </div>
         <div className='insurance-section-2'>
           <div>
-            <img src={insurance} alt='insurance photo' />
+            <img src={insurance} alt='' />
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 .home-section-1 {
-  background: linear-gradient(rgba(224, 224, 224, 0.6), rgba(224, 224, 224, 0.6)), url("../images/pvs-1-crop.jpeg");
+  background: linear-gradient(rgba(224, 224, 224, 0.6), rgba(224, 224, 224, 0.6)), url("../images/fence-crop-2.jpg");
   /* background-image: url("./images/home-background.jpg"); */
   background-size: cover;
   height: 100vh;
@@ -8,7 +8,8 @@
 }
 
 .home-section-1 img {
-  width: 70%;
+  width: 60%;
+  margin-top: 7%;
   margin-bottom: 5%;
 }
 

@@ -24,7 +24,7 @@ html,body {
 
 .header-1 {
   height: 70vh;
-  padding-top: 15vw;
+  padding-top: 24vh;
 }
 
 .header-1 h1 {
@@ -39,7 +39,7 @@ html,body {
 	-webkit-transform: skew(-12deg);
 	   -moz-transform: skew(-12deg);
 	     -o-transform: skew(-12deg);
-  background: white;
+  background: rgba(255, 255, 255, 0.8);
   margin-left: 16%;
   border-radius: 4px;
   float: none!important;

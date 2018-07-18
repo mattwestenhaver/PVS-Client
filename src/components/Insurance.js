@@ -21,7 +21,9 @@ class Insurance extends React.Component {
           <p>Below is a copy of our current insurance certificate. We have every confidence that we can provide the level of customer service and insurance requirements that you need.</p>
         </div>
         <div className='insurance-section-2'>
-          <img src={insurance} alt='insurance photo' />
+          <div>
+            <img src={insurance} alt='insurance photo' />
+          </div>
         </div>
       </div>
     )

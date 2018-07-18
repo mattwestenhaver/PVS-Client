@@ -31,7 +31,7 @@ class Services extends React.Component {
             <div className='header-2'>
               <h3>Location Services</h3>
             </div>
-            <p>Visit our location pages to view a few of our regular locations. We pride ourselves on the many locations where we are the Exclusive Valet Parking Company. As evidenced by the photo to the right, our staff are happy to work even during El Nino rain storms!  If you have an event location, contact our events department to set up a meeting. Let our 20+ years of experience go to work for you and your event location.</p>
+            <p>Visit our location pages to view a few of our regular locations. We pride ourselves on the many locations where we are the Exclusive Valet Parking Company. If you have an event location, contact our events department to set up a meeting. Let our 20+ years of experience go to work for you and your event location.</p>
           </div>
         </div>
       </div>

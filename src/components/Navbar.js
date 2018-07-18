@@ -37,7 +37,7 @@ class NavBar extends React.Component {
               </LinkContainer>
             </NavDropdown>
             <NavDropdown eventKey={3} title="Areas of Service" id="basic-nav-dropdown">
-              <NavDropdown eventkey={8} title="Los Angeles" id="basic-nav-dropdown">            
+              <NavDropdown eventkey={8} title="Los Angeles" id="basic-nav-dropdown" className='second-dropdown'>            
                 <MenuItem eventKey={8.1}>Pasadena</MenuItem>
                 <MenuItem eventKey={8.2}>San Marino</MenuItem>
                 <MenuItem eventKey={8.3}>La Canada Flintridge</MenuItem>
@@ -49,13 +49,13 @@ class NavBar extends React.Component {
               <MenuItem eventKey={3.4}>Beverly Park</MenuItem>
               <MenuItem eventKey={3.5}>Bel Air</MenuItem>
               <MenuItem eventKey={3.6}>Malibu</MenuItem>
-              <NavDropdown eventkey={9} title="Ventura County" id="basic-nav-dropdown">            
+              <NavDropdown eventkey={9} title="Ventura County" id="basic-nav-dropdown" className='second-dropdown'>            
                 <MenuItem eventKey={9.1}>Hidden Hills</MenuItem>
                 <MenuItem eventKey={9.2}>Thousand Oaks</MenuItem>
                 <MenuItem eventKey={9.3}>Westlake Village</MenuItem>
                 <MenuItem eventKey={9.4}>North Ranch</MenuItem>
               </NavDropdown>
-              <NavDropdown eventkey={10} title="Orange County" id="basic-nav-dropdown">
+              <NavDropdown eventkey={10} title="Orange County" id="basic-nav-dropdown" className='second-dropdown'>
                 <MenuItem eventKey={10.1}>Laguna Beach</MenuItem>
                 <MenuItem eventKey={10.2}>Newport Coast</MenuItem>
                 <MenuItem eventKey={10.3}>Emerald Bay</MenuItem>

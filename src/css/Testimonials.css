@@ -45,7 +45,7 @@
   width: 85%;
   margin: 0 auto;
   padding: 1%;
-  border: 1px solid white;
+  border: 2px solid white;
   -webkit-transition-property: width transform -webkit-transform width;
   -webkit-transition-duration: 0.2s;
   -webkit-transition-timing-function: ease-in-out;

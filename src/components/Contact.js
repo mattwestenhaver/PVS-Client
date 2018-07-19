@@ -23,7 +23,7 @@ class Contact extends React.Component {
           <title>Contact Us - Premiere Valet Services</title>
         </Helmet>
         <div className='contact-header'>
-          <Button color='black' size='massive' onClick={this.scrollDown.bind(this)}>Contact Us</Button>
+          <Button color='black' size='massive' onClick={this.scrollDown.bind(this)}>CONTACT US</Button>
         </div>
         <div ref='section1' className='contact-section-1'>
           <div className='contact-blurb'>

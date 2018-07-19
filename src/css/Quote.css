@@ -1,0 +1,23 @@
+.request-header {
+  padding-top: 8vh;
+}
+
+.request-form-wrap {
+  width: 50%;
+  margin: 40px auto;
+  height: fit-content;
+  background-color: lightgray;
+  color: black;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.fields input {
+  margin-left: 5px!important;
+  margin-right: 5px!important;
+}
+
+input, textarea {
+  font-family: 'PT Sans', sans-serif!important;
+  font-size: 1.5em!important;
+}

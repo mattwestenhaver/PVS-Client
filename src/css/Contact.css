@@ -1,5 +1,5 @@
 .contact-container {
-  background: linear-gradient(rgba(224, 224, 224, 0.2), rgba(224, 224, 224, 0.2)), url("../images/fence-crop-2.jpg");
+  background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url("../images/fence-crop-2.jpg");
   /* background-image: url("./images/home-background.jpg"); */
   background-size: cover;
   height: 85vh;
@@ -10,8 +10,8 @@
 .contact-blurb {
   width: 40%;
   margin: 0 auto;
-  background-color: rgba(65, 65, 65, 0.95);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
   padding: 2%;
   border-radius: 0 12px 0 12px;
 }

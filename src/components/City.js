@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {Helmet} from "react-helmet";
 
 import navOpacity from '../navBar.js'
 
@@ -12,6 +13,10 @@ class City extends React.Component {
   render() {
     return(
       <div className='city-container'>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>{this.props.city} Valet Services</title>
+        </Helmet>
         <div className='city-section-1'>
           <h1>{this.props.city} Valet Services</h1>
           <p>There are many {this.props.city} Valet Companies, but Premiere Valet Services is proudly the number one in {this.props.city}. If you are hosting an event in {this.props.city} and need valet, Premiere Valet Services can offer you first class valet services and a level of service that no other valet company in the area can.</p>

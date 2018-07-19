@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from 'semantic-ui-react'
+import {Helmet} from "react-helmet";
 
 import navOpacity from '../navBar.js'
 import logo from '../images/logo.png'
@@ -15,6 +16,10 @@ class Home extends React.Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Premiere Valet Services</title>
+        </Helmet>
         <div className='home-section-1'>
           <img src={logo} alt='PVS Logo' /><br />
           <Link to='/quote'><Button color='black' size='massive'>Request A Quote</Button></Link>

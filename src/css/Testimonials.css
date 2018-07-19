@@ -42,50 +42,41 @@
 
 .testimonial-wrap {
   background-color: rgba(255, 255, 255, 0.8);
-  width: 85%;
+  /* width: 85%; */
+  transform: scale(.85);
   margin: 0 auto;
   padding: 1%;
   border: 2px solid white;
-  -webkit-transition-property: width transform -webkit-transform width;
+  /* -webkit-transition-property: width transform -webkit-transform width;
   -webkit-transition-duration: 0.2s;
   -webkit-transition-timing-function: ease-in-out;
   transition-property: width transform -webkit-transformv width;
   transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out; */
+  transition: transform .2s;
   
 }
 
 .testimonial-wrap:hover {
-  width: 92%;
+  /* width: 92%; */
+  transform: scale(.92);
 }
 
-.testimonial-wrap:hover blockquote{
+/* .testimonial-wrap:hover blockquote{
   font-size: 1.4em;
 }
 
 .testimonial-wrap:hover cite{
   font-size: 1.2em;
-}
+} */
 
 blockquote {
   border: 0;
   color: black;
   margin-bottom: 0;
-  -webkit-transition-property: font-size transform -webkit-transform font-size;
-  -webkit-transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: font-size transform -webkit-transformv font-size;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
 }
 
 cite {
   color: black;
   font-size: 1.1em;
-  -webkit-transition-property: font-size transform -webkit-transform font-size;
-  -webkit-transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: font-size transform -webkit-transformv font-size;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
 }

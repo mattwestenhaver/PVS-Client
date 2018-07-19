@@ -4,13 +4,19 @@ class NavOpacity {
   
   solidBar() {
     $('.navbar').addClass('opaque')
+    $('.dropdown-menu').addClass('opaque');
+    $('.dropdown-menu>li>a').addClass('dark-text');
     var offset_val = 0
     function navSlide() {
       var scroll_top = $(window).scrollTop();
       if (scroll_top >= offset_val) { // the detection!
         $('.navbar').addClass('opaque');
+        $('.dropdown-menu').addClass('opaque');
+        $('.dropdown-menu>li>a').addClass('dark-text');
       } else {
         $('.navbar').removeClass('opaque');
+        $('.dropdown-menu').removeClass('opaque');
+        $('.dropdown-menu>li>a').removeClass('dark-text');
       }
     }
     $(window).scroll(navSlide);
@@ -18,6 +24,8 @@ class NavOpacity {
 
   changingMenuBar() {
     $('.navbar').removeClass('opaque');
+    $('.dropdown-menu').removeClass('opaque');
+    $('.dropdown-menu>li>a').removeClass('dark-text');
     var offset_val = 120
     function navSlide() {
       var scroll_top = $(window).scrollTop();
@@ -31,7 +39,7 @@ class NavOpacity {
       } else {
         $('.navbar').removeClass('opaque');
         $('.dropdown-menu').removeClass('opaque');
-        $('.dropdown-menu>li>a').removeClass('dark-text')
+        $('.dropdown-menu>li>a').removeClass('dark-text');
         
         // $('.navbar-inverse .navbar-brand').removeClass('whitefont');
         // $('.navbar-inverse .navbar-nav>li>a').removeClass('whitefont');

@@ -37,39 +37,96 @@ class NavBar extends React.Component {
               </LinkContainer>
             </NavDropdown>
             <NavDropdown eventKey={3} title="Areas of Service" id="basic-nav-dropdown">
-              <NavDropdown eventkey={8} title="Los Angeles" id="basic-nav-dropdown" className='second-dropdown'>            
-                <MenuItem eventKey={8.1}>Pasadena</MenuItem>
-                <MenuItem eventKey={8.2}>San Marino</MenuItem>
-                <MenuItem eventKey={8.3}>La Canada Flintridge</MenuItem>
-                <MenuItem eventKey={8.4}>Brentwood</MenuItem>
-                <MenuItem eventKey={8.5}>Pacific Palisades</MenuItem>
+              <NavDropdown eventkey={8} title="Los Angeles" id="basic-nav-dropdown" className='second-dropdown'>  
+                <LinkContainer to='/losangeles'>
+                  <MenuItem eventKey={8.1}>Los Angeles</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/pasadena'>
+                  <MenuItem eventKey={8.2}>Pasadena</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/sanmarino'>
+                  <MenuItem eventKey={8.3}>San Marino</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/lacanada'>
+                  <MenuItem eventKey={8.4}>La Canada Flintridge</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/brentwood'>
+                  <MenuItem eventKey={8.5}>Brentwood</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/palisades'>
+                  <MenuItem eventKey={8.6}>Pacific Palisades</MenuItem>
+                </LinkContainer>
               </NavDropdown>
-              <MenuItem eventKey={3.2}>Hollywood</MenuItem>
-              <MenuItem eventKey={3.3}>Beverly Hills</MenuItem>
-              <MenuItem eventKey={3.4}>Beverly Park</MenuItem>
-              <MenuItem eventKey={3.5}>Bel Air</MenuItem>
-              <MenuItem eventKey={3.6}>Malibu</MenuItem>
-              <NavDropdown eventkey={9} title="Ventura County" id="basic-nav-dropdown" className='second-dropdown'>            
-                <MenuItem eventKey={9.1}>Hidden Hills</MenuItem>
-                <MenuItem eventKey={9.2}>Thousand Oaks</MenuItem>
-                <MenuItem eventKey={9.3}>Westlake Village</MenuItem>
-                <MenuItem eventKey={9.4}>North Ranch</MenuItem>
+              <LinkContainer to='/hollywood'>
+                <MenuItem eventKey={3.2}>Hollywood</MenuItem>
+              </LinkContainer>
+              <LinkContainer to='/beverlyhills'>
+                <MenuItem eventKey={3.3}>Beverly Hills</MenuItem>
+              </LinkContainer>
+              <LinkContainer to='/beverlypark'>
+                <MenuItem eventKey={3.4}>Beverly Park</MenuItem>
+              </LinkContainer>
+              <LinkContainer to='/belair'>
+                <MenuItem eventKey={3.5}>Bel Air</MenuItem>
+              </LinkContainer>
+              <LinkContainer to='/malibu'>
+                <MenuItem eventKey={3.6}>Malibu</MenuItem>
+              </LinkContainer>
+              <NavDropdown eventkey={9} title="Ventura County" id="basic-nav-dropdown" className='second-dropdown'>
+                <LinkContainer to='/hiddenhills'>            
+                  <MenuItem eventKey={9.1}>Hidden Hills</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/thousandoaks'>
+                  <MenuItem eventKey={9.2}>Thousand Oaks</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/westlakevillage'>
+                  <MenuItem eventKey={9.3}>Westlake Village</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/northranch'>
+                  <MenuItem eventKey={9.4}>North Ranch</MenuItem>
+                </LinkContainer>
               </NavDropdown>
               <NavDropdown eventkey={10} title="Orange County" id="basic-nav-dropdown" className='second-dropdown'>
-                <MenuItem eventKey={10.1}>Laguna Beach</MenuItem>
-                <MenuItem eventKey={10.2}>Newport Coast</MenuItem>
-                <MenuItem eventKey={10.3}>Emerald Bay</MenuItem>
-                <MenuItem eventKey={10.4}>Irvine</MenuItem>
-                <MenuItem eventKey={10.4}>Corona del Mar</MenuItem>
-                <MenuItem eventKey={10.4}>Coto de Caza</MenuItem>
-                <MenuItem eventKey={10.4}>Newport Beach</MenuItem>
-                <MenuItem eventKey={10.4}>Pelican Hill</MenuItem>
-                <MenuItem eventKey={10.4}>Dana Point</MenuItem>
+                <LinkContainer to='/lagunabeach'>
+                  <MenuItem eventKey={10.1}>Laguna Beach</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/newportcoast'>
+                  <MenuItem eventKey={10.2}>Newport Coast</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/emeraldbay'>
+                  <MenuItem eventKey={10.3}>Emerald Bay</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/irvine'>
+                  <MenuItem eventKey={10.4}>Irvine</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/coronadelmar'>
+                  <MenuItem eventKey={10.4}>Corona del Mar</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/cotodecaza'>
+                  <MenuItem eventKey={10.4}>Coto de Caza</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/newportbeach'>
+                  <MenuItem eventKey={10.4}>Newport Beach</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/pelicanhill'>
+                  <MenuItem eventKey={10.4}>Pelican Hill</MenuItem>
+                </LinkContainer>
+                <LinkContainer to='/danapoint'>
+                  <MenuItem eventKey={10.4}>Dana Point</MenuItem>
+                </LinkContainer>
               </NavDropdown>
-              <MenuItem eventKey={3.7}>Manhattan Beach</MenuItem>
-              <MenuItem eventKey={3.8}>Palos Verdes</MenuItem>
-              <MenuItem eventKey={3.9}>Rolling Hills</MenuItem>
-              <MenuItem eventKey={3.10}>Long Beach</MenuItem>
+              <LinkContainer to='/manhattanbeach'>
+                <MenuItem eventKey={3.7}>Manhattan Beach</MenuItem>
+              </LinkContainer>
+              <LinkContainer to='/palosverdes'>
+                <MenuItem eventKey={3.8}>Palos Verdes</MenuItem>
+              </LinkContainer>
+              <LinkContainer to='/rollinghills'>
+                <MenuItem eventKey={3.9}>Rolling Hills</MenuItem>
+              </LinkContainer>
+              <LinkContainer to='/longbeach'>
+                <MenuItem eventKey={3.10}>Long Beach</MenuItem>
+              </LinkContainer>
             </NavDropdown>
             <LinkContainer to='/contact'>
               <NavItem eventKey={4}>

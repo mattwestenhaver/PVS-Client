@@ -1,5 +1,5 @@
 .contact-container {
-  background: linear-gradient(rgba(224, 224, 224, 0.6), rgba(224, 224, 224, 0.6)), url("../images/fence-crop-2.jpg");
+  background: linear-gradient(rgba(224, 224, 224, 0.2), rgba(224, 224, 224, 0.2)), url("../images/fence-crop-2.jpg");
   /* background-image: url("./images/home-background.jpg"); */
   background-size: cover;
   height: 85vh;
@@ -8,24 +8,22 @@
 }
 
 .contact-blurb {
-  float: left;
   width: 40%;
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: rgba(20, 20, 20, 0.9);
+  margin: 0 auto;
+  background-color: rgba(65, 65, 65, 0.95);
   color: white;
   padding: 2%;
   border-radius: 0 12px 0 12px;
 }
 
-.contact-form-wrap {
+/* .contact-form-wrap {
   float: left;
   width: 45%;
   margin: 0 auto;
   background-color: rgba(243, 243, 243, 0.9);
   padding: 2%;
   border-radius: 8px;
-}
+} */
 
 .ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url] {
   font-size: 1.4em;

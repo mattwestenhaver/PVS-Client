@@ -1,21 +1,41 @@
-.contact-container {
-  background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url("../images/fence-crop-2.jpg");
+.contact-header {
+  background: linear-gradient(rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.3)), url("../images/maserati.jpg");
   /* background-image: url("./images/home-background.jpg"); */
   background-size: cover;
-  height: 85vh;
+  height: 100vh;
   padding-top: 10vw;
   position: relative;
 }
 
+.contact-header .ui.black.button {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.4em;
+  margin-top: 28vh;
+  background-color: rgba(252, 252, 252, 0.05);
+}
+
+.contact-header .ui.black.button:hover {
+  background-color: rgba(161, 161, 161, 0.05);
+}
+
+.contact-section-1 {
+  padding: 3%;
+  width: 100%;
+  background-color: var(--background);
+}
+
 .contact-blurb {
+  font-family: 'PT Sans', sans-serif;
   width: 40%;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: black;
-  padding: 2%;
+  color: white;
   border-radius: 0 12px 0 12px;
 }
 
+.contact-blurb p {
+  font-size: 1.2em;
+}
 /* .contact-form-wrap {
   float: left;
   width: 45%;

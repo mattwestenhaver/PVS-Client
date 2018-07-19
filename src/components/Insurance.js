@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from "react-helmet";
 
 import navOpacity from '../navBar.js'
 
@@ -13,6 +14,10 @@ class Insurance extends React.Component {
   render() {
     return (
       <div className='insurance-container'>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Insurance - Premiere Valet Services</title>
+        </Helmet>
         <div className='insurance-header header-1'>
           <h1>INSURANCE</h1>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from "react-helmet";
 
 import navOpacity from '../navBar.js'
 
@@ -11,6 +12,10 @@ class Services extends React.Component {
   render() {
     return(
       <div className='services-container'>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Our Services - Premiere Valet Services</title>
+        </Helmet>
         <div className='services-header header-1'>
           <h1>OUR SERVICES</h1>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from 'semantic-ui-react'
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import navOpacity from '../navBar.js'
 import logo from '../images/logo.png'

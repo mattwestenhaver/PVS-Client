@@ -1,11 +1,26 @@
 import React from 'react'
 import { Helmet } from "react-helmet";
+import { toast, ToastContainer } from 'react-toastify'
 import { Form, Button } from 'semantic-ui-react';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 class Quote extends React.Component {
   
   handleChange() {
     console.log('hi')
+  }
+
+  formSubmit() {
+    if (this.refs.name.value === '' || this.refs.email.value === '' || this.refs.phone.value === '' || this.refs.address.value === '' || this.refs.city.value === '' || this.refs.zipcode.value === '' || this.refs.eventDate.value === '' || this.refs.eventType.value === '' || this.refs.guests.value === '' || this.refs.cars.value === '' || this.refs.arrival.value === '' || this.refs.departure.value === '' || this.refs.comments.value === '' || this.refs.reference.value === '') {
+      toast.error('Please fill out all of the fields.', {
+        position: toast.POSITION.TOP_CENTER
+      })
+    } else {
+      toast.success('Your information has been submitted.', {
+        position: toast.POSITION.TOP_CENTER
+      })
+    }
   }
 
   render() {
@@ -19,7 +34,7 @@ class Quote extends React.Component {
         </div>
         <div className='request-form-wrap'>
           <h2>Request A Quote</h2>
-          <Form>
+          <Form onSubmit={this.formSubmit.bind(this)} >
 
             <Form.Field>
               <input type='text' ref='name' placeholder='Your Name' />
@@ -58,7 +73,7 @@ class Quote extends React.Component {
             </Form.Group>
 
             <Form.Field>
-              <textarea ref='comment' rows='4' placeholder='What are the parking conditions like? Any other comments or questions?' />
+              <textarea ref='comments' rows='4' placeholder='What are the parking conditions like? Any other comments or questions?' />
             </Form.Field>
 
             <Form.Field>
@@ -66,8 +81,10 @@ class Quote extends React.Component {
             </Form.Field>
 
             <Form.Field>
-              <Button className='sign-up-button' size='big'>Submit</Button>
+              <Button color='black' size='massive'>Submit</Button>
             </Form.Field>
+
+            <ToastContainer />
 
           </Form>
         </div>

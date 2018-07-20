@@ -41,6 +41,7 @@
 }
 
 .testimonial-wrap {
+  font-family: 'Lato', sans-serif;
   background-color: rgba(255, 255, 255, 0.9);
   /* width: 85%; */
   transform: scale(.85);
@@ -74,9 +75,10 @@ blockquote {
   border: 0;
   color: black;
   margin-bottom: 0;
+  font-size: 1.4em;
 }
 
 cite {
   color: black;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }

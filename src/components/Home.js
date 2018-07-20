@@ -17,7 +17,7 @@ class Home extends React.Component {
       $('.home-section-1 img').fadeOut()
     }, 4000)
     setTimeout(() => {
-      $('.home-section-1 .ui.black.button').fadeIn()
+      $('.home-section-1 .ui.white.button').fadeIn()
     }, 4000)
     setTimeout(() => {
       $('.home-section-1').addClass('home-picture-fade')
@@ -33,7 +33,7 @@ class Home extends React.Component {
         </Helmet>
         <div className='home-section-1'>
           <img src={logo} alt='PVS Logo' /><br />
-          <Link to='/quote'><Button color='black' size='massive'>Request A Quote</Button></Link>
+          <Link to='/quote'><Button color='white' size='massive'>Request A Quote</Button></Link>
         </div>
         <div className='home-section-2'>
           <p>At Premiere Valet Parking Service we provide the Highest Standard of Private Valet Parking and Valet Parking Management Services. If you are looking for valet services in Los Angeles, Hollywood, Beverly Hills, Orange County, or Ventura County we are ready to meet your valet parking attendant needs.</p>

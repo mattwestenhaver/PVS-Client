@@ -30,16 +30,17 @@
   margin-bottom: 5%;
 }
 
-.home-section-1 .ui.black.button {
+.home-section-1 .ui.white.button {
   display: none;
   margin-top: 30vh;
-  background-color: rgba(34, 34, 34, 0.9);
+  background-color: rgba(241, 241, 241, 0.9);
+  color: rgb(39, 39, 39);
   width: 240px;
   font-size: 1.5em;
 }
 
-.home-section-1 .ui.black.button:hover {
-  background-color: rgba(10, 10, 10, .9);
+.home-section-1 .ui.white.button:hover {
+  background-color: rgba(201, 201, 201, 0.9);
 }
 
 .home-section-2 {

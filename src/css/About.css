@@ -1,5 +1,5 @@
 .about-header {
-  background: linear-gradient(rgba(224, 224, 224, 0.6), rgba(224, 224, 224, 0.6)), url("../images/infiniti-crop.jpeg");
+  background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url("../images/infiniti-crop.jpeg");
   background-size: cover;
   position: relative;
 }
@@ -7,7 +7,7 @@
 .about-section-1 {
   width: 100%;
   background-color: var(--background);
-  padding: 4% 2%;
+  padding: 3% 2%;
 }
 
 .about-section-1 h2 {
@@ -23,6 +23,6 @@
   width: 70%;
   margin: 0 auto;
   text-align: left;
-  padding: 1%;
+  padding: 0 1% 3% 1%;
   font-size: 1.2em;
 }

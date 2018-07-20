@@ -74,6 +74,16 @@ html,body {
        -o-transform: skew(12deg);
 }
 
+.page-header {
+  font-family: 'PT Sans', sans-serif;
+  margin-top: 0;
+  margin-bottom: 60px;
+  color: white;
+  border: 0;
+  float: none!important;
+  margin: 0 auto;
+}
+
 .italic {
   font-style: italic;
 }

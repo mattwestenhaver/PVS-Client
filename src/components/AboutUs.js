@@ -17,16 +17,23 @@ class AboutUs extends React.Component {
           <meta charSet="utf-8" />
           <title>Our Story - Premiere Valet Services</title>
         </Helmet>
-        <div className='about-header header-1'>
-          <h1>OUR STORY</h1>
-        </div>
+        <div className='about-header header-1'></div>
         <div className='about-section-1'>
+          <div className='page-header'>
+            <h1>ABOUT US</h1>
+          </div><br />
           <div className='header-2'>
-            <h2>Our Mission</h2>
+            <h3>Premiere Valet's Pledge</h3>
           </div>
-          <p>At Premiere Valet Parking Service we provide the Highest Standard of Private Valet Parking and Valet Parking Management Services. If you are looking for valet services in Los Angeles, Hollywood, Beverly Hills, Orange County, or Ventura County we are ready to meet your valet parking attendant needs.</p>
-          <p>For over 25 years Premiere Valet Service, Inc., has served all of Southern California with valet parking service. With offices in Los Angeles and Laguna Beach we provide valet service with locally based valet parking attendants for all of Los Angeles County, Orange County, Ventura County  and Riverside County.</p>
-          <p>Not all Los Angeles Valet Parking Companies are the same and we take pride in the level of Valet Parking Service we provide.  Our commitment to quality is why we are considered the Premiere Valet Company in Los Angeles, Malibu, Newport Coast, Laguna Beach, Orange County, etc.  Whether you are searching for a Beverly Hills Valet company to provide Beverly Hills Valet Parking Service or a Riverside Valet Company to provide Riverside Valet Parking Service, Premiere Valet Service is ready to assist with all of your valet parking needs.</p>
+          <p>While our business continues to grow each year, our objective has never changed: to provide the Highest Level of Service that exceeds our client expectations.</p>
+          <div className='header-2'>
+            <h3>Our Professional Parking Attendants</h3>
+          </div>
+          <p>We provide professional, well-groomed, uniformed Parking Attendants. Our staff consists of both male and female parking attendants.  All of our Valet Attendants have been trained to provide Superior Customer Service. We pride ourselves in the professionalism each and every one of our Valet Parking staff provide at our events.</p>
+          <div className='header-2'>
+            <h3>What Sets Us Apart</h3>
+          </div>
+          <p>Superior Customer Service has become a rare commodity in our industry. Here at Premiere Valet we answer our phones, we provide site visits, we work within our clients budget and we genuinely care about our clients. Simply contact us to experience the professionalism and hands-on attention you can only get from Premiere Valet Service Inc.</p>
         </div>
       </div>
     )

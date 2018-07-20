@@ -1,5 +1,5 @@
 .services-header {
-  background: linear-gradient(rgba(224, 224, 224, 0.6), rgba(224, 224, 224, 0.6)), url("../images/home-crop.jpg");
+  background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url("../images/home-crop.jpg");
   background-size: cover;
   position: relative;
 }
@@ -7,7 +7,7 @@
 .services-section-1 {
   width: 100%;
   background-color: var(--background);
-  padding: 4% 2%;
+  padding: 3% 2%;
   overflow: auto;
 }
 

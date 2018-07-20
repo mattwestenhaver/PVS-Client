@@ -17,10 +17,11 @@ class Testimonials extends React.Component {
           <meta charSet="utf-8" />
           <title>Testimonials - Premiere Valet Services</title>
         </Helmet>
-        <div className='testimonials-header header-1'>
-          <h1>TESTIMONIALS</h1>
-        </div>
+        <div className='testimonials-header header-1'></div>
         <div className='testimonials-section-1'>
+          <div className='page-header'>
+            <h1>TESTIMONIALS</h1>
+          </div><br />
 
           <div className='testimonials-column-1'>
             <div className='testimonial-wrap'>

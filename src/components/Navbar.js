@@ -21,7 +21,7 @@ class NavBar extends React.Component {
             </LinkContainer>
             <NavDropdown eventKey={2} title="About Us" id="basic-nav-dropdown">
               <LinkContainer to='/about'>
-                <MenuItem eventKey={2.1}>Our Story</MenuItem>
+                <MenuItem eventKey={2.1}>About</MenuItem>
               </LinkContainer>
               <LinkContainer to='/services'>
                 <MenuItem eventKey={2.2}>Services</MenuItem>

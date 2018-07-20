@@ -16,10 +16,11 @@ class Services extends React.Component {
           <meta charSet="utf-8" />
           <title>Our Services - Premiere Valet Services</title>
         </Helmet>
-        <div className='services-header header-1'>
-          <h1>OUR SERVICES</h1>
-        </div>
+        <div className='services-header header-1'></div>
         <div className='services-section-1'>
+          <div className='page-header'>
+            <h1>OUR SERVICES</h1>
+          </div><br />
           <div>
             <div className='header-2'>
               <h3>Private Parties</h3>
@@ -34,7 +35,7 @@ class Services extends React.Component {
           </div>
           <div>
             <div className='header-2'>
-              <h3>Location Services</h3>
+              <h3>Commercial Services</h3>
             </div>
             <p>Visit our location pages to view a few of our regular locations. We pride ourselves on the many locations where we are the Exclusive Valet Parking Company. If you have an event location, contact our events department to set up a meeting. Let our 20+ years of experience go to work for you and your event location.</p>
           </div>

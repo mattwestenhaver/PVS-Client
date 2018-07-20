@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from 'semantic-ui-react'
 import { Helmet } from "react-helmet";
+import $ from 'jquery'
 
 import navOpacity from '../navBar.js'
 import logo from '../images/logo.png'
@@ -11,6 +12,16 @@ class Home extends React.Component {
 
   componentDidMount() {
     navOpacity.changingMenuBar()
+    navOpacity.hideLogo()
+    setTimeout(() => {
+      $('.home-section-1 img').fadeOut()
+    }, 4000)
+    setTimeout(() => {
+      $('.home-section-1 .ui.black.button').fadeIn()
+    }, 4000)
+    setTimeout(() => {
+      $('.home-section-1').addClass('home-picture-fade')
+    }, 4200)
   }
 
   render() {

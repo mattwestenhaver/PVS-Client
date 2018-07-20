@@ -1,6 +1,13 @@
 import $ from 'jquery'
 
 class NavOpacity {
+
+  hideLogo() {
+    $('.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand').css('display', 'none')
+    setTimeout(() => {
+      $('.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand').fadeIn()
+    }, 4300)
+  }
   
   solidBar() {
     $('.navbar').addClass('opaque')

@@ -1,16 +1,45 @@
 .home-section-1 {
-  background: linear-gradient(rgba(224, 224, 224, 0.6), rgba(224, 224, 224, 0.6)), url("../images/fence-crop-2.jpg");
-  /* background-image: url("./images/home-background.jpg"); */
-  background-size: cover;
   height: 100vh;
   padding-top: 8vw;
-  position: relative;
+  background-size: cover;
+  background-image: url('../images/maxresdefault.jpg');
+  -webkit-transition: background-image 1s ease;
+     -moz-transition: background-image 1s ease;
+          transition: background-image 1s ease;
 }
 
+.home-picture-fade {
+  background-image: url("../images/fence-crop-2.jpg");
+  background-size: cover;
+  -webkit-transition: background-image 1.8s ease;
+     -moz-transition: background-image 1.8s ease;
+          transition: background-image 1.8s ease;
+}
+
+/* .home-picture-fade {
+  background: url("../images/fence-crop-2.jpg");
+  background-size: cover;
+  -webkit-transition: background 2s ease-in;
+     -moz-transition: background 2s ease-in;
+          transition: background 2s ease-in;
+} */
+
 .home-section-1 img {
-  width: 55%;
-  margin-top: 7%;
+  width: 60%;
+  margin-top: 6%;
   margin-bottom: 5%;
+}
+
+.home-section-1 .ui.black.button {
+  display: none;
+  margin-top: 30vh;
+  background-color: rgba(34, 34, 34, 0.9);
+  width: 240px;
+  font-size: 1.5em;
+}
+
+.home-section-1 .ui.black.button:hover {
+  background-color: rgba(10, 10, 10, .9);
 }
 
 .home-section-2 {

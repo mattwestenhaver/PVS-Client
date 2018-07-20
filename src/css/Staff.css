@@ -1,0 +1,24 @@
+.staff-section-1 {
+  width: 100;
+}
+
+.staff-wrap {
+  clear: both;
+  width: 50%;
+  overflow: auto;
+  margin: 20px auto;
+}
+
+.staff-image {
+  float: left;
+  width: 40%;
+}
+
+.staff-image img {
+  width: 100%;
+}
+
+.staff-information {
+  width: 60%;
+  float: left;
+}

@@ -15,7 +15,7 @@ class Testimonials extends React.Component {
       <div className='testimonials-container'>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Testimonials - Premiere Valet Services</title>
+          <title>Testimonials - Premiere Valet Service, Inc.</title>
         </Helmet>
         <div className='testimonials-header header-1'></div>
         <div className='testimonials-section-1'>

@@ -20,14 +20,14 @@ class Contact extends React.Component {
       <div className='contact-container'>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Contact Us - Premiere Valet Services</title>
+          <title>Contact Us - Premiere Valet Service, Inc.</title>
         </Helmet>
         <div className='contact-header'>
           <Button color='black' size='massive' onClick={this.scrollDown.bind(this)}>CONTACT US</Button>
         </div>
         <div ref='section1' className='contact-section-1'>
           <div className='contact-blurb'>
-            <div className='header-2'>
+            <div className='header-2 centered'>
               <h3>Questions? Give Us A Call</h3>
             </div>
             <p>We are open Monday through Friday from 8:30am to 5:30pm</p> 

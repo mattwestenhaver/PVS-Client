@@ -1,5 +1,5 @@
 .testimonials-header {
-  background: linear-gradient(rgba(224, 224, 224, 0.6), rgba(224, 224, 224, 0.6)), url("../images/rain2-crop.jpeg");
+  background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url("../images/rain2-crop.jpeg");
   background-size: cover;
   height: 50vh;
   padding-top: 8vw;

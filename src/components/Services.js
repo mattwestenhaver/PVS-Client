@@ -14,7 +14,7 @@ class Services extends React.Component {
       <div className='services-container'>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Our Services - Premiere Valet Services</title>
+          <title>Our Services - Premiere Valet Service, Inc.</title>
         </Helmet>
         <div className='services-header header-1'></div>
         <div className='services-section-1'>
@@ -31,7 +31,7 @@ class Services extends React.Component {
             <div className='header-2'>
               <h3>Businesses</h3>
             </div>
-            <p>Let us help your business grow. Premiere Valet Service is well known for troubleshooting any parking situation. Whether you require Valet Service on a regular basis or a Parking Attendant to maximize your parking options, we want to meet with you. Contact us to set up a meeting with a representative to go over your options. We find ways to meet our clients needs while staying within their budget.</p>
+            <p>Let us help your business grow. Premiere Valet Service, Inc. is well known for troubleshooting any parking situation. Whether you require Valet Service on a regular basis or a Parking Attendant to maximize your parking options, we want to meet with you. Contact us to set up a meeting with a representative to go over your options. We find ways to meet our clients needs while staying within their budget.</p>
           </div>
           <div>
             <div className='header-2'>

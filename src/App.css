@@ -88,3 +88,7 @@ html,body {
 .italic {
   font-style: italic;
 }
+
+.centered {
+  margin: 0 auto 10px auto;
+}

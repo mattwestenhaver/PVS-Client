@@ -1,5 +1,11 @@
 .request-header {
-  padding-top: 8vh;
+  height: 20vh;
+}
+
+.request-section-1 {
+  background-color: var(--background);
+  width: 100%;
+  padding: 3% 2%;
 }
 
 .request-form-wrap {

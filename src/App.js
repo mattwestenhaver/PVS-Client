@@ -13,6 +13,7 @@ import Contact from './components/Contact.js'
 import Quote from './components/Quote.js'
 import Footer from './components/Footer.js'
 import City from './components/City.js'
+import Work from './components/Work.js'
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
             <Route path='/staff' component={Staff} />
             <Route path='/contact' component={Contact} />
             <Route path='/quote' component={Quote} />
+            <Route path='/employment' component={Work} />
 
             <Route path='/losangeles' render={(props) => {
               return <City city='Los Angeles' {...props} />

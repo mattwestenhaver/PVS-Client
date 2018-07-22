@@ -1,0 +1,49 @@
+.work-header {
+  background-color: lightgray;
+}
+
+.work-section-1 {
+  width: 100%;
+  background-color: var(--background);
+  padding: 3% 2%;
+}
+
+.work-information {
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.work-information h3, ul, p, label {
+  text-align: left;
+}
+
+.work-form-wrap {
+  width: 95%;
+  height: fit-content;
+  background-color: rgb(235, 235, 235);
+  margin: 0 auto;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.ui.dropdown {
+  font-size: 1.4em;
+}
+
+.ui.selection.dropdown .menu>.item {
+  font-size: 1em;
+}
+
+.work-form-wrap .button {
+  text-align: center;
+}
+
+.ui.form .field>label {
+  font-size: 1.4em;
+  padding-left: 5px;
+}

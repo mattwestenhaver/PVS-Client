@@ -1,6 +1,7 @@
 import React from 'react'
 import { Form, Button } from 'semantic-ui-react'
 import { toast, ToastContainer } from 'react-toastify'
+import { Helmet } from "react-helmet";
 
 import navOpacity from '../navBar.js'
 
@@ -59,6 +60,10 @@ class Work extends React.Component {
 
     return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Employment - Premiere Valet Service, Inc.</title>
+        </Helmet>
         <div className='work-header header-1'></div>
         <div className='work-section-1'>
           <div className='work-information'>

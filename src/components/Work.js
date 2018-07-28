@@ -3,14 +3,16 @@ import { Form, Button } from 'semantic-ui-react'
 import { toast, ToastContainer } from 'react-toastify'
 import { Helmet } from "react-helmet";
 
+import auth from '../auth.js'
 import navOpacity from '../navBar.js'
 
 import 'react-toastify/dist/ReactToastify.css';
 
 const locationOptions = [
-  {key: 0, text: 'Los Angeles', value: 'Los Angeles'},
-  {key: 1, text: 'Ventura', value: 'Ventura'},
-  {key: 2, text: 'Orange County', value: 'Orange County'}
+  {key: 0, text: 'Los Angeles County', value: 'Los Angeles County'},
+  {key: 1, text: 'Ventura County', value: 'Ventura County'},
+  {key: 2, text: 'Orange County', value: 'Orange County'},
+  {key: 3, text: 'South Bay', value: 'South Bay'}
 ]
 
 class Work extends React.Component {
@@ -40,9 +42,10 @@ class Work extends React.Component {
         resume: this.refs.resume.value,
         location: this.state.location
       }
-      console.log(workData)
-      toast.success('Your information has been successfully submitted.', {
-        position: toast.POSITION.TOP_CENTER
+      auth.workEmail(workData).then(success => {
+        toast.success('Your information has been successfully submitted.', {
+          position: toast.POSITION.TOP_CENTER
+        })
       })
     }
     

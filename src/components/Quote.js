@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { toast, ToastContainer } from 'react-toastify'
 import { Form, Button } from 'semantic-ui-react';
 
+import auth from '../auth.js'
 import navOpacity from '../navBar.js'
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -14,7 +15,7 @@ class Quote extends React.Component {
 
   formSubmit() {
     if (this.refs.name.value === '' || this.refs.email.value === '' || this.refs.phone.value === '' || this.refs.address.value === '' || this.refs.city.value === '' || this.refs.zipcode.value === '' || this.refs.eventDate.value === '' || this.refs.eventType.value === '' || this.refs.guests.value === '' || this.refs.cars.value === '' || this.refs.arrival.value === '' || this.refs.departure.value === '' || this.refs.comments.value === '' || this.refs.reference.value === '') {
-      toast.error('Please fill out all of the fields.', {
+      toast.error('Please fill out all of the fields and submit again.', {
         position: toast.POSITION.TOP_CENTER
       })
     } else {
@@ -32,9 +33,10 @@ class Quote extends React.Component {
         comments: this.refs.comments.value,
         reference: this.refs.reference.value
       }
-      console.log(quoteData)
-      toast.success('Your information has been submitted.', {
-        position: toast.POSITION.TOP_CENTER
+      auth.quoteEmail(quoteData).then(success => {
+        toast.success('Your request has been submitted.', {
+          position: toast.POSITION.TOP_CENTER
+        })
       })
     }
   }

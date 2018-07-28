@@ -1,5 +1,10 @@
 .request-header {
-  height: 20vh;
+  background: linear-gradient(rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.3)), url("../images/maserati2.jpg");
+  /* background-image: url("./images/home-background.jpg"); */
+  background-size: cover;
+  height: 100vh;
+  padding-top: 10vw;
+  position: relative;
 }
 
 .request-section-1 {
@@ -26,4 +31,17 @@
 input, textarea {
   font-family: 'PT Sans', sans-serif!important;
   font-size: 1.5em!important;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgb(60, 60, 60)!important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgb(60, 60, 60)!important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgb(60, 60, 60)!important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgb(60, 60, 60)!important;
 }

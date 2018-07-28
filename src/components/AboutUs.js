@@ -25,15 +25,15 @@ class AboutUs extends React.Component {
           <div className='header-2'>
             <h3>Premiere Valet's Pledge</h3>
           </div>
-          <p>While our business continues to grow each year, our objective has never changed: to provide the Highest Level of Service that exceeds our client expectations.</p>
+          <p>While our business continues to grow each year, our objective has never changed: to provide the highest level of valet parking service that always exceeds our client expectations.</p>
           <div className='header-2'>
             <h3>Our Professional Parking Attendants</h3>
           </div>
-          <p>We provide professional, well-groomed, uniformed Parking Attendants. Our staff consists of both male and female parking attendants.  All of our Valet Attendants have been trained to provide Superior Customer Service. We pride ourselves in the professionalism each and every one of our Valet Parking staff provide at our events.</p>
+          <p>We provide professional, well-groomed, uniformed valet parking attendants. Our staff consists of both male and female valet parking attendants. All of our valet parking attendants have been trained to provide superior customer service. We pride ourselves in the professionalism each and every one of our valet parking attendants provide at your events.</p>
           <div className='header-2'>
             <h3>What Sets Us Apart</h3>
           </div>
-          <p>Superior Customer Service has become a rare commodity in our industry. Here at Premiere Valet we answer our phones, we provide site visits, we work within our clients budget and we genuinely care about our clients. Simply contact us to experience the professionalism and hands-on attention you can only get from Premiere Valet Service, Inc.</p>
+          <p>Superior customer service has become a rare commodity in our industry. Here at Premiere Valet Service, Inc., we answer our phones, we provide site visits, we work within our clients budget and we genuinely care about our clients. Simply contact us to experience the professionalism and hands-on attention you can only get from Premiere Valet Service, Inc.</p>
         </div>
       </div>
     )

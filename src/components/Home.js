@@ -36,20 +36,22 @@ class Home extends React.Component {
           <Link to='/quote'><Button color='white' size='massive'>Request A Quote</Button></Link>
         </div>
         <div className='home-section-2'>
-          <p>At Premiere Valet Service, Inc., we provide the Highest Standard of Private Valet Parking and Valet Parking Management Services. If you are looking for valet services in Los Angeles, Hollywood, Beverly Hills, Orange County, or Ventura County we are ready to meet your valet parking attendant needs.</p>
-          <p>For over 25 years Premiere Valet Service, Inc., has served all of Southern California with valet parking service. With offices in Los Angeles and Laguna Beach we provide valet service with locally based valet parking attendants for all of Los Angeles County, Orange County, Ventura County  and Riverside County.</p>
+          <p>Premiere Valet Service, Inc., provides the Highest Standard of Private Valet Parking and Valet Parking Management Services. If you are looking for a Los Angeles valet parking services, Hollywood valet parking services, Beverly Hills valet parking services, Orange County valet parking services or Ventura County valet parking services we are ready to meet your valet parking service needs.</p>
+          <p>For over 30 years Premiere Valet Service, Inc., has served all of Southern California with the highest quality of valet parking service. With offices in Los Angeles and Laguna Beach we provide valet parking service with locally based valet parking attendants in Los Angeles County, Orange County , Ventura County. Our valet parking service provides both male and female valet parking attendants.</p>
+          <p>Not all Los Angeles valet parking companies are the same and we take pride in the level of valet parking service we provide.  Our commitment to quality is why we are considered the Premiere valet Company in Los Angeles, Beverly Hills, Malibu, Thousand Oaks, Newport Coast, Laguna Beach, Orange County, etc.</p>
+          <p>Whether you are searching for a Beverly Hills valet parking company to provide Beverly Hills valet parking service or a Thousand Oaks valet parking company to provide Thousand Oaks Valet Parking Service, Premiere Valet Service, Inc., is ready to assist with all of your valet parking needs.</p>
           <hr />
         </div>
         <div className='home-section-3'>
           <div>
             <div className='header-2'>
-              <h3>We proudly provide Valet for:</h3>
+              <h3>We Proudly Provide Valet Parking For:</h3>
             </div>
             <h4>Private Events:</h4>
             <ul>
               <li>Weddings</li>
-              <li>Parties</li>
-              <li>Dinners</li>
+              <li>Private Parties</li>
+              <li>Private Dinners</li>
               <li>Fundraisers</li>
               <li>Other Special Events</li>
             </ul>
@@ -57,14 +59,13 @@ class Home extends React.Component {
             <ul>
               <li>Banquets</li>
               <li>Galas</li>
-              <li>Concerts</li>
               <li>Seminars</li>
             </ul>
             <h4>Businesses:</h4>
             <ul>
               <li>Parking Lot Attendants</li>
               <li>Hotel Parking Management</li>
-              <li>Restaurant Parking Management</li>
+              <li>Concert & Festival Parking Management</li>
             </ul>
           </div>
           <div>

@@ -50,6 +50,9 @@ class App extends Component {
             <Route path='/palisades' render={(props) => {
               return <City city='Pacific Palisades' {...props} />
             }} />
+            <Route path='/santamonica' render={(props) => {
+              return <City city='Santa Monica' {...props} />
+            }} />
 
             <Route path='/hollywood' render={(props) => {
               return <City city='Hollywood' {...props} />

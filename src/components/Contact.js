@@ -30,8 +30,8 @@ class Contact extends React.Component {
             <div className='header-2 centered'>
               <h3>Questions? Give Us A Call</h3>
             </div>
-            <p>We are open Monday through Friday from 8:30am to 5:30pm</p> 
-            <p>We also have a manager on call 24 hours a day, seven days a week, so let us know how we can help!</p>
+            <p>Our office is open Monday to Friday 9:00am - 5:30pm</p> 
+            <p>We have an on call manager 24 hours a day, seven days a week.</p>
             <p>Los Angeles and Ventura County: (323) 876-5816</p>
             <p>Orange County: (949) 497-8811</p>
             <p>Email: info@premierevaletparking.com</p>

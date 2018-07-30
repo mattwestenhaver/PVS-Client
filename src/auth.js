@@ -14,12 +14,12 @@ class AuthClient {
   }
 
   quoteEmail(quoteInfo) {
-    return this.request({method: 'Post', url: "/quote", data: quoteInfo})
+    return this.request({method: 'Post', url: "/email/quote", data: quoteInfo})
       .then(response => response.data.success)
   }
 
   workEmail(workInfo) {
-    return this.request({method: 'Post', url: "/work", data: workInfo})
+    return this.request({method: 'Post', url: "/email/work", data: workInfo})
       .then(response => response.data.success)
   }
  

@@ -13,6 +13,11 @@ class AuthClient {
     })
   }
 
+  load() {
+    return this.request({method: 'Get', url: '/'})
+      .then(response => response.data.success)
+  }
+
   quoteEmail(quoteInfo) {
     return this.request({method: 'Post', url: "/email/quote", data: quoteInfo})
       .then(response => response.data.success)

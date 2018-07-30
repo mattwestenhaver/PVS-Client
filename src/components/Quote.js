@@ -43,6 +43,9 @@ class Quote extends React.Component {
 
   componentDidMount() {
     navOpacity.solidBar()
+    auth.load().then(success => {
+      console.log(success)
+    })
   }
 
   render() {

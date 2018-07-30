@@ -55,6 +55,9 @@ class Work extends React.Component {
 
   componentDidMount() {
     navOpacity.changingMenuBar()
+    auth.load().then(success => {
+      console.log(success)
+    })
   }
 
   render() {

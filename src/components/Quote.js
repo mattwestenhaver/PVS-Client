@@ -37,6 +37,18 @@ class Quote extends React.Component {
         toast.success('Your request has been submitted.', {
           position: toast.POSITION.TOP_CENTER
         })
+        this.refs.name.value = ''
+        this.refs.email.value = ''
+        this.refs.phone.value = ''
+        this.refs.address.value = ''
+        this.refs.city.value = ''
+        this.refs.zipcode.value = ''
+        this.refs.eventDate.value = ''
+        this.refs.eventType.value = ''
+        this.refs.guests.value = ''
+        this.refs.cars.value = ''
+        this.refs.comments.value = ''
+        this.refs.reference.value = ''
       })
     }
   }

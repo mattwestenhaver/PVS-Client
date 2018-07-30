@@ -46,6 +46,16 @@ class Work extends React.Component {
         toast.success('Your information has been successfully submitted.', {
           position: toast.POSITION.TOP_CENTER
         })
+        this.refs.firstName.value = ''
+        this.refs.lastName.value = ''
+        this.refs.email.value = ''
+        this.refs.phone.value = ''
+        this.refs.reference.value = ''
+        this.refs.education.value = ''
+        this.refs.skills.value = ''
+        this.refs.about.value = ''
+        this.refs.resume.value = ''
+        this.setState({ location: null })
       })
     }
     

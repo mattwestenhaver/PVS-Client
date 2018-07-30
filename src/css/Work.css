@@ -1,5 +1,7 @@
 .work-header {
-  background-color: lightgray;
+  background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url("../images/plane-crop.jpeg");
+  background-size: cover;
+  position: relative;
 }
 
 .work-section-1 {
@@ -25,7 +27,7 @@
 .work-form-wrap {
   width: 95%;
   height: fit-content;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(177, 177, 177);
   margin: 0 auto;
   padding: 2%;
   border-radius: 8px;

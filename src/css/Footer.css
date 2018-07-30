@@ -1,5 +1,5 @@
 .footer-container {
-  height: 28vh;
+  height: 200px;
   width: 100%;
   background-color: white;
   padding: 1.5%;
@@ -20,6 +20,15 @@
 .footer-container a:hover {
   color: rgb(25, 84, 104);
   text-decoration: none;
+}
+
+.footer-work a {
+  color: rgb(73, 167, 199);
+}
+
+.footer-work a:hover {
+  color: rgb(73, 167, 199)!important;
+  text-decoration: underline;
 }
 
 .icon {

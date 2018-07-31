@@ -19,11 +19,6 @@ export const logPageView = () => {
 }
 
 class Quote extends React.Component {
-  
-  componentDidMount() {
-    initGA()
-    logPageView()
-  }
 
   formSubmit() {
     if (this.refs.name.value === '' || this.refs.email.value === '' || this.refs.phone.value === '' || this.refs.address.value === '' || this.refs.city.value === '' || this.refs.zipcode.value === '' || this.refs.eventDate.value === '' || this.refs.eventType.value === '' || this.refs.guests.value === '' || this.refs.cars.value === '' || this.refs.arrival.value === '' || this.refs.departure.value === '' || this.refs.comments.value === '' || this.refs.reference.value === '') {
@@ -67,6 +62,8 @@ class Quote extends React.Component {
 
   componentDidMount() {
     navOpacity.solidBar()
+    initGA()
+    logPageView()
     auth.load().then(success => {
       console.log(success)
     })

@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import $ from 'jquery'
 
 import navOpacity from '../navBar.js'
-import logo from '../images/logo.png'
+import logo from '../images/logo-white.png'
 import section3Image from '../images/pvs-5.jpg'
 
 import ReactGA from 'react-ga'
@@ -31,7 +31,7 @@ class Home extends React.Component {
       $('.home-section-1 img').fadeOut()
     }, 3000)
     setTimeout(() => {
-      $('.home-section-1 .ui.white.button').fadeIn()
+      $('.home-section-1 .ui.grey.button').fadeIn()
     }, 3000)
     setTimeout(() => {
       $('.home-section-1').addClass('home-picture-fade')
@@ -47,7 +47,7 @@ class Home extends React.Component {
         </Helmet>
         <div className='home-section-1'>
           <img src={logo} alt='PVS Logo' /><br />
-          <Link to='/quote'><Button color='white' size='massive'>Request A Quote</Button></Link>
+          <Link to='/quote'><Button color='grey' size='massive'>Request A Quote</Button></Link>
         </div>
         <div className='home-section-2'>
           <p>Premiere Valet Service, Inc., provides the Highest Standard of Private Valet Parking and Valet Parking Management Services. If you are looking for a Los Angeles valet parking services, Hollywood valet parking services, Beverly Hills valet parking services, Orange County valet parking services or Ventura County valet parking services we are ready to meet your valet parking service needs.</p>

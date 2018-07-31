@@ -140,6 +140,7 @@
   }
 
   .dropdown-menu {
+    background-color: rgba(231, 231, 231, 0.95)!important;
     color: rgb(41, 41, 41)!important;
   }
   

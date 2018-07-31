@@ -126,5 +126,17 @@
     background-color: rgba(231, 231, 231, 0.95)!important;
     color: black!important;
   }
+
+  .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    color: rgb(41, 41, 41)!important;
+  }
+  
+  .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: rgb(41, 41, 41)!important;
+  }
+  
+  .dropdown-menu>li>a {
+    color: rgb(41, 41, 41)!important;
+  }
   
 }

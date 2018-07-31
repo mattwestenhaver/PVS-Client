@@ -138,5 +138,9 @@
   .dropdown-menu>li>a {
     color: rgb(41, 41, 41)!important;
   }
+
+  .dropdown-menu {
+    color: rgb(41, 41, 41)!important;
+  }
   
 }

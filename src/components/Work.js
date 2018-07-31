@@ -33,11 +33,6 @@ class Work extends React.Component {
     }
   }
 
-  componentDidMount() {
-    initGA()
-    logPageView()
-  }
-
   workSubmit() {
     if (this.refs.firstName.value === '' || this.refs.lastName.value === '' || this.refs.email.value === '' || this.refs.phone.value === '' || this.refs.reference.value === '' || this.refs.education.value === '' || this.refs.skills.value === '' || this.refs.about.value === '' || this.refs.resume.value === '' || this.state.location === null) {
       toast.error('Please fill out all of the fields before submitting.', {
@@ -79,6 +74,8 @@ class Work extends React.Component {
 
   componentDidMount() {
     navOpacity.changingMenuBar()
+    initGA()
+    logPageView()
     auth.load().then(success => {
       console.log(success)
     })

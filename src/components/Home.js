@@ -49,17 +49,17 @@ class Home extends React.Component {
             </div>
             <h4>Private Events:</h4>
             <ul>
-              <li>Weddings</li>
-              <li>Private Parties</li>
-              <li>Private Dinners</li>
-              <li>Fundraisers</li>
+              <li>Wedding Valet Parking</li>
+              <li>Private Party Valet Parking</li>
+              <li>Private Dinner Valet Parking</li>
+              <li>Fundraiser Valet Parking</li>
               <li>Other Special Events</li>
             </ul>
             <h4>Corporate Events:</h4>
             <ul>
-              <li>Banquets</li>
-              <li>Galas</li>
-              <li>Seminars</li>
+              <li>Banquet Valet Parking</li>
+              <li>Gala Valet Parking</li>
+              <li>Seminar Valet Parking</li>
             </ul>
             <h4>Businesses:</h4>
             <ul>

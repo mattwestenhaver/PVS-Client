@@ -10,7 +10,7 @@
 .request-section-1 {
   background-color: var(--background);
   width: 100%;
-  padding: 3% 2%;
+  padding: 60px 50px 50px 50px;
 }
 
 .request-form-wrap {
@@ -21,6 +21,10 @@
   color: black;
   padding: 2%;
   border-radius: 8px;
+}
+
+.request-form-wrap h2 {
+  font-family: 'PT Sans', sans-serif!important;
 }
 
 .fields input {

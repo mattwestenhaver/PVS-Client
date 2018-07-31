@@ -45,6 +45,10 @@
 
 @media only screen and (max-width: 768px) {
 
+  .insurance-header {
+    background-position: center;
+  }
+  
   .insurance-section-1 p {
     width: 85%;
   }

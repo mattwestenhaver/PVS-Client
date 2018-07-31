@@ -36,6 +36,10 @@
 
 @media only screen and (max-width: 768px) {
 
+  .services-header {
+    background-position: center;
+  }
+
   .services-section-1 {
     padding: 2% 1%;
   }

@@ -2,6 +2,7 @@
   background: linear-gradient(rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.3)), url("../images/maserati2.jpg");
   /* background-image: url("./images/home-background.jpg"); */
   background-size: cover;
+  background-position: center;
   height: 100vh;
   padding-top: 10vw;
   position: relative;
@@ -56,6 +57,10 @@
 
 @media only screen and (max-width: 768px) {
 
+  .contact-header{
+    background-position: center;
+  }
+  
   .contact-blurb {
     width: 95%;
   }

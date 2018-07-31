@@ -104,3 +104,36 @@
   border: 2px solid white;
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .home-section-1 {
+    height: 50vh;
+    background-position: center;
+  }
+
+  .home-picture-fade {
+    background-position: center;
+  }
+
+  .home-section-1 img {
+    width: 80%;
+    margin-top: 10vh;
+  }
+
+  .home-section-1 .ui.grey.button {
+    margin-top: 15vh;
+  }
+
+  .home-section-2 p {
+    width: 90%;
+  }
+
+  .home-section-3>div {
+    width: 95%;
+    float: none;
+    padding: 10px;
+    margin: 0 5%;
+  }
+
+}

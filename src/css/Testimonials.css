@@ -85,6 +85,10 @@ cite {
 
 @media only screen and (max-width: 768px) {
 
+  .testimonials-header {
+    background-position: center;
+  }
+
   .testimonials-column-1 {
     width: 95%;
     float: none;

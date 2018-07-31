@@ -93,3 +93,16 @@ html,body {
 .centered {
   margin: 0 auto 10px auto;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .header-2 {
+    width: 80%;
+    margin: 15px auto 5px auto;
+  }
+
+  .header-2 h3 {
+    font-size: 1.3em;
+  }
+
+}

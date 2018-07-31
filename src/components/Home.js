@@ -8,9 +8,23 @@ import navOpacity from '../navBar.js'
 import logo from '../images/logo.png'
 import section3Image from '../images/pvs-5.jpg'
 
+import ReactGA from 'react-ga'
+
+export const initGA = () => {
+  console.log('GA init')
+  ReactGA.initialize('UA-122997893-1')
+}
+
+export const logPageView = () => {
+  ReactGA.set({ page: window.location.pathname })
+  ReactGA.pageview(window.location.pathname)
+}
+
 class Home extends React.Component {
 
   componentDidMount() {
+    initGA()
+    logPageView()
     navOpacity.changingMenuBar()
     navOpacity.hideLogo()
     setTimeout(() => {

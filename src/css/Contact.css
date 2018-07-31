@@ -53,3 +53,11 @@
 .ui.form textarea {
   font-size: 1.4em;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .contact-blurb {
+    width: 95%;
+  }
+
+}

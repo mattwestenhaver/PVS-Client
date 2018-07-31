@@ -16,7 +16,6 @@ class Footer extends React.Component {
         <h5>info@premierevaletparking.com</h5>
         <h5>Los Angeles and Ventura County: (323) 876-5816</h5>
         <h5>Orange County: (949) 497-8811</h5>
-        {/* <h5>Want to work with us? Click <Link to='/employment'>here</Link>.</h5> */}
       </div>
     )
   }

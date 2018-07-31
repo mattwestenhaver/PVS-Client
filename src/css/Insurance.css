@@ -42,3 +42,15 @@
 .insurance-section-2 img {
   width: 520px;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .insurance-section-1 p {
+    width: 85%;
+  }
+
+  .insurance-section-2 img {
+    width: 100%;
+  }
+
+}

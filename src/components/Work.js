@@ -2,11 +2,20 @@ import React from 'react'
 import { Form, Button } from 'semantic-ui-react'
 import { toast, ToastContainer } from 'react-toastify'
 import { Helmet } from "react-helmet";
-
 import auth from '../auth.js'
 import navOpacity from '../navBar.js'
-
 import 'react-toastify/dist/ReactToastify.css';
+import ReactGA from 'react-ga'
+
+export const initGA = () => {
+  console.log('GA init')
+  ReactGA.initialize('UA-122997893-1')
+}
+
+export const logPageView = () => {
+  ReactGA.set({ page: window.location.pathname })
+  ReactGA.pageview(window.location.pathname)
+}
 
 const locationOptions = [
   {key: 0, text: 'Los Angeles County', value: 'Los Angeles County'},
@@ -22,6 +31,11 @@ class Work extends React.Component {
     this.state = {
       location: null
     }
+  }
+
+  componentDidMount() {
+    initGA()
+    logPageView()
   }
 
   workSubmit() {

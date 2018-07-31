@@ -6,11 +6,23 @@ import { Form, Button } from 'semantic-ui-react';
 import auth from '../auth.js'
 import navOpacity from '../navBar.js'
 import 'react-toastify/dist/ReactToastify.css';
+import ReactGA from 'react-ga'
+
+export const initGA = () => {
+  console.log('GA init')
+  ReactGA.initialize('UA-122997893-1')
+}
+
+export const logPageView = () => {
+  ReactGA.set({ page: window.location.pathname })
+  ReactGA.pageview(window.location.pathname)
+}
 
 class Quote extends React.Component {
   
-  handleChange() {
-    console.log('hi')
+  componentDidMount() {
+    initGA()
+    logPageView()
   }
 
   formSubmit() {

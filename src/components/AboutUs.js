@@ -1,13 +1,24 @@
 import React from 'react'
 import { Helmet } from "react-helmet";
-
-
 import navOpacity from '../navBar.js'
+import ReactGA from 'react-ga'
+
+export const initGA = () => {
+  console.log('GA init')
+  ReactGA.initialize('UA-122997893-1')
+}
+
+export const logPageView = () => {
+  ReactGA.set({ page: window.location.pathname })
+  ReactGA.pageview(window.location.pathname)
+}
 
 class AboutUs extends React.Component {
 
   componentDidMount() {
     navOpacity.changingMenuBar()
+    initGA()
+    logPageView()
   }
 
   render() {

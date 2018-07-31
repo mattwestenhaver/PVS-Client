@@ -33,3 +33,20 @@
   padding: 1%;
   font-size: 1.2em;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .services-section-1 {
+    padding: 2% 1%;
+  }
+
+  .services-section-1 div {
+    float: none;
+    width: 100%;
+  }
+
+  .services-section-1 p {
+    width: 85%;
+  }
+  
+}

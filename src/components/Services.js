@@ -27,7 +27,7 @@ class Services extends React.Component {
       <div className='services-container'>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Our Services - Premiere Valet Service, Inc.</title>
+          <title>Our Services - Premiere Valet Services, Inc.</title>
         </Helmet>
         <div className='services-header header-1'></div>
         <div className='services-section-1'>
@@ -38,7 +38,7 @@ class Services extends React.Component {
             <div className='header-2'>
               <h3>Valet for Private Parties</h3>
             </div>
-            <p>Whether it is a small dinner party or a famous Hollywood Hills event, Premiere Valet Service, Inc., is there. If we have not worked on your street recently, we will provide any necessary site visits to make sure your valet parking needs are exceeded. We will take care of any city permit requirements. It does not matter how challenging your event location might be, we will provide you with the best solution.</p>
+            <p>Whether it is a small dinner party or a famous Hollywood Hills event, Premiere Valet Services, Inc., is there. If we have not worked on your street recently, we will provide any necessary site visits to make sure your valet parking needs are exceeded. We will take care of any city permit requirements. It does not matter how challenging your event location might be, we will provide you with the best solution.</p>
           </div>
           <div>
             <div className='header-2'>

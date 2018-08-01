@@ -74,7 +74,7 @@ class Quote extends React.Component {
       <div>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Request A Quote - Premiere Valet Service, Inc.</title>
+          <title>Request A Quote - Premiere Valet Services, Inc.</title>
         </Helmet>
         {/* <div className='request-header'></div> */}
         <div className='request-section-1'>

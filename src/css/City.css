@@ -2,14 +2,14 @@
   padding-top: 7vw;
   padding-bottom: 3vw;
   width: 100%;
-  background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url("../images/angled.JPG");
+  background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url("../images/vlad.jpeg");
   background-size: cover;
   position: relative;
 }
 
 .city-section-1 {
   width: 50%;
-  margin: 0 auto;
+  margin: 35px auto;
   padding: 2%;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;

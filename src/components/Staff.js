@@ -25,7 +25,7 @@ class Staff extends React.Component {
       <div className='staff-container'>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Our Staff - Premiere Valet Services</title>
+          <title>Our Staff - Premiere Valet Services, Inc.</title>
         </Helmet>
         <div className='staff-header header-1'>
           <h1>OUR STAFF</h1>

@@ -31,7 +31,7 @@ class Contact extends React.Component {
       <div className='contact-container'>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Contact Us - Premiere Valet Service, Inc.</title>
+          <title>Contact Us - Premiere Valet Services, Inc.</title>
         </Helmet>
         <div className='contact-header'>
           <Button color='black' size='massive' onClick={this.scrollDown.bind(this)}>CONTACT US</Button>

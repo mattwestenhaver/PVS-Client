@@ -89,7 +89,7 @@ class Work extends React.Component {
       <div>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Employment - Premiere Valet Service, Inc.</title>
+          <title>Employment - Premiere Valet Services, Inc.</title>
         </Helmet>
         <div className='work-header header-1'></div>
         <div className='work-section-1'>

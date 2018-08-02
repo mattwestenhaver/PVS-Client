@@ -7,6 +7,7 @@ import $ from 'jquery'
 import navOpacity from '../navBar.js'
 import logo from '../images/logo-white.png'
 import section3Image from '../images/pvs-5.jpg'
+import newBG from '../images/fence-crop-3.jpg'
 
 import ReactGA from 'react-ga'
 

@@ -16,14 +16,6 @@
           transition: background-image 1.8s ease-in-out;
 }
 
-/* .home-picture-fade {
-  background: url("../images/fence-crop-2.jpg");
-  background-size: cover;
-  -webkit-transition: background 2s ease-in;
-     -moz-transition: background 2s ease-in;
-          transition: background 2s ease-in;
-} */
-
 .home-section-1 img {
   width: 60%;
   margin-top: 6%;

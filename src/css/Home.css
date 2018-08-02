@@ -111,6 +111,10 @@
     background-position: center;
   }
 
+  .home-section-1 img {
+    margin-top: 25vh;
+  }
+
   .home-picture-fade {
     background-image: url("../images/fence-crop-3.jpg");
     background-position: center;
@@ -121,12 +125,12 @@
 @media only screen and (max-width: 768px) {
 
   .home-picture-fade {
-    background-image: url("../images/fence-crop.jpeg");
+    background-image: url("../images/fence-crop-3.jpg");
   }
 
   .home-section-1 img {
     width: 80%;
-    margin-top: 10vh;
+    margin-top: 25vh;
   }
 
   .home-section-1 .ui.grey.button {
@@ -142,6 +146,22 @@
     float: none;
     padding: 10px;
     margin: 0 5%;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  .home-section-1 {
+    height: 70vh;
+  }
+
+  .home-section-1 img {
+    margin-top: 25vh;
+  }
+
+  .home-picture-fade {
+    background-image: url("../images/fence-crop-3.jpg");
   }
 
 }

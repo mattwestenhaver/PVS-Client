@@ -32,10 +32,10 @@ class Home extends React.Component {
     }, 3000)
     setTimeout(() => {
       $('.home-section-1 .ui.grey.button').fadeIn()
-    }, 3000)
+    }, 4000)
     setTimeout(() => {
       $('.home-section-1').addClass('home-picture-fade')
-    }, 3200)
+    }, 3400)
   }
 
   render() {

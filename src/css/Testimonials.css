@@ -86,7 +86,9 @@ cite {
 @media only screen and (max-width: 768px) {
 
   .testimonials-header {
+    background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url("../images/rain-crop-3.JPG");
     background-position: center;
+    background-size: cover;
   }
 
   .testimonials-column-1 {

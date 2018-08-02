@@ -21,14 +21,14 @@
 }
 
 .contact-section-1 {
-  padding: 3%;
+  padding: 6% 3%;
   width: 100%;
   background-color: var(--background);
 }
 
 .contact-blurb {
   font-family: 'PT Sans', sans-serif;
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
   color: white;
   border-radius: 0 12px 0 12px;

@@ -35,7 +35,7 @@ class Work extends React.Component {
 
   workSubmit() {
     if (this.refs.firstName.value === '' || this.refs.lastName.value === '' || this.refs.email.value === '' || this.refs.phone.value === '' || this.refs.reference.value === '' || this.refs.education.value === '' || this.refs.skills.value === '' || this.refs.about.value === '' || this.refs.resume.value === '' || this.state.location === null) {
-      toast.error('Please fill out all of the fields before submitting.', {
+      toast.error('Fill out all the fields before submitting.', {
         position: toast.POSITION.TOP_CENTER
       })
     } else {

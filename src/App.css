@@ -98,6 +98,10 @@ html,body {
   margin: 0 auto 10px auto;
 }
 
+.Toastify__toast-body {
+  font-size: 1.4em;
+}
+
 @media only screen and (max-width: 768px) {
 
   .header-1 {

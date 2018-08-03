@@ -13,7 +13,7 @@
   font-weight: 300;
   font-size: 1.6em;
   margin-top: 27vh;
-  background-color: rgba(252, 252, 252, 0.05);
+  background-color: rgba(252, 252, 252, 0.1);
 }
 
 .contact-header .ui.black.button:hover {

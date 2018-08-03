@@ -60,10 +60,12 @@
 
   .contact-header{
     background-position: center;
+    height: 65vh;
   }
   
   .contact-blurb {
     width: 95%;
+    font-size: 1.1em;
   }
 
 }

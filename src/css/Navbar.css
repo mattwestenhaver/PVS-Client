@@ -45,7 +45,7 @@
 }
 
 .navbar:hover {
-  background-color: rgba(34, 34, 34, .3);
+  background-color: rgba(34, 34, 34, .5);
   color: white;
 }
 
@@ -55,7 +55,11 @@
 }
 
 .navbar-brand img {
-  /* max-width: 100%; */
+  width: 70px;
+}
+
+.invert-logo {
+  content: url('../images/logo-2.png')!important;
 }
 
 .navbar-header>.active {
@@ -63,7 +67,7 @@
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
-  color: black;
+  color: whitesmoke;
 }
 
 .dropdown-menu>.dropdown-menu {
@@ -101,7 +105,7 @@
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
   background-color: rgba(53, 53, 53, 0);
-  color: rgb(0, 0, 0);
+  color: white;
   text-decoration: underline;
 }
 
@@ -154,6 +158,10 @@
 
   .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a, .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:hover {
     background-color: rgba(189, 189, 189, 0.95)!important;
+  }
+
+  .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+    color: black;
   }
   
 }

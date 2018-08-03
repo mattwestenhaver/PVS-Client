@@ -1,8 +1,10 @@
 import React from 'react'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
+import { Responsive } from 'semantic-ui-react'
 
-import smallLogo from '../images/logo-2.png'
+import smallLogo from '../images/logo-white-small.png'
+import smallLogo2 from '../images/logo-2.png'
 
 class NavBar extends React.Component {
   render() {
@@ -10,7 +12,12 @@ class NavBar extends React.Component {
       <Navbar inverse collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <LinkContainer to='/'><img className='navbar-logo' src={smallLogo} alt='PVS logo'/></LinkContainer>
+            <Responsive minWidth={769}>
+              <LinkContainer to='/'><img className='navbar-logo' src={smallLogo} alt='PVS logo'/></LinkContainer>
+            </Responsive>
+            <Responsive maxWidth={768}>
+              <LinkContainer to='/'><img className='navbar-logo' src={smallLogo2} alt='PVS logo'/></LinkContainer>
+            </Responsive>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

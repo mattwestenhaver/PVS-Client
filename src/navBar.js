@@ -13,6 +13,8 @@ class NavOpacity {
     $('.navbar').addClass('opaque')
     $('.dropdown-menu').addClass('opaque');
     $('.dropdown-menu>li>a').addClass('dark-text');
+    $('.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a').addClass('dark-text')
+    $('.navbar-logo').addClass('invert-logo')
     var offset_val = 0
     function navSlide() {
       var scroll_top = $(window).scrollTop();
@@ -20,6 +22,7 @@ class NavOpacity {
         $('.navbar').addClass('opaque');
         $('.dropdown-menu').addClass('opaque');
         $('.dropdown-menu>li>a').addClass('dark-text');
+        $('.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a').addClass('dark-text')
       } else {
         $('.navbar').removeClass('opaque');
         $('.dropdown-menu').removeClass('opaque');
@@ -33,6 +36,9 @@ class NavOpacity {
     $('.navbar').removeClass('opaque');
     $('.dropdown-menu').removeClass('opaque');
     $('.dropdown-menu>li>a').removeClass('dark-text');
+    $('.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a').remove('dark-text')
+    $('.navbar-logo').removeClass('invert-logo')
+
     var offset_val = 120
     function navSlide() {
       var scroll_top = $(window).scrollTop();
@@ -40,6 +46,8 @@ class NavOpacity {
         $('.navbar').addClass('opaque');
         $('.dropdown-menu').addClass('opaque');
         $('.dropdown-menu>li>a').addClass('dark-text')
+        $('.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a').addClass('dark-text')
+        $('.navbar-logo').addClass('invert-logo')
         
         // $('.navbar-inverse .navbar-brand').addClass('whitefont');
         // $('.navbar-inverse .navbar-nav>li>a').addClass('whitefont');
@@ -47,6 +55,8 @@ class NavOpacity {
         $('.navbar').removeClass('opaque');
         $('.dropdown-menu').removeClass('opaque');
         $('.dropdown-menu>li>a').removeClass('dark-text');
+        $('.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a').removeClass('dark-text')
+        $('.navbar-logo').removeClass('invert-logo')
         
         // $('.navbar-inverse .navbar-brand').removeClass('whitefont');
         // $('.navbar-inverse .navbar-nav>li>a').removeClass('whitefont');

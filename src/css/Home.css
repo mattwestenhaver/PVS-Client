@@ -9,7 +9,7 @@
 }
 
 .home-picture-fade {
-  background-image: url("../images/fence-crop-3.jpg");
+  background-image: url("../images/lineup.jpeg");
   background-size: cover;
   -webkit-transition: background-image 1.8s ease-in-out;
      -moz-transition: background-image 1.8s ease-in-out;
@@ -116,7 +116,7 @@
   }
 
   .home-picture-fade {
-    background-image: url("../images/fence-crop-3.jpg");
+    background-image: url("../images/lineup.jpeg");
     background-position: center;
   }
 
@@ -125,7 +125,7 @@
 @media only screen and (max-width: 768px) {
 
   .home-picture-fade {
-    background-image: url("../images/fence-crop-3.jpg");
+    background-image: url("../images/lineup.jpeg");
   }
 
   .home-section-1 img {
@@ -161,7 +161,7 @@
   }
 
   .home-picture-fade {
-    background-image: url("../images/fence-crop-3.jpg");
+    background-image: url("../images/lineup.jpeg");
   }
 
 }

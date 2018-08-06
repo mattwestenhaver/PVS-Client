@@ -39,7 +39,7 @@ class Contact extends React.Component {
             <Button color='black' size='massive' onClick={this.scrollDown.bind(this)}>CONTACT US</Button>
           </Responsive>
           <Responsive maxWidth={768}>
-            <a className='mobile-contact-button' href="tel:+3238765816">CONTACT US</a>
+            <a className='mobile-contact-button' href="tel:+13238765816">CONTACT US</a>
           </Responsive>
         </div>
         <div ref='section1' className='contact-section-1'>

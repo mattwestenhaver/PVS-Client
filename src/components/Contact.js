@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from 'semantic-ui-react'
+import { Button, Responsive } from 'semantic-ui-react'
 import { Helmet } from "react-helmet";
 import navOpacity from '../navBar.js'
 import ReactGA from 'react-ga'
@@ -35,7 +35,12 @@ class Contact extends React.Component {
           <title>Contact Us - Premiere Valet Services, Inc.</title>
         </Helmet>
         <div className='contact-header'>
-          <Button color='black' size='massive' onClick={this.scrollDown.bind(this)}>CONTACT US</Button>
+          <Responsive minWidth={769}>
+            <Button color='black' size='massive' onClick={this.scrollDown.bind(this)}>CONTACT US</Button>
+          </Responsive>
+          <Responsive maxWidth={768}>
+            <a className='mobile-contact-button' href="tel:+3238765816">CONTACT US</a>
+          </Responsive>
         </div>
         <div ref='section1' className='contact-section-1'>
           <div className='contact-blurb'>

@@ -141,11 +141,15 @@ class NavBar extends React.Component {
 
             </NavDropdown>
 
-            <LinkContainer to='/contact'>
-              <NavItem eventKey={4}>
-                Contact Us
-              </NavItem>
-            </LinkContainer>
+            <NavDropdown eventKey={4} title="Contact Us" id="basic-nav-dropdown">
+              <LinkContainer to='/contact'>
+                <MenuItem eventKey={4.1}>Contact Information</MenuItem>
+              </LinkContainer>
+              <LinkContainer to='/employment'>
+                <MenuItem eventKey={4.2}>Employment</MenuItem>
+              </LinkContainer>
+            </NavDropdown>
+
             <LinkContainer to='/quote'>
               <NavItem eventKey={5}>
                 Request A Quote

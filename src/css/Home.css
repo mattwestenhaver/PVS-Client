@@ -9,8 +9,9 @@
 }
 
 .home-picture-fade {
-  background-image: url("../images/lineup.jpeg");
+  background-image: url("../images/lineup-3.jpeg");
   background-size: cover;
+  background-position: center;
   -webkit-transition: background-image 1.8s ease-in-out;
      -moz-transition: background-image 1.8s ease-in-out;
           transition: background-image 1.8s ease-in-out;
@@ -116,7 +117,7 @@
   }
 
   .home-picture-fade {
-    background-image: url("../images/lineup.jpeg");
+    background-image: url("../images/lineup-3.jpeg");
     background-position: center;
   }
 
@@ -129,7 +130,7 @@
   }
 
   .home-picture-fade {
-    background-image: url("../images/lineup.jpeg");
+    background-image: url("../images/lineup-3.jpeg");
   }
 
   .home-section-1 img {
@@ -154,7 +155,7 @@
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 736px) {
 
   .home-section-1 {
     height: 100vh;

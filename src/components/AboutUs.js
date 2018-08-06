@@ -39,7 +39,7 @@ class AboutUs extends React.Component {
           </div>
           <p>While our business continues to grow each year, our objective has never changed: to provide the highest level of valet parking service that always exceeds our client expectations.</p>
           <div className='header-2'>
-            <h3>Our Professional Parking Attendants</h3>
+            <h3>Our Professional Attendants</h3>
           </div>
           <p>We provide professional, well-groomed, uniformed valet parking attendants. Our staff consists of both male and female valet parking attendants. All of our valet parking attendants have been trained to provide superior customer service. We pride ourselves in the professionalism each and every one of our valet parking attendants provide at your events.</p>
           <div className='header-2'>

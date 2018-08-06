@@ -34,6 +34,20 @@
   font-size: 1.2em;
 }
 
+.services-section-1 img {
+  width: 35vw;
+  border: 2px solid white;
+  border-radius: 4px;
+  margin: 20px auto;
+}
+/* .services-private-img {
+  width: 400px;
+}
+
+.services-business-img {
+  width: 400px;
+} */
+
 @media only screen and (max-width: 768px) {
 
   .services-header {
@@ -51,6 +65,10 @@
 
   .services-section-1 p {
     width: 85%;
+  }
+
+  .services-section-1 img {
+    width: 80vw;
   }
   
 }

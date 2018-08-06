@@ -124,13 +124,17 @@
 
 @media only screen and (max-width: 768px) {
 
+  .home-section-1 {
+    height: 60vh;
+  }
+
   .home-picture-fade {
     background-image: url("../images/lineup.jpeg");
   }
 
   .home-section-1 img {
     width: 80%;
-    margin-top: 20vh;
+    margin-top: 15vh;
   }
 
   .home-section-1 .ui.grey.button {
@@ -150,18 +154,26 @@
 
 }
 
+@media only screen and (max-width: 700px) {
+
+  .home-section-1 {
+    height: 100vh;
+  }
+
+}
+
 @media only screen and (max-width: 450px) {
 
   .home-section-1 {
-    height: 55vh;
+    height: 48vh;
   }
 
   .home-section-1 img {
-    margin-top: 25vh;
+    margin-top: 12vh;
   }
 
-  .home-picture-fade {
-    background-image: url("../images/lineup.jpeg");
+  .home-section-1 .ui.grey.button {
+    margin-top: 15vh;
   }
 
 }

@@ -40,36 +40,36 @@ class Testimonials extends React.Component {
           <div className='testimonials-column-1'>
             <div className='testimonial-wrap'>
               <blockquote>
-                  <p>Your valets were professional, courteous, and expeditious.</p>
+                  <p>No matter the profile of the clients involved, or the number of last-minute strategies that needed to be put in place to make things work, Premiere Valet Services always came through and used their experience to create the perfect plan even as we were still gathering event information.</p>
               </blockquote>
-              <cite>– Silver Star Automotive Group</cite>
+              <cite>– Parking Services Manager, The Walt Disney Company</cite>
             </div>
             <div className='testimonial-wrap'>
               <blockquote>
-                  <p>The engagers were blown away at the level of service...  Your hard work, dedication and commitment to excellence really made the difference.</p>
+                  <p>Thank you again for everything on this year’s gala.  By all accounts the valet was a hit.</p>
               </blockquote>
-              <cite>– Edward C Moses-Granger - Sherwood Country Club</cite>
+              <cite>– Director of Events, Hammer Museum</cite>
             </div>
             <div className='testimonial-wrap'>
               <blockquote>
-                  <p>We thank you for you flexibility, positive attitude and obvious experience. It was truly a pleasure to work with you.</p>
+                  <p>You [guys] are AMAZING! Thank you so much.</p>
               </blockquote>
-              <cite>– Merv Griffin Productions</cite>
+              <cite>– Director of Events, California Science Center</cite>
             </div>
             <div className='testimonial-wrap'>
               <blockquote>
-                  <p>Our sincerest appreciation for your wonderful staff, they are number one.</p>
+                  <p>Your team was wonderful and very on it. Please thank Adam again for me as well, he was great to work with.</p>
               </blockquote>
-              <cite>– Rabin Rodgers - Event Producers</cite>
+              <cite>– Mitie Tucker Event Production</cite>
             </div>
           </div>
 
           <div className='testimonials-column-2'>
             <div className='testimonial-wrap'>
               <blockquote>
-                  <p>As always, your guys did a wonderful job. Thank you for your hard work and consistency.</p>
+                  <p>“We love working with your team—thank you for everything!!!”</p>
               </blockquote>
-              <cite>– Harrison & Schriftman - Public Relations</cite>
+              <cite>– O’Gara Coach, The Gray Group</cite>
             </div>
             <div className='testimonial-wrap'>
               <blockquote>

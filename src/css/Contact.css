@@ -56,10 +56,23 @@
   font-size: 1.4em;
 }
 
+@media only screen and (max-width: 1024px) {
+
+  .contact-header {
+    height: 100vh;
+  }
+
+  .contact-header .ui.black.button {
+    margin-top: 35vh;
+  }
+
+}
+
+
 @media only screen and (max-width: 768px) {
 
-  .contact-header{
-    background-position: center;
+  .contact-header {
+    height: 60vh;
   }
   
   .contact-blurb {
@@ -77,11 +90,20 @@
     color: white;
     padding: 20px;
     display: inline-block;
-    margin-top: 18vh;
+    margin-top: 25vh;
     border-radius: 5px;
   }
 
 }
+
+@media only screen and (max-width: 700px) {
+
+  .contact-header {
+    height: 100vh;
+  }
+
+}
+
 
 @media only screen and (max-width: 420px) {
   
@@ -89,9 +111,8 @@
     height: 45vh;
   }
 
-  .contact-header .ui.black.button {
+  .mobile-contact-button {
     margin-top: 18vh;
-    background-color: rgba(0, 0, 0, 0.45);
   }
 
 }

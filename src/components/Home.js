@@ -24,10 +24,11 @@ export const logPageView = () => {
 class Home extends React.Component {
 
   componentDidMount() {
+    window.scrollTo(0, 0)
     initGA()
     logPageView()
-    navOpacity.changingMenuBar()
-    navOpacity.hideLogo()
+    // navOpacity.changingMenuBar()
+    // navOpacity.hideLogo()
     setTimeout(() => {
       $('.home-section-1 img').fadeOut()
     }, 3000)

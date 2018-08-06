@@ -16,14 +16,15 @@ export const logPageView = () => {
 class AboutUs extends React.Component {
 
   componentDidMount() {
-    navOpacity.changingMenuBar()
+    // navOpacity.changingMenuBar()
     initGA()
     logPageView()
+    window.scrollTo(0, 0)
   }
 
   render() {
     return (
-      <div className='about-container'>
+      <div ref='top' className='about-container'>
         <Helmet>
           <meta charSet="utf-8" />
           <title>Our Story - Premiere Valet Services, Inc.</title>

@@ -73,7 +73,8 @@ class Work extends React.Component {
   handleChange = (e, { name, value }) => this.setState({ [name]: value })
 
   componentDidMount() {
-    navOpacity.changingMenuBar()
+    window.scrollTo(0, 0)
+    // navOpacity.changingMenuBar()
     initGA()
     logPageView()
     auth.load().then(success => {

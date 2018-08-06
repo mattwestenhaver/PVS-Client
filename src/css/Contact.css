@@ -1,5 +1,5 @@
 .contact-header {
-  background: linear-gradient(rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.3)), url("../images/maserati2.jpg");
+  background: linear-gradient(rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.3)), url("../images/louis-vuitton-2.jpg");
   /* background-image: url("./images/home-background.jpg"); */
   background-size: cover;
   background-position: center;
@@ -12,12 +12,12 @@
   font-family: 'PT Sans', sans-serif;
   font-weight: 300;
   font-size: 1.6em;
-  margin-top: 27vh;
-  background-color: rgba(252, 252, 252, 0.1);
+  margin-top: 12vh;
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .contact-header .ui.black.button:hover {
-  background-color: rgba(161, 161, 161, 0.05);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .contact-section-1 {

@@ -8,7 +8,7 @@ class Footer extends React.Component {
       <div className='footer-container'>
         <h5>Premiere Valet Services, Inc.</h5>
         <h5>The Highest Quality Valet Parking Service In Southern California</h5>
-        <h5 className='footer-work'>Want to work with us? Click <Link to='/employment'>here</Link>.</h5>
+        {/* <h5 className='footer-work'>Want to work with us? Click <Link to='/employment'>here</Link>.</h5> */}
         <a target='_blank' rel="noopener noreferrer" href='https://www.yelp.com/biz/premiere-valet-service-los-angeles-3'><Icon name='yelp' size='big' /></a>
         {/* <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/company/premiere-valet-services-inc./'><Icon name='linkedin' size='big' /></a> */}
         <a target='_blank' rel="noopener noreferrer" href='https://www.facebook.com/premierevaletservices/'><Icon name='facebook' size='big' /></a>

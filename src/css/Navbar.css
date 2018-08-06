@@ -1,7 +1,7 @@
 .navbar {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
-  background-color: rgba(34, 34, 34, 0);
+  background-color: rgba(15, 15, 15, 0.9);
   color: white;
   border-radius: 0;
   border: 0;
@@ -19,7 +19,7 @@
   transition-timing-function: ease-in-out; 
 }
 
-.opaque {
+/* .opaque {
   background-color: rgba(231, 231, 231, 0.95)!important;
   color: black!important;
 }
@@ -47,7 +47,7 @@
 .navbar:hover {
   background-color: rgba(34, 34, 34, .5);
   color: white;
-}
+} */
 
 .navbar-brand {
   padding: 8px 8px 8px 30px;
@@ -75,7 +75,7 @@
 }
 
 .dropdown-menu {
-  background-color: rgba(34, 34, 34, 0.8);
+  background-color: rgba(20, 20, 20, 0.8);
   border: 0;
   margin: 0;
 }
@@ -125,21 +125,16 @@
 
 @media only screen and (max-width: 990px) {
 
-  .navbar:hover {
-    background-color: rgba(34, 34, 34, 0);
+  /* .navbar:hover {
+    background-color: rgba(20, 20, 20, 0);
     color: white;
-  }
+  } */
   
 }
 
 @media only screen and (max-width: 768px) {
 
-  .navbar {
-    background-color: rgba(231, 231, 231, 0.95)!important;
-    color: black!important;
-  }
-
-  .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  /* .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     color: rgb(41, 41, 41)!important;
   }
   
@@ -162,6 +157,6 @@
 
   .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
     color: black;
-  }
+  } */
   
 }

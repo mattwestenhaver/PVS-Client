@@ -16,6 +16,7 @@ export const logPageView = () => {
 class Staff extends React.Component {
 
   componentDidMount() {
+    window.scrollTo(0, 0)
     initGA()
     logPageView()
   }

@@ -17,7 +17,8 @@ export const logPageView = () => {
 class Services extends React.Component {
 
   componentDidMount() {
-    navOpacity.changingMenuBar()
+    window.scrollTo(0, 0)
+    // navOpacity.changingMenuBar()
     initGA()
     logPageView()
   }

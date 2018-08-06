@@ -1,7 +1,7 @@
 .footer-container {
-  height: 200px;
+  height: 180px;
   width: 100%;
-  background-color: white;
+  background-color: black;
   padding: 1.5%;
   clear: both;
 }
@@ -11,10 +11,11 @@
   margin-top: 0;
   font-family: 'PT Sans', sans-serif;
   line-height: 1.3em;
+  color: white;
 }
 
 .footer-container a {
-  color: black;
+  color: white;
 }
 
 .footer-container a:hover {

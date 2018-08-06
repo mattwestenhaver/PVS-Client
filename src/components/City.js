@@ -17,7 +17,8 @@ export const logPageView = () => {
 class City extends React.Component {
 
   componentDidMount() {
-    navOpacity.solidBar()
+    window.scrollTo(0, 0)
+    // navOpacity.solidBar()
     initGA()
     logPageView()
   }

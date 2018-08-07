@@ -1,5 +1,5 @@
 .home-section-1 {
-  height: 100vh;
+  height: 80vh;
   padding-top: 8vw;
   background-size: cover;
   background-image: url('../images/all-black.jpg');
@@ -19,7 +19,7 @@
 
 .home-section-1 img {
   width: 60%;
-  margin-top: 6%;
+  margin-top: 4%;
   margin-bottom: 5%;
 }
 
@@ -27,7 +27,7 @@
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.02em;
   opacity: 0;
-  margin-top: 30vh;
+  margin-top: 35vh;
   background-color: rgba(241, 241, 241, 0.9);
   color: rgb(39, 39, 39);
   width: 240px;
@@ -130,7 +130,7 @@
   }
 
   .home-picture-fade {
-    background-image: url("../images/lineup-3.jpeg");
+    background-image: url("../images/lineup-mobile.jpeg");
   }
 
   .home-section-1 img {

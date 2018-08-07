@@ -13,9 +13,9 @@ class Footer extends React.Component {
         {/* <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/company/premiere-valet-services-inc./'><Icon name='linkedin' size='big' /></a> */}
         <a target='_blank' rel="noopener noreferrer" href='https://www.facebook.com/premierevaletservices/'><Icon name='facebook' size='big' /></a>
         <a target='_blank' rel="noopener noreferrer" href='https://www.instagram.com/premierevalet/'><Icon name='instagram' size='big' /></a>
-        <h5>info@premierevaletparking.com</h5>
-        <h5>Los Angeles and Ventura County: (323) 876-5816</h5>
-        <h5>Orange County: (949) 497-8811</h5>
+        <h5><a href="mailto:info@premierevaletparking.com">info@premierevaletparking.com</a></h5>
+        <h5>Los Angeles and Ventura County: <a href="tel:+13238765816">(323) 876-5816</a></h5>
+        <h5>Orange County: <a href="tel:+19494978811">(949) 497-8811</a></h5>
       </div>
     )
   }

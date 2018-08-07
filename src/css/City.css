@@ -1,37 +1,42 @@
-.city-container {
-  padding-top: 7vw;
-  padding-bottom: 3vw;
-  width: 100%;
-  background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url("../images/vlad.jpeg");
-  background-size: cover;
-  position: relative;
-}
-
 .city-section-1 {
-  width: 50%;
-  margin: 35px auto;
-  padding: 2%;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
+  height: 70vh;
+  width: 100%;
+  background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url("../images/plane-crop.jpeg");
+  background-size: cover;
 }
 
-.city-section-1 h1 {
+.city-section-2 {
+  width: 100%;
+  padding: 2%;
+  background-color: var(--background);
+}
+
+.city-section-2 h1 {
   font-family: 'PT Sans', sans-serif;
-  color: black;
+  color: white;
   font-size: 2em;
 }
 
-.city-section-1 p {
+.city-section-2 p {
+  width: 70%;
+  margin: 15px auto;
   font-family: 'PT Sans', sans-serif;
-  color: black;
+  color: white;
   font-size: 1.2em;
+}
+
+.city-section-2 a {
+  color: rgb(160, 160, 160);
+}
+
+.city-section-2 a:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 768px) {
 
   .city-section-1 {
-    margin: 45px auto 25px auto;
-    width: 80%;
+    background-position: center;
   }
 
 }

@@ -39,4 +39,8 @@
     background-position: center;
   }
 
+  .city-section-2 p { 
+    width: 85%;
+  }
+
 }

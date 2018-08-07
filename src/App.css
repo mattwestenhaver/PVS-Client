@@ -109,9 +109,8 @@ html,body {
   }
 
   .header-2 {
-    width: 80%;
-    margin-top: 15px;
-    margin-bottom: 0;
+    max-width: 85%;
+    margin: 15px auto 0 auto;
   }
 
   .header-2 h3 {

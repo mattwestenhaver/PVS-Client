@@ -37,7 +37,7 @@ class Home extends React.Component {
     }, 5200)
     setTimeout(() => {
       $('.home-section-1').stop().addClass('home-picture-fade')
-    }, 3400)
+    }, 3000)
   }
 
   render() {

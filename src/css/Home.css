@@ -1,6 +1,7 @@
 .home-section-1 {
   height: 80vh;
   padding-top: 8vw;
+  background-color: black;
   background-size: cover;
   background-image: url('../images/all-black.jpg');
   -webkit-transition: background-image 1s ease-in-out;

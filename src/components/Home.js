@@ -30,14 +30,14 @@ class Home extends React.Component {
     // navOpacity.changingMenuBar()
     // navOpacity.hideLogo()
     setTimeout(() => {
-      $('.home-section-1 img').fadeOut()
+      $('.home-section-1 img').fadeOut(800)
     }, 3000)
     setTimeout(() => {
       $('.home-section-1 .ui.grey.button').css('opacity', '1')
     }, 5200)
     setTimeout(() => {
       $('.home-section-1').stop().addClass('home-picture-fade')
-    }, 3000)
+    }, 3400)
   }
 
   render() {

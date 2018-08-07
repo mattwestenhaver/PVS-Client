@@ -4,9 +4,9 @@
   background-color: black;
   background-size: cover;
   background-image: url('../images/all-black.jpg');
-  -webkit-transition: background-image 1s ease-in-out;
-     -moz-transition: background-image 1s ease-in-out;
-          transition: background-image 1s ease-in-out;
+  -webkit-transition: background-image 2s ease-in-out;
+     -moz-transition: background-image 2s ease-in-out;
+          transition: background-image 2s ease-in-out;
 }
 
 .home-picture-fade {

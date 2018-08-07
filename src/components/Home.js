@@ -36,7 +36,7 @@ class Home extends React.Component {
       $('.home-section-1 .ui.grey.button').css('opacity', '1')
     }, 5200)
     setTimeout(() => {
-      $('.home-section-1').addClass('home-picture-fade')
+      $('.home-section-1').stop().addClass('home-picture-fade')
     }, 3400)
   }
 
@@ -87,6 +87,9 @@ class Home extends React.Component {
           <div>
             <img src={section3Image} alt='' />
           </div>
+        </div>
+        <div className='home-section-4'>
+          <Link to='/quote'><Button className='request-home-2' color='grey' size='massive'>Request A Quote</Button></Link>
         </div>
       </div>
     )

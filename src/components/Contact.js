@@ -36,10 +36,10 @@ class Contact extends React.Component {
         </Helmet>
         <div className='contact-header'>
           <Responsive minWidth={769}>
-            <Button color='black' size='massive' onClick={this.scrollDown.bind(this)}>CONTACT US</Button>
+            <Button color='black' size='massive' onClick={this.scrollDown.bind(this)}>Contact Us</Button>
           </Responsive>
           <Responsive maxWidth={768}>
-            <a className='mobile-contact-button' href="tel:+13238765816">CONTACT US</a>
+            <a className='mobile-contact-button' href="tel:+13238765816">Contact Us</a>
           </Responsive>
         </div>
         <div ref='section1' className='contact-section-1'>

@@ -12,9 +12,9 @@
   background-image: url("../images/lineup-3.jpeg");
   background-size: cover;
   background-position: center;
-  -webkit-transition: background-image 1.8s ease-in-out;
-     -moz-transition: background-image 1.8s ease-in-out;
-          transition: background-image 1.8s ease-in-out;
+  -webkit-transition: background-image 2.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+     -moz-transition: background-image 2.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+          transition: background-image 2.5s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .home-section-1 img {
@@ -106,6 +106,22 @@
   border-radius: 5px;
 }
 
+.home-section-4 {
+  width: 100%;
+  background-color: var(--background);
+}
+
+.home-section-4 .ui.grey.button {
+  background-color: rgba(241, 241, 241, 0.9);
+  color: rgb(39, 39, 39);
+  margin-bottom: 40px;
+  font-size: 1.4em;
+}
+
+.home-section-4 .ui.grey.button:hover {
+  background-color: rgba(201, 201, 201, 0.9);
+}
+
 @media (max-width: 1024px) {
 
   .home-section-1 {
@@ -139,7 +155,7 @@
   }
 
   .home-section-1 .ui.grey.button {
-    margin-top: 20vh;
+    margin-top: 25vh;
   }
 
   .home-section-2 p {

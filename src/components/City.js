@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {Helmet} from "react-helmet";
-import navOpacity from '../navBar.js'
+// import navOpacity from '../navBar.js'
 import ReactGA from 'react-ga'
 
 export const initGA = () => {
@@ -24,10 +24,14 @@ class City extends React.Component {
   }
 
   render() {
+
+    const helmetData = `${this.props.city} Valet Parking, Valet Parking ${this.props.city}, ${this.props.city} Valet Service, Valet Service ${this.props.city}, ${this.props.city} Valet, Valet Service, Valet Attendants ${this.props.city}`
+
     return(
       <div className='city-container'>
         <Helmet>
           <meta charSet="utf-8" />
+          <meta name="description" content={helmetData} />
           <title>{this.props.city} - Premiere Valet Services, Inc.</title>
         </Helmet>
         <div className='city-section-1 header-1'></div>

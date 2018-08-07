@@ -3,6 +3,10 @@ import { Helmet } from "react-helmet";
 import blankImage from '../images/blank-user.jpg'
 import ReactGA from 'react-ga'
 
+import Ryan from '../images/ryan-headshot.jpeg'
+import Ed from '../images/ed-headshot.jpeg'
+import Steve from '../images/steve-headshot.jpeg'
+
 export const initGA = () => {
   console.log('GA init')
   ReactGA.initialize('UA-122997893-1')
@@ -44,7 +48,7 @@ class Staff extends React.Component {
           </div>
           <div className='staff-wrap'>
             <div className='staff-image'>
-              <img src={blankImage} alt='blank-user' />
+              <img src={Ryan} alt='blank-user' />
             </div>
             <div className='staff-information'>
               <h2>Ryan Petakoff</h2>
@@ -64,7 +68,7 @@ class Staff extends React.Component {
           </div>
           <div className='staff-wrap'>
             <div className='staff-image'>
-              <img src={blankImage} alt='blank-user' />
+              <img src={Ed} alt='blank-user' />
             </div>
             <div className='staff-information'>
               <h2>Edward Alvarez</h2>
@@ -74,7 +78,7 @@ class Staff extends React.Component {
           </div>
           <div className='staff-wrap'>
             <div className='staff-image'>
-              <img src={blankImage} alt='blank-user' />
+              <img src={Steve} alt='blank-user' />
             </div>
             <div className='staff-information'>
               <h2>Steve Flores</h2>

@@ -50,6 +50,23 @@ input, textarea {
   color: rgb(60, 60, 60)!important;
 }
 
+.confirmation-container {
+  width: 100%;
+  background-color: var(--background);
+  padding: 130px 20px 70px 20px;
+}
+
+.confirmation-container h3 {
+  font-family: 'PT Sans', sans-serif!important;
+  font-size: 1.9em;
+  color: white;
+}
+
+.confirmation-container img {
+  width: 550px;
+  margin-bottom: 40px;
+}
+
 @media only screen and (max-width: 768px) {
 
   .request-header {

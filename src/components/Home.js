@@ -4,10 +4,10 @@ import { Button } from 'semantic-ui-react'
 import { Helmet } from "react-helmet";
 import $ from 'jquery'
 
-import navOpacity from '../navBar.js'
+// import navOpacity from '../navBar.js'
 import logo from '../images/logo-white.png'
 import section3Image from '../images/aston-martin.jpg'
-import newBG from '../images/fence-crop-3.jpg'
+// import newBG from '../images/fence-crop-3.jpg'
 
 import ReactGA from 'react-ga'
 
@@ -45,6 +45,7 @@ class Home extends React.Component {
       <div>
         <Helmet>
           <meta charSet="utf-8" />
+          <meta name="keywords" content="valet parking, Los Angeles valet services, valet, valet companies, los angeles valet company, los angeles valet companies, valet, valet companies los angeles, valet parking service, valet parking" />
           <title>Premiere Valet Services, Inc.</title>
         </Helmet>
         <div className='home-section-1'>

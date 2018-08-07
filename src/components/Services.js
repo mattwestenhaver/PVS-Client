@@ -31,6 +31,7 @@ class Services extends React.Component {
       <div className='services-container'>
         <Helmet>
           <meta charSet="utf-8" />
+          <meta name="keywords" content="los angeles valet parking, valet services, valet service company, valet company los angeles, valet companies, private valet, valet, valet attendants, beverly hills valet, bel air valet, valet service" />
           <title>Our Services - Premiere Valet Services, Inc.</title>
         </Helmet>
         <div className='services-header header-1'></div>

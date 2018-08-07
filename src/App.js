@@ -11,6 +11,7 @@ import Testimonials from './components/Testimonials.js'
 import Staff from './components/Staff.js'
 import Contact from './components/Contact.js'
 import Quote from './components/Quote.js'
+import QuoteConfirmation from './components/QuoteConfirmation.js'
 import Footer from './components/Footer.js'
 import City from './components/City.js'
 import Work from './components/Work.js'
@@ -30,6 +31,7 @@ class App extends Component {
             <Route path='/staff' component={Staff} />
             <Route path='/contact' component={Contact} />
             <Route path='/quote' component={Quote} />
+            <Route path='/confirmation' component={QuoteConfirmation} />
             <Route path='/employment' component={Work} />
 
             <Route path='/losangeles' render={(props) => {

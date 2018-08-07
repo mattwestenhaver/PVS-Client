@@ -1,7 +1,6 @@
 import React from 'react'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Responsive } from 'semantic-ui-react'
 
 import smallLogo from '../images/logo-white-small.png'
 
@@ -37,7 +36,7 @@ class NavBar extends React.Component {
                 <MenuItem eventKey={2.5}>Our Staff</MenuItem>
               </LinkContainer> */}
             </NavDropdown>
-
+            
             <NavDropdown eventKey={3} title="Areas of Service" id="basic-nav-dropdown">
 
               <NavDropdown eventkey={8} title="Los Angeles County" id="basic-nav-dropdown" className='second-dropdown'>  

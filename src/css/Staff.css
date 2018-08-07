@@ -1,12 +1,14 @@
 .staff-section-1 {
   width: 100;
+  background-color: var(--background);
+  padding: 20px;
 }
 
 .staff-wrap {
   clear: both;
   width: 50%;
   overflow: auto;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
 }
 
 .staff-image {
@@ -21,4 +23,5 @@
 .staff-information {
   width: 60%;
   float: left;
+  color: white;
 }

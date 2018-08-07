@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Responsive } from 'semantic-ui-react'
 import { Helmet } from "react-helmet";
-import navOpacity from '../navBar.js'
+// import navOpacity from '../navBar.js'
 import ReactGA from 'react-ga'
 
 export const initGA = () => {

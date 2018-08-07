@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from "react-helmet";
-import navOpacity from '../navBar.js'
+// import navOpacity from '../navBar.js'
 import insurance from '../images/insurance2.jpg'
 import ReactGA from 'react-ga'
 

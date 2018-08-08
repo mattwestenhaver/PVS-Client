@@ -46,7 +46,7 @@ class AboutUs extends React.Component {
           <div className='header-2'>
             <h3>What Sets Us Apart</h3>
           </div>
-          <p>Superior customer service has become a rare commodity in our industry. Here at Premiere Valet Services, Inc., we answer our phones, we provide site visits, we work within our clients budget and we genuinely care about our clients. Simply contact us to experience the professionalism and hands-on attention you can only get from Premiere Valet Services, Inc.</p>
+          <p>Superior customer service can be a rare commodity in our industry. Here at Premiere Valet Services, Inc., we answer our phones, we provide site visits, we work within our clients budget and we genuinely care about our clients. Simply contact us to experience the professionalism and hands-on attention you can only get from Premiere Valet Services, Inc.</p>
         </div>
       </div>
     )

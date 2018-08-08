@@ -6,6 +6,7 @@ import ReactGA from 'react-ga'
 import Ryan from '../images/ryan-headshot.jpeg'
 import Ed from '../images/ed-headshot.jpeg'
 import Steve from '../images/steve-headshot.jpeg'
+import Mark from '../images/mark-headshot.jpeg'
 
 export const initGA = () => {
   console.log('GA init')
@@ -43,7 +44,7 @@ class Staff extends React.Component {
             <div className='staff-information'>
               <h2>David Allen</h2>
               <h3>Title</h3>
-              <p>Bio here</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
             </div>
           </div><hr />
           <div className='staff-wrap'>
@@ -53,17 +54,17 @@ class Staff extends React.Component {
             <div className='staff-information'>
               <h2>Ryan Petakoff</h2>
               <h3>Title</h3>
-              <p>Bio here</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
             </div>
           </div><hr />
           <div className='staff-wrap'>
             <div className='staff-image'>
-              <img src={blankImage} alt='blank-user' />
+              <img src={Mark} alt='blank-user' />
             </div>
             <div className='staff-information'>
               <h2>Mark Ramirez</h2>
               <h3>Title</h3>
-              <p>Bio here</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
             </div>
           </div><hr />
           <div className='staff-wrap'>
@@ -73,7 +74,7 @@ class Staff extends React.Component {
             <div className='staff-information'>
               <h2>Edward Alvarez</h2>
               <h3>Title</h3>
-              <p>Bio here</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
             </div>
           </div><hr />
           <div className='staff-wrap'>
@@ -83,7 +84,7 @@ class Staff extends React.Component {
             <div className='staff-information'>
               <h2>Steve Flores</h2>
               <h3>Title</h3>
-              <p>Bio here</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
             </div>
           </div>
         </div>

@@ -85,5 +85,17 @@ input, textarea {
   .fields input {
     margin-bottom: 10px!important;
   }
+
+  .confirmation-container {
+    padding: 120px 20px 80px 20px;
+  }
+
+  .confirmation-container img {
+    width: 300px;
+  }
+
+  .confirmation-container h3 {
+    font-size: 1.4em;
+  }
   
 }

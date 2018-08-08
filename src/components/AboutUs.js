@@ -38,7 +38,7 @@ class AboutUs extends React.Component {
           <div className='header-2'>
             <h3>Premiere Valet's Pledge</h3>
           </div>
-          <p>While our business continues to grow each year, our objective has never changed: to provide the highest level of valet parking service that always exceeds our client’s expectation.</p>
+          <p>While our business continues to grow each year, our objective has never changed: to provide the highest level of valet parking service that always exceeds our client’s expectations.</p>
           <div className='header-2'>
             <h3>Our Professional Attendants</h3>
           </div>

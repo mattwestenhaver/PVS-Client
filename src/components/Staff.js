@@ -45,7 +45,7 @@ class Staff extends React.Component {
               <h3>Title</h3>
               <p>Bio here</p>
             </div>
-          </div>
+          </div><hr />
           <div className='staff-wrap'>
             <div className='staff-image'>
               <img src={Ryan} alt='blank-user' />
@@ -55,7 +55,7 @@ class Staff extends React.Component {
               <h3>Title</h3>
               <p>Bio here</p>
             </div>
-          </div>
+          </div><hr />
           <div className='staff-wrap'>
             <div className='staff-image'>
               <img src={blankImage} alt='blank-user' />
@@ -65,7 +65,7 @@ class Staff extends React.Component {
               <h3>Title</h3>
               <p>Bio here</p>
             </div>
-          </div>
+          </div><hr />
           <div className='staff-wrap'>
             <div className='staff-image'>
               <img src={Ed} alt='blank-user' />
@@ -75,7 +75,7 @@ class Staff extends React.Component {
               <h3>Title</h3>
               <p>Bio here</p>
             </div>
-          </div>
+          </div><hr />
           <div className='staff-wrap'>
             <div className='staff-image'>
               <img src={Steve} alt='blank-user' />

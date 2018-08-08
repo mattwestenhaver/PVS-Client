@@ -1,7 +1,13 @@
+.staff-container hr {
+  width: 60%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .staff-section-1 {
   width: 100;
   background-color: var(--background);
-  padding: 20px;
+  padding: 50px;
 }
 
 .staff-wrap {
@@ -18,10 +24,39 @@
 
 .staff-image img {
   width: 100%;
+  border: 1px solid white;
+  border-radius: 4px;
 }
 
 .staff-information {
+  font-family: 'Lato', sans-serif;
   width: 60%;
   float: left;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .staff-container hr {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .staff-section-1 {
+    padding: 20px;
+  }
+
+  .staff-wrap {
+    width: 85%;
+  }
+
+  .staff-information h2 {
+    font-size: 1.5em;
+  }
+
+  .staff-information h3 {
+    font-size: 1.3em;
+  }
+
 }

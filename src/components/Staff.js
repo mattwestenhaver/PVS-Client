@@ -49,20 +49,20 @@ class Staff extends React.Component {
           </div><hr />
           <div className='staff-wrap'>
             <div className='staff-image'>
-              <img src={Ryan} alt='blank-user' />
+              <img src={Mark} alt='blank-user' />
             </div>
             <div className='staff-information'>
-              <h2>Ryan Petakoff</h2>
+              <h2>Mark Ramirez</h2>
               <h3>Title</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
             </div>
           </div><hr />
           <div className='staff-wrap'>
             <div className='staff-image'>
-              <img src={Mark} alt='blank-user' />
+              <img src={Ryan} alt='blank-user' />
             </div>
             <div className='staff-information'>
-              <h2>Mark Ramirez</h2>
+              <h2>Ryan Petakoff</h2>
               <h3>Title</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
             </div>

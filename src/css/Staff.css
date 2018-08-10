@@ -1,5 +1,19 @@
+.staff-header {
+  background-color: var(--background);
+  padding-top: 12vh;
+}
+
+.staff-header img {
+  width: 50%;
+}
+
+.staff-section-1 h1 {
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+}
+
 .staff-container hr {
-  width: 60%;
+  width: 65%;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -12,14 +26,20 @@
 
 .staff-wrap {
   clear: both;
-  width: 50%;
+  width: 60%;
   overflow: auto;
   margin: 20px auto 0 auto;
+}
+
+.staff-wrap h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .staff-wrap p {
   width: 90%;
   margin: 0 auto;
+  padding-left: 10px;
 }
 
 .staff-image {
@@ -62,6 +82,22 @@
 
   .staff-information h3 {
     font-size: 1.3em;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  .staff-image {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    float: none;
+  }
+
+  .staff-information {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
   }
 
 }

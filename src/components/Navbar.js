@@ -32,9 +32,9 @@ class NavBar extends React.Component {
               <LinkContainer to='/testimonials'>
                 <MenuItem eventKey={2.4}>Testimonials</MenuItem>
               </LinkContainer>
-              {/* <LinkContainer to='/staff'>
-                <MenuItem eventKey={2.5}>Our Staff</MenuItem>
-              </LinkContainer> */}
+              <LinkContainer to='/staff'>
+                <MenuItem eventKey={2.5}>Management Team</MenuItem>
+              </LinkContainer>
             </NavDropdown>
             
             <NavDropdown eventKey={3} title="Areas of Service" id="basic-nav-dropdown">

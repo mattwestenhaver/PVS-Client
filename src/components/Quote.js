@@ -29,7 +29,7 @@ class Quote extends React.Component {
   }
 
   formSubmit() {
-    if (this.refs.name.value === '' || this.refs.email.value === '' || this.refs.phone.value === '' || this.refs.address.value === '' || this.refs.city.value === '' || this.refs.zipcode.value === '' || this.refs.eventDate.value === '' || this.refs.eventType.value === '' || this.refs.guests.value === '' || this.refs.cars.value === '' || this.refs.arrival.value === '' || this.refs.departure.value === '' || this.refs.comments.value === '' || this.refs.reference.value === '') {
+    if (this.refs.name.value === '' || this.refs.email.value === '' || this.refs.phone.value === '' || this.refs.address.value === '' || this.refs.city.value === '' || this.refs.zipcode.value === '' || this.refs.eventDate.value === '' || this.refs.eventType.value === '' || this.refs.guests.value === '' || this.refs.cars.value === '' || this.refs.arrival.value === '' || this.refs.departure.value === '' || this.refs.comments.value === '' || this.refs.reference.value === '' || this.refs.arrival.value === '' || this.refs.departure.value === '') {
       toast.error('Fill out all the fields before submitting.', {
         position: toast.POSITION.TOP_CENTER
       })
@@ -41,6 +41,8 @@ class Quote extends React.Component {
         address: this.refs.address.value,
         city: this.refs.city.value,
         zipcode: this.refs.zipcode.value,
+        arrival: this.refs.arrival.value,
+        departure: this.refs.departure.value,
         eventDate: this.refs.eventDate.value,
         eventType: this.refs.eventType.value,
         guests: this.refs.guests.value,
@@ -63,6 +65,8 @@ class Quote extends React.Component {
         this.refs.zipcode.value = ''
         this.refs.eventDate.value = ''
         this.refs.eventType.value = ''
+        this.refs.arrival.value = ''
+        this.refs.departure.value = ''
         this.refs.guests.value = ''
         this.refs.cars.value = ''
         this.refs.comments.value = ''

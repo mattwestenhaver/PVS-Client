@@ -15,6 +15,10 @@
   padding: 2%;
 }
 
+.insurance-section-1 hr {
+  width: 70%;
+}
+
 .insurance-section-1 p {
   font-family: 'Lato', sans-serif;
   color: white;

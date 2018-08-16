@@ -10,6 +10,10 @@
   padding: 3% 2%;
 }
 
+.about-section-1 hr {
+  width: 70%;
+}
+
 .about-section-1 h2 {
   color: white;
   font-family: 'PT Sans', sans-serif;

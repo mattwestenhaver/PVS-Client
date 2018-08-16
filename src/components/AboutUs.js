@@ -33,7 +33,7 @@ class AboutUs extends React.Component {
         <div className='about-header header-1'></div>
         <div className='about-section-1'>
           <div className='page-header'>
-            <h1>ABOUT US</h1>
+            <hr/><h1>ABOUT US</h1><hr/>
           </div><br />
           <div className='header-2'>
             <h3>Premiere Valet's Pledge</h3>

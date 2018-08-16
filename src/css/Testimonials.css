@@ -18,6 +18,10 @@
   overflow: auto;
 }
 
+.testimonials-section-1 hr {
+  width: 90%;
+}
+
 .testimonials-column-1 {
   padding-top: 3vh;
   width: 50%;

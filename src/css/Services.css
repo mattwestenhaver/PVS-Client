@@ -11,7 +11,11 @@
   overflow: auto;
 }
 
-.services-section-1 div {
+.services-section-1 hr {
+  width: 80%;
+}
+
+.services-column {
   float: left;
   width: 50%;
 }
@@ -58,7 +62,7 @@
     padding: 2% 1%;
   }
 
-  .services-section-1 div {
+  .services-column {
     float: none;
     width: 100%;
   }

@@ -34,7 +34,7 @@ class Testimonials extends React.Component {
         <div className='testimonials-header header-1'></div>
         <div className='testimonials-section-1'>
           <div className='page-header'>
-            <h1>TESTIMONIALS</h1>
+            <hr/><h1>TESTIMONIALS</h1><hr/>
           </div><br />
 
           <div className='testimonials-column-1'>

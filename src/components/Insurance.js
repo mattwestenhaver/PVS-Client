@@ -33,7 +33,7 @@ class Insurance extends React.Component {
         <div className='insurance-header header-1'></div>
         <div className='insurance-section-1'>
           <div className='page-header'>
-            <h1>INSURANCE</h1>
+            <hr/><h1>INSURANCE</h1><hr/>
           </div><br />
           <p>Premiere Valet Services, Inc., has been in business for over 30 years. While we consider ourselves to be the best valet parking company in the business, our pricing remains competitive with that of other companies with far less experience and who are not able to offer the level of insurance we provide our clients.</p> 
           <p>Below is a copy of our current insurance certificate. We have every confidence that we can provide the level of customer service and insurance requirements that you need.</p>

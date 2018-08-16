@@ -37,16 +37,16 @@ class Services extends React.Component {
         <div className='services-header header-1'></div>
         <div className='services-section-1'>
           <div className='page-header'>
-            <h1>OUR SERVICES</h1>
+            <hr/><h1>OUR SERVICES</h1><hr/>
           </div><br />
-          <div>
+          <div className='services-column'>
             <div className='header-2'>
               <h3>Valet for Private Parties</h3>
             </div>
             <p>Whether it is a small dinner party or an exclusive Hollywood Hills event, Premiere Valet Services, Inc., is there. If we have not worked on your street recently, we will provide any necessary site visits to make sure your valet parking needs are exceeded. We will take care of any city permit requirements. It does not matter how challenging your event location might be, we will provide you with the best solution.</p>
             <img src={chineseNY} className='services-private-img' alt='' />
           </div>
-          <div>
+          <div className='services-column'>
             <div className='header-2'>
               <h3>Business Solutions and Commercial Services</h3>
             </div>

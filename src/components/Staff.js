@@ -81,16 +81,6 @@ class Staff extends React.Component {
               <h3>Scheduling Manager</h3>
               <p>Edward has been with with Premiere Valet Service since 2012 when he started as a valet parking attendant. With his past scheduling experience which consisted of scheduling doctors at a large hospital, he was quickly promoted to Scheduling Manager where he coordinates the scheduling of the 200+ employees all throughout Southern California. Edward also manages special events in the field.</p>
             </div>
-          </div><hr />
-          <div className='staff-wrap'>
-            <div className='staff-image'>
-              <img src={Steve} alt='blank-user' />
-            </div>
-            <div className='staff-information'>
-              <h2>Steve Flores</h2>
-              <h3>Marketing Manager</h3>
-              <p>Steve joined the Premiere Valet Team in 2014 after graduating from Cal State Long Beach. Steve was brought in full time to assist the company in its marketing efforts as the Marketing Manager. In addition to marketing, Steve also assists with event permits and works many events in the field.</p>
-            </div>
           </div>
         </div>
       </div>

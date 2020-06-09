@@ -51,6 +51,15 @@
   padding: 2%;
 }
 
+.home-section-2 h2 {
+  font-family: 'Lato', sans-serif;
+}
+
+.home-section-2 .facemask {
+  margin: 25px auto 0 auto;
+  border-radius: 8px;
+}
+
 .home-section-2 p {
   font-family: 'Lato', sans-serif;
   width: 65%;
@@ -166,6 +175,10 @@
   .home-section-2 hr {
     width: 80%;
   }
+
+  .home-section-2 .facemask {
+    width: 50%;
+  }  
 
   .home-section-3>div {
     width: 95%;

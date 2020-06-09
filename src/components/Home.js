@@ -7,6 +7,7 @@ import $ from 'jquery'
 // import navOpacity from '../navBar.js'
 import logo from '../images/logo-white.png'
 import section3Image from '../images/aston-martin.jpg'
+import faceMask from '../images/facemask.jpeg'
 // import newBG from '../images/fence-crop-3.jpg'
 
 import ReactGA from 'react-ga'
@@ -53,6 +54,11 @@ class Home extends React.Component {
           <Link to='/quote'><Button color='grey' size='massive'>Request A Quote</Button></Link>
         </div>
         <div className='home-section-2'>
+          <h2>COVID-19 Update:</h2>
+          <p>Premiere Valet Services is taking necessary precautions and implementing guidelines provided by the CDC and OSHA in order to minimize the risk of infection and spread of COVID-19. In addition, all PVS employees are required to wear a PVS face covering as pictured below:</p>
+          <img className="facemask" src={faceMask} alt="COVID Facemask" />
+          <br />
+          <hr />
           <p>Premiere Valet Services, Inc., provides the highest standard of private valet parking and valet parking management services. We provide valet parking service to private events with as few as 25-30 guests to movie studio and industry events for 1,000’s of guests. If you are looking for a Los Angeles valet parking services, Hollywood valet parking services, Beverly Hills valet parking services, Orange County valet parking services or Ventura County valet parking services we are ready to meet your valet parking service needs.</p>
           <p>For over 30 years Premiere Valet Services, Inc., has served all of Southern California with the highest quality of valet parking service. With offices in Los Angeles and Laguna Beach we provide valet parking service with locally based valet parking attendants throughout Los Angeles County, Orange County and Ventura County. Our valet parking service consists of both male and female valet parking attendants.</p>
           <p>Not all valet parking companies are the same and we take pride in the level of valet parking service we provide. Our commitment to quality is why we are considered the Premiere valet company throughout Los Angeles, Beverly Hills, Malibu, Thousand Oaks, Newport Coast, Laguna Beach, Orange County, etc.</p>

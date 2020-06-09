@@ -4,6 +4,7 @@ class AuthClient {
 
   constructor() {
     this.request = axios.create({
+      // baseURL: 'http://localhost:3001/'
       baseURL: 'https://pvs-server.herokuapp.com/'
       // headers: {
       //   common: {

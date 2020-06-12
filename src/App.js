@@ -15,6 +15,7 @@ import QuoteConfirmation from './components/QuoteConfirmation.js'
 import Footer from './components/Footer.js'
 import City from './components/City.js'
 import Work from './components/Work.js'
+import Quotes from './components/Quotes.jsx';
 
 class App extends Component {
   render() {
@@ -33,6 +34,7 @@ class App extends Component {
             <Route path='/quote' component={Quote} />
             <Route path='/confirmation' component={QuoteConfirmation} />
             <Route path='/employment' component={Work} />
+            <Route path='/view-quotes' component={Quotes} />
 
             <Route path='/losangeles' render={(props) => {
               return <City city='Los Angeles' {...props} />

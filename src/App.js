@@ -15,7 +15,7 @@ import QuoteConfirmation from './components/QuoteConfirmation.js'
 import Footer from './components/Footer.js'
 import City from './components/City.js'
 import Work from './components/Work.js'
-import Quotes from './components/Quotes.jsx';
+import Quotes from './components/Quotes/index.jsx';
 
 class App extends Component {
   render() {

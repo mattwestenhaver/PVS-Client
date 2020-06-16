@@ -11,11 +11,7 @@ class Quotes extends React.Component {
     constructor() {
         super()
         this.state = {
-            allQuotes: [],
-            filteredQuotes: [],
-            activeIndex: null,
-            loggedIn: false,
-            showActive: true
+            loggedIn: false
         }
     }
 
@@ -32,38 +28,7 @@ class Quotes extends React.Component {
         }
     }
 
-    changeView(value) {
-        this.setState({
-            activeIndex: -1,
-            showActive: value
-        })
-        if (value === true) {
-            this.setState({
-                filteredQuotes: this.state.allQuotes.filter(q => q.archived === false)
-            })
-        } else {
-            this.setState({
-                filteredQuotes: this.state.allQuotes.filter(q => q.archived === true)
-            })
-        }
-    }
-
-    componentDidMount() {
-        auth.getQuotes()
-            .then(response => {
-                if (response.data.success) {
-                    this.setState({ 
-                        allQuotes: response.data.quotes,
-                        filteredQuotes: response.data.quotes.filter(q => q.archived === false)
-                    })
-                }
-            })
-    }
-
     render() {
-
-        const { showActive } = this.state
-
         return (
             !this.state.loggedIn
                 ?   <div className="view-quotes-container">
@@ -77,11 +42,7 @@ class Quotes extends React.Component {
                         <ToastContainer />
                     </div>
                 :   <div className="view-quotes-container">
-                        {/* {showActive === true
-                            ? <Button size='huge' onClick={this.changeView.bind(this, false)}>Show Archived</Button>
-                            : <Button size='huge' onClick={this.changeView.bind(this, true)}>Show Active</Button>
-                        } */}
-                        <QuotesAccordion quotes={this.state.allQuotes} />
+                        <QuotesAccordion />
                     </div>
         )
     }

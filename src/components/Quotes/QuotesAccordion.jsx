@@ -10,7 +10,8 @@ class QuotesAccordion extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            quotes: props.quotes.filter(q => q.archived === false),
+            quotes: [],
+            viewArchived: false,
             activeIndex: null
         }
     }
@@ -23,13 +24,19 @@ class QuotesAccordion extends React.Component {
         this.setState({ activeIndex: newIndex })
     }
 
+    switchView(value) {
+        this.setState({
+            viewArchived: value,
+            activeIndex: -1
+        })
+        this.getQuotes()
+    }
+
     archiveQuote(quote) {
         auth.archiveQuote(quote)
             .then(response => {
                 if (response.data.success) {
-                    this.setState({
-                        quotes: this.state.quotes.filter(q => q._id !== quote._id)
-                    })
+                    this.getQuotes()
                     toast.success('Quote archived successfully.', {
                         position: toast.POSITION.TOP_CENTER
                     })
@@ -45,9 +52,7 @@ class QuotesAccordion extends React.Component {
         auth.activateQuote(quote)
             .then(response => {
                 if (response.data.success) {
-                    this.setState({
-                        quotes: this.state.quotes.filter(q => q._id !== quote._id)
-                    })
+                    this.getQuotes()
                     toast.success('Quote re-activated successfully.', {
                         position: toast.POSITION.TOP_CENTER
                     })
@@ -59,17 +64,46 @@ class QuotesAccordion extends React.Component {
             })    
     }
 
+    getQuotes() {
+        auth.getQuotes()
+            .then(response => {
+                if (response.data.success) {
+                    if (this.state.viewArchived) {
+                        this.setState({ 
+                            quotes: response.data.quotes.filter(q => q.archived)
+                        })
+                    } else {
+                        this.setState({ 
+                            quotes: response.data.quotes.filter(q => !q.archived)
+                        })
+                    }
+                }
+            })
+    }
+
+    componentDidMount() {
+        this.getQuotes()
+    }
+
     render () {
 
         const { activeIndex } = this.state
 
         return (
             <div>
-                {this.state.quotes.length === 0
-                    ?   <h2>No quotes available</h2>
-                    :   <div>
-                            <h2>Active Quotes</h2>
-                            {this.state.quotes.map(q => {
+                <div>
+                    {this.state.viewArchived === false
+                        ?   <div>
+                                <h2>Active Quotes</h2>
+                                <Button size="huge" onClick={this.switchView.bind(this, true)}>View Archived Quotes</Button>
+                            </div>
+                        :   <div>
+                                <h2>Archived Quotes</h2>
+                                <Button size="huge" onClick={this.switchView.bind(this, false)}>View Active Quotes</Button>
+                            </div>
+                    }
+                    {this.state.quotes.length !== 0
+                        ?   this.state.quotes.map(q => {
                                 return (
                                     <Accordion styled key={q._id} className="quote-container">
                                         <Accordion.Title
@@ -108,9 +142,10 @@ class QuotesAccordion extends React.Component {
                                         </Accordion.Content>
                                     </Accordion>
                                 )
-                            })}
-                        </div>
-                }
+                            })
+                        : <h3>No quotes available</h3>
+                    }
+                </div>
                 <ToastContainer />
             </div>
         )

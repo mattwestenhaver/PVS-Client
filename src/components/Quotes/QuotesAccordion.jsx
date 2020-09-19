@@ -81,6 +81,31 @@ class QuotesAccordion extends React.Component {
             })
     }
 
+    testEmails() {
+        const quoteData = {
+            name: 'EMAIL NOTIFICATION TEST',
+            email: 'info@premierevaletparking.com',
+            phone: '1234567890',
+            address: 'TEST ADDRESS',
+            city: 'TEST CITY',
+            zipcode: 12345,
+            arrival: 'TEST',
+            departure: 'TEST',
+            eventDate: 'TEST',
+            eventType: 'TEST',
+            guests: 10,
+            cars: 10,
+            comments: 'TEST',
+            reference: 'TEST'
+        }
+        auth.quoteEmail(quoteData).then(success => {
+            if (success) {
+                return true
+            }
+            return false
+        })
+    }
+
     componentDidMount() {
         this.getQuotes()
     }
@@ -91,6 +116,7 @@ class QuotesAccordion extends React.Component {
 
         return (
             <div>
+                <Button className="notification-test" size="huge" color='red' onClick={this.testEmails.bind(this)}>Test Email Notifications</Button>
                 <div>
                     {this.state.viewArchived === false
                         ?   <div>

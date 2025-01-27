@@ -4,11 +4,9 @@ import { Button } from 'semantic-ui-react';
 import { Helmet } from 'react-helmet';
 import $ from 'jquery';
 
-// import navOpacity from '../navBar.js'
 import logo from '../images/logo-white.png';
 import section3Image from '../images/aston-martin.jpg';
 import faceMask from '../images/facemask.jpeg';
-// import newBG from '../images/fence-crop-3.jpg'
 
 import ReactGA from 'react-ga';
 

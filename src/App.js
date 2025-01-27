@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
-import NavBar from './components/Navbar.js';
-import Home from './components/Home.js';
-import AboutUs from './components/AboutUs.js';
-import Services from './components/Services.js';
-import Insurance from './components/Insurance.js';
-import Testimonials from './components/Testimonials.js';
-import Staff from './components/Staff.js';
-import Contact from './components/Contact.js';
-import Quote from './components/Quote.js';
-import QuoteConfirmation from './components/QuoteConfirmation.js';
-import Footer from './components/Footer.js';
-import City from './components/City.js';
-import Work from './components/Work.js';
-import Quotes from './components/Quotes/index.jsx';
+import NavBar from './components/Navbar';
+import Home from './components/Home';
+import AboutUs from './components/AboutUs';
+import Services from './components/Services';
+import Insurance from './components/Insurance';
+import Testimonials from './components/Testimonials';
+import Staff from './components/Staff';
+import Contact from './components/Contact';
+import Quote from './components/Quote';
+import QuoteConfirmation from './components/QuoteConfirmation';
+import Footer from './components/Footer';
+import City from './components/City';
+import Work from './components/Work';
+import Quotes from './components/Quotes';
 
 class App extends Component {
     render() {

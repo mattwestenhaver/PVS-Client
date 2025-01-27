@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Button } from 'semantic-ui-react';
-import QuotesAccordion from './QuotesAccordion.jsx';
+import QuotesAccordion from './QuotesAccordion';
 import { toast, ToastContainer } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';

@@ -1,103 +1,99 @@
 .staff-header {
-  background-color: var(--background);
-  padding-top: 12vh;
+    background-color: var(--background);
+    padding-top: 12vh;
 }
 
 .staff-header img {
-  width: 50%;
+    width: 50%;
 }
 
 .staff-section-1 h1 {
-  font-family: 'PT Sans', sans-serif;
-  color: white;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
 }
 
 .staff-container hr {
-  width: 65%;
-  margin-top: 40px;
-  margin-bottom: 40px;
+    width: 65%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .staff-section-1 {
-  width: 100;
-  background-color: var(--background);
-  padding: 50px;
+    width: 100;
+    background-color: var(--background);
+    padding: 50px;
 }
 
 .staff-wrap {
-  clear: both;
-  width: 60%;
-  overflow: auto;
-  margin: 20px auto 0 auto;
+    clear: both;
+    width: 60%;
+    overflow: auto;
+    margin: 20px auto 0 auto;
 }
 
 .staff-wrap h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .staff-wrap p {
-  width: 90%;
-  margin: 0 auto;
-  padding-left: 10px;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 10px;
 }
 
 .staff-image {
-  float: left;
-  width: 40%;
+    float: left;
+    width: 40%;
 }
 
 .staff-image img {
-  width: 100%;
-  border: 1px solid white;
-  border-radius: 4px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 4px;
 }
 
 .staff-information {
-  font-family: 'Lato', sans-serif;
-  width: 60%;
-  float: left;
-  color: white;
+    font-family: 'Lato', sans-serif;
+    width: 60%;
+    float: left;
+    color: white;
 }
 
 @media only screen and (max-width: 768px) {
+    .staff-container hr {
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
-  .staff-container hr {
-    width: 90%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+    .staff-section-1 {
+        padding: 20px;
+    }
 
-  .staff-section-1 {
-    padding: 20px;
-  }
+    .staff-wrap {
+        width: 85%;
+    }
 
-  .staff-wrap {
-    width: 85%;
-  }
+    .staff-information h2 {
+        font-size: 1.5em;
+    }
 
-  .staff-information h2 {
-    font-size: 1.5em;
-  }
-
-  .staff-information h3 {
-    font-size: 1.3em;
-  }
-
+    .staff-information h3 {
+        font-size: 1.3em;
+    }
 }
 
 @media only screen and (max-width: 450px) {
+    .staff-image {
+        width: 80%;
+        margin: 0 auto 10px auto;
+        float: none;
+    }
 
-  .staff-image {
-    width: 80%;
-    margin: 0 auto 10px auto;
-    float: none;
-  }
-
-  .staff-information {
-    float: none;
-    width: 90%;
-    margin: 0 auto;
-  }
-
+    .staff-information {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
 }

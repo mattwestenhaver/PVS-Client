@@ -1,54 +1,54 @@
 .contact-header {
-  background: linear-gradient(rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.3)), url("../images/louis-vuitton-2.jpg");
-  /* background-image: url("./images/home-background.jpg"); */
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  padding-top: 10vw;
-  position: relative;
+    background: linear-gradient(rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.3)), url('../images/louis-vuitton-2.jpg');
+    /* background-image: url("./images/home-background.jpg"); */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    padding-top: 10vw;
+    position: relative;
 }
 
 .contact-header .ui.black.button {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 1.6em;
-  margin-top: 37vh;
-  color: rgb(39, 39, 39);
-  background-color: rgba(241, 241, 241, 0.9);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.6em;
+    margin-top: 37vh;
+    color: rgb(39, 39, 39);
+    background-color: rgba(241, 241, 241, 0.9);
 }
 
 .contact-header .ui.black.button:hover {
-  background-color: rgba(201, 201, 201, 0.9);
+    background-color: rgba(201, 201, 201, 0.9);
 }
 
 .contact-section-1 {
-  padding: 6% 3%;
-  width: 100%;
-  background-color: var(--background);
+    padding: 6% 3%;
+    width: 100%;
+    background-color: var(--background);
 }
 
 .contact-blurb {
-  font-family: 'PT Sans', sans-serif;
-  width: 60%;
-  margin: 0 auto;
-  color: white;
-  border-radius: 0 12px 0 12px;
+    font-family: 'PT Sans', sans-serif;
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    border-radius: 0 12px 0 12px;
 }
 
 .contact-blurb p {
-  font-size: 1.2em;
-  margin-top: 18px;
-  text-align: center;
+    font-size: 1.2em;
+    margin-top: 18px;
+    text-align: center;
 }
 
 .contact-blurb a {
-  color: whitesmoke;
-  text-decoration: none;
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 .contact-blurb a:hover {
-  color: rgb(180, 180, 180);
-  text-decoration: underline;
+    color: rgb(180, 180, 180);
+    text-decoration: underline;
 }
 /* .contact-form-wrap {
   float: left;
@@ -59,72 +59,74 @@
   border-radius: 8px;
 } */
 
-.ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url] {
-  font-size: 1.4em;
+.ui.form input:not([type]),
+.ui.form input[type='date'],
+.ui.form input[type='datetime-local'],
+.ui.form input[type='email'],
+.ui.form input[type='file'],
+.ui.form input[type='number'],
+.ui.form input[type='password'],
+.ui.form input[type='search'],
+.ui.form input[type='tel'],
+.ui.form input[type='text'],
+.ui.form input[type='time'],
+.ui.form input[type='url'] {
+    font-size: 1.4em;
 }
 
 .ui.form textarea {
-  font-size: 1.4em;
+    font-size: 1.4em;
 }
 
 @media only screen and (max-width: 1024px) {
+    .contact-header {
+        height: 100vh;
+    }
 
-  .contact-header {
-    height: 100vh;
-  }
-
-  .contact-header .ui.black.button {
-    margin-top: 35vh;
-  }
-
+    .contact-header .ui.black.button {
+        margin-top: 35vh;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    .contact-header {
+        height: 60vh;
+    }
 
-  .contact-header {
-    height: 60vh;
-  }
-  
-  .contact-blurb {
-    width: 95%;
-    font-size: 1.1em;
-  }
+    .contact-blurb {
+        width: 95%;
+        font-size: 1.1em;
+    }
 
-  .mobile-contact-button {
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 0.02em;
-    font-weight: 700;
-    line-height: 25px;
-    font-size: 1.6em;
-    width: 40%;
-    height: 60px;
-    color: rgb(39, 39, 39);
-    background-color: rgba(241, 241, 241, 0.9);
-    padding: 20px;
-    display: inline-block;
-    margin-top: 32vh;
-    border-radius: 5px;
-  }
-
+    .mobile-contact-button {
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 0.02em;
+        font-weight: 700;
+        line-height: 25px;
+        font-size: 1.6em;
+        width: 40%;
+        height: 60px;
+        color: rgb(39, 39, 39);
+        background-color: rgba(241, 241, 241, 0.9);
+        padding: 20px;
+        display: inline-block;
+        margin-top: 32vh;
+        border-radius: 5px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
-
-  .contact-header {
-    height: 100vh;
-  }
-
+    .contact-header {
+        height: 100vh;
+    }
 }
 
-
 @media only screen and (max-width: 420px) {
-  
-  .contact-header {
-    height: 45vh;
-  }
+    .contact-header {
+        height: 45vh;
+    }
 
-  .mobile-contact-button {
-    margin-top: 18vh;
-  }
-
+    .mobile-contact-button {
+        margin-top: 18vh;
+    }
 }

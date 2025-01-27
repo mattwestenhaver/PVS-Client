@@ -17,114 +17,110 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 
 :root {
-  --background: rgb(20, 20, 20);
+    --background: rgb(20, 20, 20);
 }
 
-html,body {
-  height: 100%;
+html,
+body {
+    height: 100%;
 }
 
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .header-1 {
-  height: 55vh;
-  padding-top: 24vh;
+    height: 55vh;
+    padding-top: 24vh;
 }
 
 .header-1 h1 {
-  font-size: 4.5em;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 700;
+    font-size: 4.5em;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
 }
 
 .header-2 {
-  width: fit-content!important;
-  height: fit-content!important;
-  transform: skew(-12deg);
-	-webkit-transform: skew(-12deg);
-	   -moz-transform: skew(-12deg);
-	     -o-transform: skew(-12deg);
-  background: rgba(255, 255, 255, 0.9);
-  margin-left: 16%;
-  border-radius: 4px;
-  float: none!important;
-  margin-bottom: 10px;
+    width: fit-content !important;
+    height: fit-content !important;
+    transform: skew(-12deg);
+    -webkit-transform: skew(-12deg);
+    -moz-transform: skew(-12deg);
+    -o-transform: skew(-12deg);
+    background: rgba(255, 255, 255, 0.9);
+    margin-left: 16%;
+    border-radius: 4px;
+    float: none !important;
+    margin-bottom: 10px;
 }
 
 .header-2 h2 {
-  padding: 10px 15px;
-  color: black;
-  transform: skew(12deg);
-  -webkit-transform: skew(12deg);
-	   -moz-transform: skew(12deg);
-	     -o-transform: skew(12deg);
+    padding: 10px 15px;
+    color: black;
+    transform: skew(12deg);
+    -webkit-transform: skew(12deg);
+    -moz-transform: skew(12deg);
+    -o-transform: skew(12deg);
 }
 
 .header-2 h3 {
-  padding: 10px 15px!important;
-  color: black;
-  transform: skew(12deg);
-  -webkit-transform: skew(12deg);
-	   -moz-transform: skew(12deg);
-       -o-transform: skew(12deg);
-  text-decoration: none;
+    padding: 10px 15px !important;
+    color: black;
+    transform: skew(12deg);
+    -webkit-transform: skew(12deg);
+    -moz-transform: skew(12deg);
+    -o-transform: skew(12deg);
+    text-decoration: none;
 }
 
 .header-2 p {
-  padding: 10px 15px!important;
-  color: black;
-  transform: skew(12deg);
-  -webkit-transform: skew(12deg);
-	   -moz-transform: skew(12deg);
-       -o-transform: skew(12deg);
+    padding: 10px 15px !important;
+    color: black;
+    transform: skew(12deg);
+    -webkit-transform: skew(12deg);
+    -moz-transform: skew(12deg);
+    -o-transform: skew(12deg);
 }
 
 .page-header {
-  font-family: 'PT Sans', sans-serif;
-  margin-top: 0;
-  margin-bottom: 60px;
-  color: white;
-  border: 0;
-  float: none!important;
-  margin: 0 auto;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 0;
+    margin-bottom: 60px;
+    color: white;
+    border: 0;
+    float: none !important;
+    margin: 0 auto;
 }
 
 .italic {
-  font-style: italic;
+    font-style: italic;
 }
 
 .centered {
-  margin: 0 auto 10px auto;
+    margin: 0 auto 10px auto;
 }
 
 .Toastify__toast-body {
-  font-size: 1.4em;
+    font-size: 1.4em;
 }
 
 @media only screen and (max-width: 767px) {
+    .header-1 {
+        height: 100vh;
+    }
 
-  .header-1 {
-    height: 100vh;
-  }
+    .header-2 {
+        max-width: 85%;
+        margin: 15px auto 0 auto;
+    }
 
-  .header-2 {
-    max-width: 85%;
-    margin: 15px auto 0 auto;
-  }
-
-  .header-2 h3 {
-    font-size: 1.3em;
-  }
-
+    .header-2 h3 {
+        font-size: 1.3em;
+    }
 }
 
 @media only screen and (max-width: 420px) {
-
-  .header-1 {
-    height: 45vh;
-  }
-
+    .header-1 {
+        height: 45vh;
+    }
 }
-

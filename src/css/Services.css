@@ -1,48 +1,48 @@
 .services-header {
-  background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url("../images/home-crop-3.jpeg");
-  background-size: cover;
-  position: relative;
+    background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url('../images/home-crop-3.jpeg');
+    background-size: cover;
+    position: relative;
 }
 
 .services-section-1 {
-  width: 100%;
-  background-color: var(--background);
-  padding: 3% 2%;
-  overflow: auto;
+    width: 100%;
+    background-color: var(--background);
+    padding: 3% 2%;
+    overflow: auto;
 }
 
 .services-section-1 hr {
-  width: 80%;
+    width: 80%;
 }
 
 .services-column {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
 }
 
 .services-section-1 h3 {
-  font-family: 'PT Sans', sans-serif;
-  text-align: left;
-  margin: 2% auto 0 auto;
-  font-size: 1.5em;
-  text-decoration: underline;
+    font-family: 'PT Sans', sans-serif;
+    text-align: left;
+    margin: 2% auto 0 auto;
+    font-size: 1.5em;
+    text-decoration: underline;
 }
 
 .services-section-1 p {
-  font-family: 'PT Sans', sans-serif;
-  color: white;
-  width: 70%;
-  margin: 0 auto;
-  text-align: left;
-  padding: 1%;
-  font-size: 1.2em;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1%;
+    font-size: 1.2em;
 }
 
 .services-section-1 img {
-  width: 35vw;
-  border: 2px solid white;
-  border-radius: 4px;
-  margin: 20px auto;
+    width: 35vw;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin: 20px auto;
 }
 /* .services-private-img {
   width: 400px;
@@ -53,26 +53,24 @@
 } */
 
 @media only screen and (max-width: 768px) {
+    .services-header {
+        background-position: center;
+    }
 
-  .services-header {
-    background-position: center;
-  }
+    .services-section-1 {
+        padding: 2% 1%;
+    }
 
-  .services-section-1 {
-    padding: 2% 1%;
-  }
+    .services-column {
+        float: none;
+        width: 100%;
+    }
 
-  .services-column {
-    float: none;
-    width: 100%;
-  }
+    .services-section-1 p {
+        width: 80%;
+    }
 
-  .services-section-1 p {
-    width: 80%;
-  }
-
-  .services-section-1 img {
-    width: 75vw;
-  }
-  
+    .services-section-1 img {
+        width: 75vw;
+    }
 }

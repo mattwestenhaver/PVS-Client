@@ -1,50 +1,48 @@
 .city-section-1 {
-  height: 70vh;
-  width: 100%;
-  background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url("../images/plane-crop.jpeg");
-  background-size: cover;
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url('../images/plane-crop.jpeg');
+    background-size: cover;
 }
 
 .city-section-2 {
-  width: 100%;
-  padding: 2%;
-  background-color: var(--background);
+    width: 100%;
+    padding: 2%;
+    background-color: var(--background);
 }
 
 .city-section-2 hr {
-  width: 70%;
+    width: 70%;
 }
 
 .city-section-2 h1 {
-  font-family: 'PT Sans', sans-serif;
-  color: white;
-  font-size: 2em;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    font-size: 2em;
 }
 
 .city-section-2 p {
-  width: 70%;
-  margin: 15px auto;
-  font-family: 'PT Sans', sans-serif;
-  color: white;
-  font-size: 1.2em;
+    width: 70%;
+    margin: 15px auto;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    font-size: 1.2em;
 }
 
 .city-section-2 a {
-  color: rgb(160, 160, 160);
+    color: rgb(160, 160, 160);
 }
 
 .city-section-2 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 768px) {
+    .city-section-1 {
+        background-position: center;
+    }
 
-  .city-section-1 {
-    background-position: center;
-  }
-
-  .city-section-2 p { 
-    width: 85%;
-  }
-
+    .city-section-2 p {
+        width: 85%;
+    }
 }

@@ -1,38 +1,38 @@
 .footer-container {
-  height: 180px;
-  width: 100%;
-  background-color: var(--background);
-  padding: 1.5%;
-  clear: both;
+    height: 180px;
+    width: 100%;
+    background-color: var(--background);
+    padding: 1.5%;
+    clear: both;
 }
 
 .footer-container h5 {
-  margin-bottom: 0;
-  margin-top: 0;
-  font-family: 'PT Sans', sans-serif;
-  line-height: 1.3em;
-  color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.3em;
+    color: white;
 }
 
 .footer-container a {
-  color: white;
+    color: white;
 }
 
 .footer-container a:hover {
-  color: rgb(25, 84, 104);
-  text-decoration: none;
+    color: rgb(25, 84, 104);
+    text-decoration: none;
 }
 
 .footer-work a {
-  color: rgb(73, 167, 199);
+    color: rgb(73, 167, 199);
 }
 
 .footer-work a:hover {
-  color: rgb(73, 167, 199)!important;
-  text-decoration: underline;
+    color: rgb(73, 167, 199) !important;
+    text-decoration: underline;
 }
 
 .icon {
-  padding-top: 10px;
-  padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }

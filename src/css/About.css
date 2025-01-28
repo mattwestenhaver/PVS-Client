@@ -1,27 +1,27 @@
-.about-header {
+.about__header {
     background: linear-gradient(rgba(224, 224, 224, 0.05), rgba(224, 224, 224, 0.05)), url('../images/vlad-2.jpeg');
     background-size: cover;
     background-position: center;
 }
 
-.about-section-1 {
+.about__body {
     width: 100%;
     background-color: var(--background);
     padding: 3% 2%;
 }
 
-.about-section-1 hr {
+.about__body hr {
     width: 70%;
 }
 
-.about-section-1 h2 {
+.about__body h2 {
     color: white;
     font-family: 'PT Sans', sans-serif;
     text-align: left;
     padding-left: 16%;
 }
 
-.about-section-1 p {
+.about__body p {
     font-family: 'Lato', sans-serif;
     color: white;
     width: 70%;
@@ -32,7 +32,11 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .about-header {
+    .about__header {
         background-position: center;
+    }
+
+    .about__body p {
+        padding-top: 10px;
     }
 }

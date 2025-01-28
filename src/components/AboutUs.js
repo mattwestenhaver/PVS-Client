@@ -22,19 +22,18 @@ class AboutUs extends React.Component {
 
     render() {
         return (
-            <div ref="top" className="about-container">
+            <div ref="top">
                 <MetaData
                     title="Our Story - Premiere Valet Services, Inc."
                     keywords="valet parking los angeles, los angeles valet, valet parking, laguna beach valet, parking attendants, beverly hills valet, orange county valet parking, valet company los angeles, valet parking service"
                 />
-                <div className="about-header header-1"></div>
-                <div className="about-section-1">
+                <div className="about__header header-1"></div>
+                <div className="about__body">
                     <div className="page-header">
                         <hr />
                         <h1>ABOUT US</h1>
                         <hr />
                     </div>
-                    <br />
                     <div className="header-2">
                         <h3>Premiere Valet's Pledge</h3>
                     </div>

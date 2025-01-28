@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@babel/eslint-parser": "^7.26.5",
         "axios": "^1.7.9",
         "react": "^17.0.2",
         "react-bootstrap": "^0.32.4",

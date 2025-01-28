@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-// import navOpacity from '../navBar.js'
 import insurance from '../images/insurance2.jpg';
 import ReactGA from 'react-ga';
 
@@ -17,7 +16,6 @@ export const logPageView = () => {
 class Insurance extends React.Component {
     componentDidMount() {
         window.scrollTo(0, 0);
-        // navOpacity.changingMenuBar()
         initGA();
         logPageView();
     }

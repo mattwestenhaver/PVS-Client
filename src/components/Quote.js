@@ -5,7 +5,6 @@ import { Form, Button } from 'semantic-ui-react';
 import { Redirect } from 'react-router-dom';
 
 import auth from '../auth.js';
-// import navOpacity from '../navBar.js'
 import 'react-toastify/dist/ReactToastify.css';
 import ReactGA from 'react-ga';
 
@@ -93,7 +92,6 @@ class Quote extends React.Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
-        // navOpacity.solidBar()
         initGA();
         logPageView();
         auth.load().then(success => {

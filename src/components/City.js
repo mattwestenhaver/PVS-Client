@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-// import navOpacity from '../navBar.js'
 import ReactGA from 'react-ga';
 
 export const initGA = () => {
@@ -17,7 +16,6 @@ export const logPageView = () => {
 class City extends React.Component {
     componentDidMount() {
         window.scrollTo(0, 0);
-        // navOpacity.solidBar()
         initGA();
         logPageView();
     }

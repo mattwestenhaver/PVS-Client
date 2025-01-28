@@ -24,8 +24,6 @@ const Home = () => {
         window.scrollTo(0, 0);
         initGA();
         logPageView();
-        // navOpacity.changingMenuBar()
-        // navOpacity.hideLogo()
         setTimeout(() => {
             $('.home-section-1 img').fadeOut(800);
         }, 3000);

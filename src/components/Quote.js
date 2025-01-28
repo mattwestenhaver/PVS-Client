@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { toast, ToastContainer } from 'react-toastify';
 import { Form, Button } from 'semantic-ui-react';
-import { Redirect } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 import auth from '../auth.js';
 import 'react-toastify/dist/ReactToastify.css';
@@ -101,7 +101,7 @@ class Quote extends React.Component {
 
     render() {
         return this.state.redirect ? (
-            <Redirect to="/confirmation" />
+            <Navigate to="/confirmation" />
         ) : (
             <div>
                 <Helmet>

@@ -31,7 +31,7 @@ const Staff = () => {
                 <title>Our Staff - Premiere Valet Services, Inc.</title>
             </Helmet>
             <div className="staff-header">
-                <img src={logo} alt="pvs white logo" />
+                <img src={logo} alt="PVS White Logo" />
             </div>
             <div className="staff-main-section">
                 <hr />

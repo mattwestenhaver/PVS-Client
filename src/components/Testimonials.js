@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
+
+import MetaData from './common/MetaData';
 
 export const initGA = () => {
     console.log('GA init');
@@ -21,10 +22,7 @@ const Testimonials = () => {
 
     return (
         <div className="testimonials-container">
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Testimonials - Premiere Valet Services, Inc.</title>
-            </Helmet>
+            <MetaData title="Testimonials - Premiere Valet Services, Inc." />
             <div className="testimonials-header header-1"></div>
             <div className="testimonials-section-1">
                 <div className="page-header">

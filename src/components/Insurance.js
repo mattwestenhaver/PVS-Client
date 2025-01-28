@@ -1,7 +1,8 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import insurance from '../images/insurance2.jpg';
 import ReactGA from 'react-ga';
+
+import insurance from '../images/insurance2.jpg';
+import MetaData from './common/MetaData';
 
 export const initGA = () => {
     console.log('GA init');
@@ -23,10 +24,7 @@ class Insurance extends React.Component {
     render() {
         return (
             <div className="insurance-container">
-                <Helmet>
-                    <meta charSet="utf-8" />
-                    <title>Insurance - Premiere Valet Services, Inc.</title>
-                </Helmet>
+                <MetaData title="Insurance - Premiere Valet Services, Inc." />
                 <div className="insurance-header header-1"></div>
                 <div className="insurance-section-1">
                     <div className="page-header">

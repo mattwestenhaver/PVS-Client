@@ -1,9 +1,10 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { Form, Button } from 'semantic-ui-react';
 import { toast, ToastContainer } from 'react-toastify';
-import { Helmet } from 'react-helmet';
+
+import MetaData from './common/MetaData.jsx';
 import auth from '../auth.js';
-import ReactGA from 'react-ga';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const initGA = () => {
@@ -94,10 +95,7 @@ class Work extends React.Component {
 
         return (
             <div>
-                <Helmet>
-                    <meta charSet="utf-8" />
-                    <title>Employment - Premiere Valet Services, Inc.</title>
-                </Helmet>
+                <MetaData title="Employment - Premiere Valet Services, Inc." />
                 <div className="work-header header-1"></div>
                 <div className="work-section-1">
                     <div className="work-information">

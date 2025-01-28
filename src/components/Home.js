@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'semantic-ui-react';
-import { Helmet } from 'react-helmet';
+import MetaData from './common/MetaData';
 
 import logo from '../images/logo-white.png';
 import section3Image from '../images/aston-martin.jpg';
@@ -42,14 +42,10 @@ const Home = () => {
 
     return (
         <div className="home-container">
-            <Helmet>
-                <meta charSet="utf-8" />
-                <meta
-                    name="keywords"
-                    content="valet parking, Los Angeles valet services, valet, valet companies, los angeles valet company, los angeles valet companies, valet, valet companies los angeles, valet parking service, valet parking"
-                />
-                <title>Premiere Valet Services, Inc.</title>
-            </Helmet>
+            <MetaData
+                title="Premiere Valet Services, Inc."
+                keywords="valet parking, Los Angeles valet services, valet, valet companies, los angeles valet company, los angeles valet companies, valet, valet companies los angeles, valet parking service, valet parking"
+            />
             <div className="home-section-1">
                 <img src={logo} alt="PVS Logo" />
                 <br />

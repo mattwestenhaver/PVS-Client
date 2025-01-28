@@ -25,8 +25,18 @@ const Home = () => {
         logPageView();
         if (window.location.pathname === '/') {
             setTimeout(() => fadeOutEffect('.home-section-1 img'), 3000);
-            setTimeout(() => (document.querySelector('.home-section-1 .ui.grey.button').style.opacity = 1), 5200);
-            setTimeout(() => document.querySelector('.home-section-1').classList.add('home-picture-fade'), 3400);
+            setTimeout(() => {
+                const button = document.querySelector('.home-section-1 .ui.grey.button');
+                if (button) {
+                    button.style.opacity = 1;
+                }
+            }, 5200);
+            setTimeout(() => {
+                const picture = document.querySelector('.home-section-1');
+                if (picture) {
+                    picture.classList.add('home-picture-fade');
+                }
+            }, 3400);
         }
     }, []);
 
@@ -122,15 +132,17 @@ export default Home;
 
 function fadeOutEffect(target) {
     var fadeTarget = document.querySelector(target);
-    var fadeEffect = setInterval(function () {
-        if (!fadeTarget.style.opacity) {
-            fadeTarget.style.opacity = 1;
-        }
-        if (fadeTarget.style.opacity > 0) {
-            fadeTarget.style.opacity -= 0.04;
-        } else {
-            clearInterval(fadeEffect);
-            fadeTarget.style.display = 'none';
-        }
-    }, 20);
+    if (fadeTarget) {
+        var fadeEffect = setInterval(function () {
+            if (!fadeTarget.style.opacity) {
+                fadeTarget.style.opacity = 1;
+            }
+            if (fadeTarget.style.opacity > 0) {
+                fadeTarget.style.opacity -= 0.04;
+            } else {
+                clearInterval(fadeEffect);
+                fadeTarget.style.display = 'none';
+            }
+        }, 20);
+    }
 }

@@ -27,22 +27,24 @@ class Quotes extends React.Component {
     }
 
     render() {
-        return !this.state.loggedIn ? (
-            <div className="view-quotes-container">
-                <Form className="login" onSubmit={this.handleLogin.bind(this)}>
-                    <h2>Please login to view quotes</h2>
-                    <Form.Field>
-                        <input type="password" ref="password" placeholder="Password" />
-                    </Form.Field>
-                    <Button className="login-button" size="big">
-                        Log In
-                    </Button>
-                </Form>
-                <ToastContainer />
-            </div>
-        ) : (
-            <div className="view-quotes-container">
-                <QuotesAccordion />
+        return (
+            <div className="view-quotes__container">
+                {!this.state.loggedIn ? (
+                    <>
+                        <Form className="login" onSubmit={this.handleLogin.bind(this)}>
+                            <h2>Please login to view quotes</h2>
+                            <Form.Field>
+                                <input type="password" ref="password" placeholder="Password" />
+                            </Form.Field>
+                            <Button className="login-button" size="big">
+                                Log In
+                            </Button>
+                        </Form>
+                        <ToastContainer />
+                    </>
+                ) : (
+                    <QuotesAccordion />
+                )}
             </div>
         );
     }

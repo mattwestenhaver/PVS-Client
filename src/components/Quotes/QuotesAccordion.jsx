@@ -133,7 +133,7 @@ class QuotesAccordion extends React.Component {
                     {this.state.quotes.length !== 0 ? (
                         this.state.quotes.map(q => {
                             return (
-                                <Accordion styled key={q._id} className="quote-container">
+                                <Accordion styled key={q._id} className="quote-accordion__container">
                                     <Accordion.Title
                                         active={activeIndex === q._id}
                                         index={q._id}

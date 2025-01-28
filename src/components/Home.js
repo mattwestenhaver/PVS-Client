@@ -24,29 +24,29 @@ const Home = () => {
         initGA();
         logPageView();
         if (window.location.pathname === '/') {
-            setTimeout(() => fadeOutEffect('.home-section-1 img'), 3000);
+            setTimeout(() => fadeOutEffect('.home__section-1 img'), 3000);
             setTimeout(() => {
-                const button = document.querySelector('.home-section-1 .ui.grey.button');
+                const button = document.querySelector('.home__section-1 .ui.grey.button');
                 if (button) {
                     button.style.opacity = 1;
                 }
             }, 5200);
             setTimeout(() => {
-                const picture = document.querySelector('.home-section-1');
+                const picture = document.querySelector('.home__section-1');
                 if (picture) {
-                    picture.classList.add('home-picture-fade');
+                    picture.classList.add('home__picture-fade');
                 }
             }, 3400);
         }
     }, []);
 
     return (
-        <div className="home-container">
+        <div className="home__container">
             <MetaData
                 title="Premiere Valet Services, Inc."
                 keywords="valet parking, Los Angeles valet services, valet, valet companies, los angeles valet company, los angeles valet companies, valet, valet companies los angeles, valet parking service, valet parking"
             />
-            <div className="home-section-1">
+            <div className="home__section-1">
                 <img src={logo} alt="PVS Logo" />
                 <br />
                 <Link to="/quote">
@@ -55,7 +55,7 @@ const Home = () => {
                     </Button>
                 </Link>
             </div>
-            <div className="home-section-2">
+            <div className="home__section-2">
                 <p>
                     Premiere Valet Services, Inc., provides the highest standard of private valet parking and valet
                     parking management services. We provide valet parking service to private events with as few as 25-30
@@ -83,7 +83,7 @@ const Home = () => {
                 </p>
                 <hr />
             </div>
-            <div className="home-section-3">
+            <div className="home__section-3">
                 <div>
                     <div className="header-2">
                         <h3>We Proudly Provide Valet Parking For:</h3>
@@ -113,7 +113,7 @@ const Home = () => {
                     <img src={section3Image} alt="" />
                 </div>
             </div>
-            <div className="home-section-4">
+            <div className="home__section-4">
                 <Link to="/quote">
                     <Button className="request-home-2" color="grey" size="massive">
                         Request A Quote

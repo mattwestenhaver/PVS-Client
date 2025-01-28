@@ -21,7 +21,7 @@ const AboutUs = () => {
     }, []);
 
     return (
-        <div ref="top">
+        <div>
             <MetaData
                 title="Our Story - Premiere Valet Services, Inc."
                 keywords="valet parking los angeles, los angeles valet, valet parking, laguna beach valet, parking attendants, beverly hills valet, orange county valet parking, valet company los angeles, valet parking service"

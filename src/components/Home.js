@@ -59,15 +59,6 @@ class Home extends React.Component {
                     </Link>
                 </div>
                 <div className="home-section-2">
-                    <h2>COVID-19 Update:</h2>
-                    <p>
-                        Premiere Valet Services is taking necessary precautions and implementing guidelines provided by
-                        the CDC and OSHA in order to minimize the risk of infection and spread of COVID-19. In addition,
-                        all PVS employees are required to wear a PVS face covering as pictured below:
-                    </p>
-                    <img className="facemask" src={faceMask} alt="COVID Facemask" />
-                    <br />
-                    <hr />
                     <p>
                         Premiere Valet Services, Inc., provides the highest standard of private valet parking and valet
                         parking management services. We provide valet parking service to private events with as few as

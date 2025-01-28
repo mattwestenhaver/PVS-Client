@@ -55,9 +55,8 @@
     font-family: 'Lato', sans-serif;
 }
 
-.home-section-2 .facemask {
-    margin: 25px auto 0 auto;
-    border-radius: 8px;
+.home-section-2 {
+    margin: 0 auto;
 }
 
 .home-section-2 p {
@@ -173,7 +172,7 @@
         width: 80%;
     }
 
-    .home-section-2 .facemask {
+    .home-section-2 {
         width: 50%;
     }
 

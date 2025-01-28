@@ -21,19 +21,19 @@ const Testimonials = () => {
     }, []);
 
     return (
-        <div className="testimonials-container">
+        <div>
             <MetaData title="Testimonials - Premiere Valet Services, Inc." />
-            <div className="testimonials-header header-1"></div>
-            <div className="testimonials-section-1">
+            <div className="testimonials__header header-1"></div>
+            <div className="testimonials__section-1">
                 <div className="page-header">
                     <hr />
                     <h1>TESTIMONIALS</h1>
                     <hr />
                 </div>
                 <br />
-                <div className="testimonials-column-container">
-                    <div className="testimonials-column-1">
-                        <div className="testimonial-wrap">
+                <div className="testimonials__column-container">
+                    <div className="testimonials__column-1">
+                        <div className="testimonials__wrap">
                             <blockquote>
                                 <p>
                                     No matter the profile of the clients involved, or the number of last-minute
@@ -44,7 +44,7 @@ const Testimonials = () => {
                             </blockquote>
                             <cite>– Parking Services Manager, The Walt Disney Company</cite>
                         </div>
-                        <div className="testimonial-wrap">
+                        <div className="testimonials__wrap">
                             <blockquote>
                                 <p>
                                     Thank you again for everything on this year’s gala. By all accounts the valet was a
@@ -53,13 +53,13 @@ const Testimonials = () => {
                             </blockquote>
                             <cite>– Director of Events, Hammer Museum</cite>
                         </div>
-                        <div className="testimonial-wrap">
+                        <div className="testimonials__wrap">
                             <blockquote>
                                 <p>You [guys] are AMAZING! Thank you so much.</p>
                             </blockquote>
                             <cite>– Director of Events, California Science Center</cite>
                         </div>
-                        <div className="testimonial-wrap">
+                        <div className="testimonials__wrap">
                             <blockquote>
                                 <p>
                                     Your team was wonderful and very on it. Please thank Adam again for me as well, he
@@ -69,14 +69,14 @@ const Testimonials = () => {
                             <cite>– Mitie Tucker Event Production</cite>
                         </div>
                     </div>
-                    <div className="testimonials-column-2">
-                        <div className="testimonial-wrap">
+                    <div className="testimonials__column-2">
+                        <div className="testimonials__wrap">
                             <blockquote>
                                 <p>“We love working with your team—thank you for everything!!!”</p>
                             </blockquote>
                             <cite>– O’Gara Coach, The Gray Group</cite>
                         </div>
-                        <div className="testimonial-wrap">
+                        <div className="testimonials__wrap">
                             <blockquote>
                                 <p>
                                     Thank you so much for you contribution to the pre-Grammy event. I always appreciate
@@ -85,7 +85,7 @@ const Testimonials = () => {
                             </blockquote>
                             <cite>– Best Events</cite>
                         </div>
-                        <div className="testimonial-wrap">
+                        <div className="testimonials__wrap">
                             <blockquote>
                                 <p>
                                     As usual, when it comes to our valet service needs, we are grateful for the working

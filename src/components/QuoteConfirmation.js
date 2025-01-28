@@ -22,7 +22,7 @@ const QuoteConfirmation = () => {
     }, []);
 
     return (
-        <div className="confirmation-container">
+        <div className="confirmation__container">
             <MetaData title="Thank You - Premiere Valet Services, Inc." />
             <img src={logo} alt="logo" />
             <h3>Thank you for choosing Premiere Valet Services, Inc. for your next event!</h3>

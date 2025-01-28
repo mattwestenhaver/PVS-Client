@@ -106,9 +106,8 @@ class Quote extends React.Component {
         ) : (
             <div>
                 <MetaData title="Request A Quote - Premiere Valet Services, Inc." />
-                {/* <div className='request-header'></div> */}
-                <div className="request-section-1">
-                    <div className="request-form-wrap">
+                <div className="request__section-1">
+                    <div className="request__form-wrap">
                         <h2>Request A Quote</h2>
                         <Form onSubmit={this.formSubmit.bind(this)}>
                             <Form.Field>

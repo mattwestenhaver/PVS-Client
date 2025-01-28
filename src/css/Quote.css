@@ -1,19 +1,10 @@
-.request-header {
-    background: linear-gradient(rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.3)), url('../images/maserati2.jpg');
-    /* background-image: url("./images/home-background.jpg"); */
-    background-size: cover;
-    height: 100vh;
-    padding-top: 10vw;
-    position: relative;
-}
-
-.request-section-1 {
+.request__section-1 {
     background-color: var(--background);
     width: 100%;
     padding: 60px 50px 50px 50px;
 }
 
-.request-form-wrap {
+.request__form-wrap {
     width: 60%;
     margin: 40px auto;
     height: fit-content;
@@ -23,7 +14,7 @@
     border-radius: 8px;
 }
 
-.request-form-wrap h2 {
+.request__form-wrap h2 {
     font-family: 'PT Sans', sans-serif !important;
 }
 
@@ -55,34 +46,30 @@ textarea {
     color: rgb(60, 60, 60) !important;
 }
 
-.confirmation-container {
+.confirmation__container {
     width: 100%;
     background-color: var(--background);
     height: 90vh;
     padding: 140px 20px 90px 20px;
 }
 
-.confirmation-container h3 {
+.confirmation__container h3 {
     font-family: 'PT Sans', sans-serif !important;
     font-size: 1.9em;
     color: white;
 }
 
-.confirmation-container img {
+.confirmation__container img {
     width: 550px;
     margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 768px) {
-    .request-header {
-        background-position: center;
-    }
-
-    .request-section-1 {
+    .request__section-1 {
         padding: 50px 20px 20px 20px;
     }
 
-    .request-form-wrap {
+    .request__form-wrap {
         width: 100%;
         margin: 10px auto;
     }
@@ -91,15 +78,15 @@ textarea {
         margin-bottom: 10px !important;
     }
 
-    .confirmation-container {
+    .confirmation__container {
         padding: 120px 20px 80px 20px;
     }
 
-    .confirmation-container img {
+    .confirmation__container img {
         width: 300px;
     }
 
-    .confirmation-container h3 {
+    .confirmation__container h3 {
         font-size: 1.4em;
     }
 }

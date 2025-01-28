@@ -15,9 +15,9 @@
     width: 80%;
 }
 
-.services-column {
-    float: left;
-    width: 50%;
+.services-column-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .services-section-1 h3 {
@@ -34,7 +34,7 @@
     width: 70%;
     margin: 0 auto;
     text-align: left;
-    padding: 1%;
+    padding: 15px 5px;
     font-size: 1.2em;
 }
 
@@ -44,13 +44,6 @@
     border-radius: 4px;
     margin: 20px auto;
 }
-/* .services-private-img {
-  width: 400px;
-}
-
-.services-business-img {
-  width: 400px;
-} */
 
 @media only screen and (max-width: 768px) {
     .services-header {
@@ -61,9 +54,8 @@
         padding: 2% 1%;
     }
 
-    .services-column {
-        float: none;
-        width: 100%;
+    .services-column-container {
+        grid-template-columns: 1fr;
     }
 
     .services-section-1 p {

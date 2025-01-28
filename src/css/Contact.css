@@ -1,6 +1,5 @@
 .contact-header {
     background: linear-gradient(rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.3)), url('../images/louis-vuitton-2.jpg');
-    /* background-image: url("./images/home-background.jpg"); */
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -50,14 +49,6 @@
     color: rgb(180, 180, 180);
     text-decoration: underline;
 }
-/* .contact-form-wrap {
-  float: left;
-  width: 45%;
-  margin: 0 auto;
-  background-color: rgba(243, 243, 243, 0.9);
-  padding: 2%;
-  border-radius: 8px;
-} */
 
 .ui.form input:not([type]),
 .ui.form input[type='date'],

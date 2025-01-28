@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
 
@@ -15,33 +15,33 @@ export const logPageView = () => {
     ReactGA.pageview(window.location.pathname);
 };
 
-class Services extends React.Component {
-    componentDidMount() {
+const Services = () => {
+    useEffect(() => {
         window.scrollTo(0, 0);
         // navOpacity.changingMenuBar()
         initGA();
         logPageView();
-    }
+    }, []);
 
-    render() {
-        return (
-            <div className="services-container">
-                <Helmet>
-                    <meta charSet="utf-8" />
-                    <meta
-                        name="keywords"
-                        content="los angeles valet parking, valet services, valet service company, valet company los angeles, valet companies, private valet, valet, valet attendants, beverly hills valet, bel air valet, valet service"
-                    />
-                    <title>Our Services - Premiere Valet Services, Inc.</title>
-                </Helmet>
-                <div className="services-header header-1"></div>
-                <div className="services-section-1">
-                    <div className="page-header">
-                        <hr />
-                        <h1>OUR SERVICES</h1>
-                        <hr />
-                    </div>
-                    <br />
+    return (
+        <div className="services-container">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <meta
+                    name="keywords"
+                    content="los angeles valet parking, valet services, valet service company, valet company los angeles, valet companies, private valet, valet, valet attendants, beverly hills valet, bel air valet, valet service"
+                />
+                <title>Our Services - Premiere Valet Services, Inc.</title>
+            </Helmet>
+            <div className="services-header header-1"></div>
+            <div className="services-section-1">
+                <div className="page-header">
+                    <hr />
+                    <h1>OUR SERVICES</h1>
+                    <hr />
+                </div>
+                <br />
+                <div className="services-column-container">
                     <div className="services-column">
                         <div className="header-2">
                             <h3>Valet for Private Parties</h3>
@@ -53,7 +53,7 @@ class Services extends React.Component {
                             of any city permit requirements. It does not matter how challenging your event location
                             might be, we will provide you with the best solution.
                         </p>
-                        <img src={chineseNY} className="services-private-img" alt="" />
+                        <img src={chineseNY} className="services-private-img" alt="Valet in Chinese New Year Uniform" />
                     </div>
                     <div className="services-column">
                         <div className="header-2">
@@ -70,12 +70,12 @@ class Services extends React.Component {
                             attendants for Disney Studios in Burbank for their busier production days. We can adjust to
                             fit any demand.
                         </p>
-                        <img src={hondaIMG} className="services-business-img" alt="" />
+                        <img src={hondaIMG} className="services-business-img" alt="Valet With Honda Parking Sign" />
                     </div>
                 </div>
             </div>
-        );
-    }
-}
+        </div>
+    );
+};
 
 export default Services;

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Responsive } from 'semantic-ui-react';
 import { Helmet } from 'react-helmet';
-// import navOpacity from '../navBar.js'
 import ReactGA from 'react-ga';
 
 export const initGA = () => {
@@ -17,7 +16,6 @@ export const logPageView = () => {
 class Contact extends React.Component {
     componentDidMount() {
         window.scrollTo(0, 0);
-        // navOpacity.solidBar()
         initGA();
         logPageView();
     }

@@ -82,7 +82,6 @@ class Work extends React.Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
-        // navOpacity.changingMenuBar()
         initGA();
         logPageView();
         auth.load().then(success => {

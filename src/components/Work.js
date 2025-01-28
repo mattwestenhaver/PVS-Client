@@ -96,9 +96,9 @@ class Work extends React.Component {
         return (
             <div>
                 <MetaData title="Employment - Premiere Valet Services, Inc." />
-                <div className="work-header header-1"></div>
-                <div className="work-section-1">
-                    <div className="work-information">
+                <div className="work__header header-1"></div>
+                <div className="work__section-1">
+                    <div className="work__information">
                         <h3>To work with us you must meet the following requirements:</h3>
                         <ul>
                             <li>You MUST be at least 19 years of age</li>
@@ -114,7 +114,7 @@ class Work extends React.Component {
                         </p>
                         <h3>Please fill out the form below if you are interested in working with us.</h3>
 
-                        <div className="work-form-wrap">
+                        <div className="work__form-wrap">
                             <Form onSubmit={this.workSubmit.bind(this)}>
                                 <Form.Field>
                                     <label>First Name</label>

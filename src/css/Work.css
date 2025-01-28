@@ -1,16 +1,16 @@
-.work-header {
+.work__header {
     background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url('../images/plane-crop.jpeg');
     background-size: cover;
     position: relative;
 }
 
-.work-section-1 {
+.work__section-1 {
     width: 100%;
     background-color: var(--background);
     padding: 3% 2%;
 }
 
-.work-information {
+.work__information {
     font-family: 'PT Sans', sans-serif;
     color: black;
     width: 60%;
@@ -20,14 +20,14 @@
     border-radius: 8px;
 }
 
-.work-information h3,
+.work__information h3,
 ul,
 p,
 label {
     text-align: left;
 }
 
-.work-form-wrap {
+.work__form-wrap {
     width: 95%;
     height: fit-content;
     background-color: rgb(177, 177, 177);
@@ -44,7 +44,7 @@ label {
     font-size: 1em;
 }
 
-.work-form-wrap .button {
+.work__form-wrap .button {
     text-align: center;
 }
 
@@ -54,11 +54,11 @@ label {
 }
 
 @media only screen and (max-width: 768px) {
-    .work-header {
+    .work__header {
         background-position: center;
     }
 
-    .work-information {
+    .work__information {
         width: 95%;
     }
 }

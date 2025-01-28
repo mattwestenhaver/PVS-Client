@@ -66,7 +66,7 @@ const Home = () => {
                     to meet your valet parking service needs.
                 </p>
                 <p>
-                    For over 30 years Premiere Valet Services, Inc., has served all of Southern California with the
+                    For over 40 years Premiere Valet Services, Inc., has served all of Southern California with the
                     highest quality of valet parking service. With offices in Los Angeles and Laguna Beach we provide
                     valet parking service with locally based valet parking attendants throughout Los Angeles County,
                     Orange County and Ventura County. Our valet parking service consists of both male and female valet

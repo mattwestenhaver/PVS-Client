@@ -6,7 +6,6 @@ import $ from 'jquery';
 
 import logo from '../images/logo-white.png';
 import section3Image from '../images/aston-martin.jpg';
-import faceMask from '../images/facemask.jpeg';
 
 import ReactGA from 'react-ga';
 

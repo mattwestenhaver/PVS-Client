@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'semantic-ui-react';
 import { Helmet } from 'react-helmet';
-import $ from 'jquery';
 
 import logo from '../images/logo-white.png';
 import section3Image from '../images/aston-martin.jpg';
@@ -24,15 +23,9 @@ const Home = () => {
         window.scrollTo(0, 0);
         initGA();
         logPageView();
-        setTimeout(() => {
-            $('.home-section-1 img').fadeOut(800);
-        }, 3000);
-        setTimeout(() => {
-            $('.home-section-1 .ui.grey.button').css('opacity', '1');
-        }, 5200);
-        setTimeout(() => {
-            $('.home-section-1').stop().addClass('home-picture-fade');
-        }, 3400);
+        setTimeout(() => fadeOutEffect('.home-section-1 img'), 3000);
+        setTimeout(() => (document.querySelector('.home-section-1 .ui.grey.button').style.opacity = 1), 5200);
+        setTimeout(() => document.querySelector('.home-section-1').classList.add('home-picture-fade'), 3400);
     }, []);
 
     return (
@@ -124,3 +117,18 @@ const Home = () => {
 };
 
 export default Home;
+
+function fadeOutEffect(target) {
+    var fadeTarget = document.querySelector(target);
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity > 0) {
+            fadeTarget.style.opacity -= 0.04;
+        } else {
+            clearInterval(fadeEffect);
+            fadeTarget.style.display = 'none';
+        }
+    }, 20);
+}

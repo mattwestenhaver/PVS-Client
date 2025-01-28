@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
 
@@ -12,30 +12,28 @@ export const logPageView = () => {
     ReactGA.pageview(window.location.pathname);
 };
 
-class Testimonials extends React.Component {
-    componentDidMount() {
+const Testimonials = () => {
+    useEffect(() => {
         window.scrollTo(0, 0);
-        // navOpacity.changingMenuBar()
         initGA();
         logPageView();
-    }
+    }, []);
 
-    render() {
-        return (
-            <div className="testimonials-container">
-                <Helmet>
-                    <meta charSet="utf-8" />
-                    <title>Testimonials - Premiere Valet Services, Inc.</title>
-                </Helmet>
-                <div className="testimonials-header header-1"></div>
-                <div className="testimonials-section-1">
-                    <div className="page-header">
-                        <hr />
-                        <h1>TESTIMONIALS</h1>
-                        <hr />
-                    </div>
-                    <br />
-
+    return (
+        <div className="testimonials-container">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Testimonials - Premiere Valet Services, Inc.</title>
+            </Helmet>
+            <div className="testimonials-header header-1"></div>
+            <div className="testimonials-section-1">
+                <div className="page-header">
+                    <hr />
+                    <h1>TESTIMONIALS</h1>
+                    <hr />
+                </div>
+                <br />
+                <div className="testimonials-column-container">
                     <div className="testimonials-column-1">
                         <div className="testimonial-wrap">
                             <blockquote>
@@ -73,7 +71,6 @@ class Testimonials extends React.Component {
                             <cite>– Mitie Tucker Event Production</cite>
                         </div>
                     </div>
-
                     <div className="testimonials-column-2">
                         <div className="testimonial-wrap">
                             <blockquote>
@@ -102,8 +99,8 @@ class Testimonials extends React.Component {
                     </div>
                 </div>
             </div>
-        );
-    }
-}
+        </div>
+    );
+};
 
 export default Testimonials;

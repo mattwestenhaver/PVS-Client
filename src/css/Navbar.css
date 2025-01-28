@@ -19,35 +19,9 @@
     transition-timing-function: ease-in-out;
 }
 
-/* .opaque {
-  background-color: rgba(231, 231, 231, 0.95)!important;
-  color: black!important;
+.navbar-logo {
+    cursor: pointer;
 }
-
-.white-text {
-  color: white!important;
-  -webkit-transition-property: color transform -webkit-transform color;
-  -webkit-transition-duration: 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: color transform -webkit-transformv color;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-in-out;
-}
-
-.dark-text {
-  color: rgb(41, 41, 41)!important;
-  -webkit-transition-property: color transform -webkit-transform color;
-  -webkit-transition-duration: 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: color transform -webkit-transformv color;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-in-out;
-}
-
-.navbar:hover {
-  background-color: rgba(34, 34, 34, .5);
-  color: white;
-} */
 
 .navbar-brand {
     padding: 8px 8px 8px 30px;
@@ -129,38 +103,4 @@
     .dropdown:hover > .dropdown-menu {
         display: block;
     }
-}
-
-@media only screen and (max-width: 990px) {
-    /* .navbar:hover {
-    background-color: rgba(20, 20, 20, 0);
-    color: white;
-  } */
-}
-
-@media only screen and (max-width: 768px) {
-    /* .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-    color: rgb(41, 41, 41)!important;
-  }
-  
-  .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-    color: rgb(41, 41, 41)!important;
-  }
-  
-  .dropdown-menu>li>a {
-    color: rgb(41, 41, 41)!important;
-  }
-
-  .dropdown-menu {
-    background-color: rgba(231, 231, 231, 0.95)!important;
-    color: rgb(41, 41, 41)!important;
-  }
-
-  .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a, .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:hover {
-    background-color: rgba(189, 189, 189, 0.95)!important;
-  }
-
-  .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
-    color: black;
-  } */
 }

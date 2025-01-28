@@ -1,3 +1,7 @@
+.home-container {
+    background-color: var(--background);
+}
+
 .home-section-1 {
     height: 80vh;
     padding-top: 8vw;
@@ -47,7 +51,6 @@
 
 .home-section-2 {
     color: white;
-    background-color: var(--background);
     padding: 2%;
 }
 
@@ -55,14 +58,13 @@
     font-family: 'Lato', sans-serif;
 }
 
-.home-section-2 .facemask {
-    margin: 25px auto 0 auto;
-    border-radius: 8px;
+.home-section-2 {
+    width: 65%;
+    margin: 0 auto;
 }
 
 .home-section-2 p {
     font-family: 'Lato', sans-serif;
-    width: 65%;
     margin: 0 auto;
     text-align: left;
     font-size: 1.2em;
@@ -71,26 +73,19 @@
 
 .home-section-2 hr {
     border-top: 1px solid rgba(255, 255, 255, 0.8);
-    width: 65%;
     margin: 45px auto 5px auto;
 }
 
 .home-section-3 {
     font-family: 'Lato', sans-serif;
     color: white;
-    background-color: var(--background);
     text-align: left;
-    width: 100%;
-    margin: 0 auto;
-    padding: 2% 12% 4% 12%;
-    overflow: auto;
-}
-
-.home-section-3 > div {
-    width: 40%;
-    float: left;
-    padding: 10px;
-    margin: 0 5%;
+    width: 65%;
+    margin: 20px auto 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 20px;
 }
 
 .home-section-3 .header-2 {
@@ -165,23 +160,21 @@
         margin-top: 25vh;
     }
 
+    .home-section-2 {
+        width: 100%;
+    }
+
     .home-section-2 p {
         width: 90%;
     }
 
     .home-section-2 hr {
+        width: 90%;
+    }
+
+    .home-section-3 {
         width: 80%;
-    }
-
-    .home-section-2 .facemask {
-        width: 50%;
-    }
-
-    .home-section-3 > div {
-        width: 95%;
-        float: none;
-        padding: 10px;
-        margin: 0 5%;
+        grid-template-columns: 1fr;
     }
 }
 

@@ -46,15 +46,17 @@ const City = ({ city }) => {
                 <p>
                     Our <span className="italic">premiere</span> valet parking staff is the most qualified, experienced
                     and reliable valet parking staff you will find in any {city} valet company. Contact us any time at
-                    {city === 'Irvine' ||
-                    city === 'Laguna Beach' ||
-                    city === 'Newport Coast' ||
-                    city === 'Newport Beach' ||
-                    city === 'Emerald Bay' ||
-                    city === 'Corona del Mar' ||
-                    city === 'Coto de Caza' ||
-                    city === 'Pelican Hill' ||
-                    city === 'Dana Point' ? (
+                    {[
+                        'Irvine',
+                        'Laguna Beach',
+                        'Newport Coast',
+                        'Newport Beach',
+                        'Emerald Bay',
+                        'Corona del Mar',
+                        'Coto de Caza',
+                        'Pelican Hill',
+                        'Dana Point',
+                    ].includes(city) ? (
                         <a href="tel:+19494978811"> (949) 497-8811 </a>
                     ) : (
                         <a href="tel:+13238765816"> (323) 876-5816 </a>

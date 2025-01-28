@@ -7,28 +7,28 @@
     width: 50%;
 }
 
-.staff-section-1 h1 {
+.staff-title {
     font-family: 'PT Sans', sans-serif;
     color: white;
 }
 
 .staff-container hr {
-    width: 65%;
+    width: 75%;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-.staff-section-1 {
-    width: 100;
+.staff-main-section {
+    width: 100%;
     background-color: var(--background);
     padding: 50px;
 }
 
 .staff-wrap {
-    clear: both;
-    width: 60%;
+    width: 70%;
     overflow: auto;
-    margin: 20px auto 0 auto;
+    display: flex;
+    margin: 0 auto;
 }
 
 .staff-wrap h3 {
@@ -38,12 +38,11 @@
 
 .staff-wrap p {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     padding-left: 10px;
 }
 
 .staff-image {
-    float: left;
     width: 40%;
 }
 
@@ -56,8 +55,8 @@
 .staff-information {
     font-family: 'Lato', sans-serif;
     width: 60%;
-    float: left;
     color: white;
+    flex-grow: 1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -67,11 +66,12 @@
         margin-bottom: 30px;
     }
 
-    .staff-section-1 {
+    .staff-main-section {
         padding: 20px;
     }
 
     .staff-wrap {
+        flex-direction: column;
         width: 85%;
     }
 
@@ -82,17 +82,25 @@
     .staff-information h3 {
         font-size: 1.3em;
     }
+
+    .staff-image {
+        width: 50%;
+        margin: 0 auto 20px auto;
+    }
+
+    .staff-information {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width: 450px) {
     .staff-image {
         width: 80%;
         margin: 0 auto 10px auto;
-        float: none;
     }
 
     .staff-information {
-        float: none;
         width: 90%;
         margin: 0 auto;
     }

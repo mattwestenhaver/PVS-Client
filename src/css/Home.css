@@ -84,6 +84,7 @@
     margin: 20px auto 40px auto;
     display: grid;
     grid-template-columns: 1fr 0.9fr;
+    align-items: center;
     gap: 20px;
 }
 
@@ -159,19 +160,20 @@
         margin-top: 25vh;
     }
 
+    .home-section-2 {
+        width: 100%;
+    }
+
     .home-section-2 p {
         width: 90%;
     }
 
     .home-section-2 hr {
-        width: 80%;
-    }
-
-    .home-section-2 {
-        width: 50%;
+        width: 90%;
     }
 
     .home-section-3 {
+        width: 80%;
         grid-template-columns: 1fr;
     }
 }

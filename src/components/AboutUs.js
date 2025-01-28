@@ -1,6 +1,7 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
+
+import MetaData from './common/MetaData';
 
 export const initGA = () => {
     console.log('GA init');
@@ -22,14 +23,10 @@ class AboutUs extends React.Component {
     render() {
         return (
             <div ref="top" className="about-container">
-                <Helmet>
-                    <meta charSet="utf-8" />
-                    <meta
-                        name="keywords"
-                        content="valet parking los angeles, los angeles valet, valet parking, laguna beach valet, parking attendants, beverly hills valet, orange county valet parking, valet company los angeles, valet parking service"
-                    />
-                    <title>Our Story - Premiere Valet Services, Inc.</title>
-                </Helmet>
+                <MetaData
+                    title="Our Story - Premiere Valet Services, Inc."
+                    keywords="valet parking los angeles, los angeles valet, valet parking, laguna beach valet, parking attendants, beverly hills valet, orange county valet parking, valet company los angeles, valet parking service"
+                />
                 <div className="about-header header-1"></div>
                 <div className="about-section-1">
                     <div className="page-header">

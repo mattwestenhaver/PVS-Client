@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactGA from 'react-ga';
-import { Helmet } from 'react-helmet';
 
+import MetaData from './common/MetaData';
 import logo from '../images/logo-white.png';
 
 export const initGA = () => {
@@ -24,10 +24,7 @@ class QuoteConfirmation extends React.Component {
     render() {
         return (
             <div className="confirmation-container">
-                <Helmet>
-                    <meta charSet="utf-8" />
-                    <title>Thank You - Premiere Valet Services, Inc.</title>
-                </Helmet>
+                <MetaData title="Thank You - Premiere Valet Services, Inc." />
                 <img src={logo} alt="logo" />
                 <h3>Thank you for choosing Premiere Valet Services, Inc. for your next event!</h3>
                 <h3>We will get back to you as soon as possible.</h3>

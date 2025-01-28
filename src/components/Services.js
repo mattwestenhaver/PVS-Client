@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
 
+import MetaData from './common/MetaData';
 import hondaIMG from '../images/honda.jpg';
 import chineseNY from '../images/chinese-new-year.jpg';
 
@@ -24,14 +24,10 @@ const Services = () => {
 
     return (
         <div className="services-container">
-            <Helmet>
-                <meta charSet="utf-8" />
-                <meta
-                    name="keywords"
-                    content="los angeles valet parking, valet services, valet service company, valet company los angeles, valet companies, private valet, valet, valet attendants, beverly hills valet, bel air valet, valet service"
-                />
-                <title>Our Services - Premiere Valet Services, Inc.</title>
-            </Helmet>
+            <MetaData
+                title="Our Services - Premiere Valet Services, Inc."
+                keywords="los angeles valet parking, valet services, valet service company, valet company los angeles, valet companies, private valet, valet, valet attendants, beverly hills valet, bel air valet, valet service"
+            />
             <div className="services-header header-1"></div>
             <div className="services-section-1">
                 <div className="page-header">

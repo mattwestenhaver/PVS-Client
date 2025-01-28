@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { toast, ToastContainer } from 'react-toastify';
 import { Form, Button } from 'semantic-ui-react';
 import { Navigate } from 'react-router-dom';
@@ -7,6 +6,8 @@ import { Navigate } from 'react-router-dom';
 import auth from '../auth.js';
 import 'react-toastify/dist/ReactToastify.css';
 import ReactGA from 'react-ga';
+
+import MetaData from './common/MetaData.jsx';
 
 export const initGA = () => {
     console.log('GA init');
@@ -104,10 +105,7 @@ class Quote extends React.Component {
             <Navigate to="/confirmation" />
         ) : (
             <div>
-                <Helmet>
-                    <meta charSet="utf-8" />
-                    <title>Request A Quote - Premiere Valet Services, Inc.</title>
-                </Helmet>
+                <MetaData title="Request A Quote - Premiere Valet Services, Inc." />
                 {/* <div className='request-header'></div> */}
                 <div className="request-section-1">
                     <div className="request-form-wrap">

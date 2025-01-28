@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Responsive } from 'semantic-ui-react';
-import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
+import MetaData from './common/MetaData';
 
 export const initGA = () => {
     console.log('GA init');
@@ -27,10 +27,7 @@ class Contact extends React.Component {
     render() {
         return (
             <div className="contact-container">
-                <Helmet>
-                    <meta charSet="utf-8" />
-                    <title>Contact Us - Premiere Valet Services, Inc.</title>
-                </Helmet>
+                <MetaData title="Contact Us - Premiere Valet Services, Inc." />
                 <div className="contact-header">
                     <Responsive minWidth={769}>
                         <Button color="black" size="massive" onClick={this.scrollDown.bind(this)}>

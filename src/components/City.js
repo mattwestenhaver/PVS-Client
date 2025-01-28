@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
+import MetaData from './common/MetaData';
 
 export const initGA = () => {
     console.log('GA init');
@@ -24,11 +24,7 @@ const City = ({ city }) => {
 
     return (
         <div className="city-container">
-            <Helmet>
-                <meta charSet="utf-8" />
-                <meta name="description" content={helmetData} />
-                <title>{city} - Premiere Valet Services, Inc.</title>
-            </Helmet>
+            <MetaData title={`${city} - Premiere Valet Services, Inc.`} keywords={helmetData} />
             <div className="city-section-1 header-1"></div>
             <div className="city-section-2">
                 <hr />

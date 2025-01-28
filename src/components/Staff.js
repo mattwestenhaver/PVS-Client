@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
 
+import MetaData from './common/MetaData';
 import Ryan from '../images/ryan-petakoff.jpg';
 import Mark from '../images/mark-ramirez.jpg';
 import Joel from '../images/joel-ocampo.jpg';
@@ -26,10 +26,7 @@ const Staff = () => {
 
     return (
         <div className="staff-container">
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Our Staff - Premiere Valet Services, Inc.</title>
-            </Helmet>
+            <MetaData title="Our Staff - Premiere Valet Services, Inc." />
             <div className="staff-header">
                 <img src={logo} alt="PVS White Logo" />
             </div>

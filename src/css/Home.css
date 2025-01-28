@@ -1,8 +1,8 @@
-.home-container {
+.home__container {
     background-color: var(--background);
 }
 
-.home-section-1 {
+.home__section-1 {
     height: 80vh;
     padding-top: 8vw;
     background-color: black;
@@ -13,7 +13,7 @@
     transition: background-image 2s ease-in-out;
 }
 
-.home-picture-fade {
+.home__picture-fade {
     background-image: url('../images/lineup-3.jpeg');
     background-size: cover;
     background-position: center;
@@ -22,13 +22,13 @@
     transition: background-image 2.5s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
-.home-section-1 img {
+.home__section-1 img {
     width: 60%;
     margin-top: 4%;
     margin-bottom: 5%;
 }
 
-.home-section-1 .ui.grey.button {
+.home__section-1 .ui.grey.button {
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.02em;
     opacity: 0;
@@ -45,25 +45,22 @@
     transition-timing-function: ease-in-out;
 }
 
-.home-section-1 .ui.grey.button:hover {
+.home__section-1 .ui.grey.button:hover {
     background-color: rgba(201, 201, 201, 0.9);
 }
 
-.home-section-2 {
+.home__section-2 {
     color: white;
     padding: 2%;
-}
-
-.home-section-2 h2 {
-    font-family: 'Lato', sans-serif;
-}
-
-.home-section-2 {
     width: 65%;
     margin: 0 auto;
 }
 
-.home-section-2 p {
+.home__section-2 h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+.home__section-2 p {
     font-family: 'Lato', sans-serif;
     margin: 0 auto;
     text-align: left;
@@ -71,12 +68,12 @@
     padding: 1%;
 }
 
-.home-section-2 hr {
+.home__section-2 hr {
     border-top: 1px solid rgba(255, 255, 255, 0.8);
     margin: 45px auto 5px auto;
 }
 
-.home-section-3 {
+.home__section-3 {
     font-family: 'Lato', sans-serif;
     color: white;
     text-align: left;
@@ -88,112 +85,112 @@
     gap: 20px;
 }
 
-.home-section-3 .header-2 {
+.home__section-3 .header-2 {
     margin-left: 0;
 }
 
-.home-section-3 h3 {
+.home__section-3 h3 {
     font-size: 1.3em;
 }
 
-.home-section-3 h4 {
+.home__section-3 h4 {
     font-size: 1.2em;
 }
 
-.home-section-3 ul {
+.home__section-3 ul {
     margin-bottom: 20px;
     font-size: 1.1em;
 }
 
-.home-section-3 img {
+.home__section-3 img {
     width: 100%;
     border: 2px solid white;
     border-radius: 5px;
 }
 
-.home-section-4 {
+.home__section-4 {
     width: 100%;
     background-color: var(--background);
 }
 
-.home-section-4 .ui.grey.button {
+.home__section-4 .ui.grey.button {
     background-color: rgba(241, 241, 241, 0.9);
     color: rgb(39, 39, 39);
     margin-bottom: 40px;
     font-size: 1.4em;
 }
 
-.home-section-4 .ui.grey.button:hover {
+.home__section-4 .ui.grey.button:hover {
     background-color: rgba(201, 201, 201, 0.9);
 }
 
 @media (max-width: 1024px) {
-    .home-section-1 {
+    .home__section-1 {
         background-position: center;
     }
 
-    .home-section-1 img {
+    .home__section-1 img {
         margin-top: 15vh;
     }
 
-    .home-picture-fade {
+    .home__picture-fade {
         background-image: url('../images/lineup-3.jpeg');
         background-position: center;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .home-section-1 {
-        height: 60vh;
-    }
-
-    .home-picture-fade {
+    .home__picture-fade {
         background-image: url('../images/lineup-mobile.jpeg');
     }
 
-    .home-section-1 img {
+    .home__section-1 {
+        height: 60vh;
+    }
+
+    .home__section-1 img {
         width: 80%;
         margin-top: 15vh;
     }
 
-    .home-section-1 .ui.grey.button {
+    .home__section-1 .ui.grey.button {
         margin-top: 25vh;
     }
 
-    .home-section-2 {
+    .home__section-2 {
         width: 100%;
     }
 
-    .home-section-2 p {
+    .home__section-2 p {
         width: 90%;
     }
 
-    .home-section-2 hr {
+    .home__section-2 hr {
         width: 90%;
     }
 
-    .home-section-3 {
+    .home__section-3 {
         width: 80%;
         grid-template-columns: 1fr;
     }
 }
 
 @media only screen and (max-width: 736px) {
-    .home-section-1 {
+    .home__section-1 {
         height: 100vh;
     }
 }
 
 @media only screen and (max-width: 450px) {
-    .home-section-1 {
+    .home__section-1 {
         height: 48vh;
     }
 
-    .home-section-1 img {
+    .home__section-1 img {
         margin-top: 12vh;
     }
 
-    .home-section-1 .ui.grey.button {
+    .home__section-1 .ui.grey.button {
         margin-top: 15vh;
     }
 }

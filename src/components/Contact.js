@@ -26,22 +26,22 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <div className="contact-container">
+            <div>
                 <MetaData title="Contact Us - Premiere Valet Services, Inc." />
-                <div className="contact-header">
+                <div className="contact__header">
                     <Responsive minWidth={769}>
                         <Button color="black" size="massive" onClick={this.scrollDown.bind(this)}>
                             Contact Us
                         </Button>
                     </Responsive>
                     <Responsive maxWidth={768}>
-                        <a className="mobile-contact-button" href="tel:+13238765816">
+                        <a className="contact__mobile-button" href="tel:+13238765816">
                             Contact Us
                         </a>
                     </Responsive>
                 </div>
-                <div ref="section1" className="contact-section-1">
-                    <div className="contact-blurb">
+                <div ref="section1" className="contact__section-1">
+                    <div className="contact__blurb">
                         <div className="header-2 centered">
                             <h3>Questions? Give Us A Call</h3>
                         </div>

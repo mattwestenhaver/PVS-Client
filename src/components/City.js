@@ -23,10 +23,10 @@ const City = ({ city }) => {
     const helmetData = `${city} Valet Parking, Valet Parking ${city}, ${city} Valet Service, Valet Service ${city}, ${city} Valet, Valet Service, Valet Attendants ${city}`;
 
     return (
-        <div className="city-container">
+        <div>
             <MetaData title={`${city} - Premiere Valet Services, Inc.`} keywords={helmetData} />
-            <div className="city-section-1 header-1"></div>
-            <div className="city-section-2">
+            <div className="city__section-1 header-1" />
+            <div className="city__section-2">
                 <hr />
                 <h1>{city} Valet Services</h1>
                 <hr />
@@ -46,15 +46,17 @@ const City = ({ city }) => {
                 <p>
                     Our <span className="italic">premiere</span> valet parking staff is the most qualified, experienced
                     and reliable valet parking staff you will find in any {city} valet company. Contact us any time at
-                    {city === 'Irvine' ||
-                    city === 'Laguna Beach' ||
-                    city === 'Newport Coast' ||
-                    city === 'Newport Beach' ||
-                    city === 'Emerald Bay' ||
-                    city === 'Corona del Mar' ||
-                    city === 'Coto de Caza' ||
-                    city === 'Pelican Hill' ||
-                    city === 'Dana Point' ? (
+                    {[
+                        'Irvine',
+                        'Laguna Beach',
+                        'Newport Coast',
+                        'Newport Beach',
+                        'Emerald Bay',
+                        'Corona del Mar',
+                        'Coto de Caza',
+                        'Pelican Hill',
+                        'Dana Point',
+                    ].includes(city) ? (
                         <a href="tel:+19494978811"> (949) 497-8811 </a>
                     ) : (
                         <a href="tel:+13238765816"> (323) 876-5816 </a>

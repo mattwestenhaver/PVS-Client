@@ -1,58 +1,58 @@
-.staff-header {
+.staff__header {
     background-color: var(--background);
     padding-top: 12vh;
 }
 
-.staff-header img {
+.staff__header img {
     width: 50%;
 }
 
-.staff-title {
+.staff__title {
     font-family: 'PT Sans', sans-serif;
     color: white;
 }
 
-.staff-container hr {
-    width: 75%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.staff-main-section {
+.staff__main-section {
     width: 100%;
     background-color: var(--background);
     padding: 50px;
 }
 
-.staff-wrap {
+.staff__main-section hr {
+    width: 75%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.staff__wrap {
     width: 70%;
     overflow: auto;
     display: flex;
     margin: 0 auto;
 }
 
-.staff-wrap h3 {
+.staff__wrap h3 {
     margin-top: 0;
     margin-bottom: 20px;
 }
 
-.staff-wrap p {
+.staff__wrap p {
     width: 90%;
     margin: 0 auto 10px auto;
     padding-left: 10px;
 }
 
-.staff-image {
+.staff__image {
     width: 40%;
 }
 
-.staff-image img {
+.staff__image img {
     width: 100%;
     border: 1px solid white;
     border-radius: 4px;
 }
 
-.staff-information {
+.staff__information {
     font-family: 'Lato', sans-serif;
     width: 60%;
     color: white;
@@ -60,47 +60,47 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .staff-container hr {
+    .staff__main-section {
+        padding: 20px;
+    }
+
+    .staff__main-section hr {
         width: 90%;
         margin-top: 30px;
         margin-bottom: 30px;
     }
 
-    .staff-main-section {
-        padding: 20px;
-    }
-
-    .staff-wrap {
+    .staff__wrap {
         flex-direction: column;
         width: 85%;
     }
 
-    .staff-information h2 {
+    .staff__information h2 {
         font-size: 1.5em;
     }
 
-    .staff-information h3 {
+    .staff__information h3 {
         font-size: 1.3em;
     }
 
-    .staff-image {
+    .staff__image {
         width: 50%;
         margin: 0 auto 20px auto;
     }
 
-    .staff-information {
+    .staff__information {
         width: 90%;
         margin: 0 auto;
     }
 }
 
 @media only screen and (max-width: 450px) {
-    .staff-image {
+    .staff__image {
         width: 80%;
         margin: 0 auto 10px auto;
     }
 
-    .staff-information {
+    .staff__information {
         width: 100%;
         margin: 0 auto;
     }

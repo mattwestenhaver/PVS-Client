@@ -23,9 +23,11 @@ const Home = () => {
         window.scrollTo(0, 0);
         initGA();
         logPageView();
-        setTimeout(() => fadeOutEffect('.home-section-1 img'), 3000);
-        setTimeout(() => (document.querySelector('.home-section-1 .ui.grey.button').style.opacity = 1), 5200);
-        setTimeout(() => document.querySelector('.home-section-1').classList.add('home-picture-fade'), 3400);
+        if (window.location.pathname === '/') {
+            setTimeout(() => fadeOutEffect('.home-section-1 img'), 3000);
+            setTimeout(() => (document.querySelector('.home-section-1 .ui.grey.button').style.opacity = 1), 5200);
+            setTimeout(() => document.querySelector('.home-section-1').classList.add('home-picture-fade'), 3400);
+        }
     }, []);
 
     return (

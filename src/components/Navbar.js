@@ -10,7 +10,7 @@ class NavBar extends React.Component {
             <Navbar inverse collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <LinkContainer to="/">
+                        <LinkContainer exact="/" to="/">
                             <img className="navbar-logo" src={smallLogo} alt="PVS logo" />
                         </LinkContainer>
                     </Navbar.Brand>
@@ -18,7 +18,7 @@ class NavBar extends React.Component {
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav pullRight>
-                        <LinkContainer exact to="/">
+                        <LinkContainer exact="/" to="/">
                             <NavItem eventKey={1}>Home</NavItem>
                         </LinkContainer>
                         <NavDropdown eventKey={2} title="About Us" id="basic-nav-dropdown">

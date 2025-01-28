@@ -23,10 +23,10 @@ const City = ({ city }) => {
     const helmetData = `${city} Valet Parking, Valet Parking ${city}, ${city} Valet Service, Valet Service ${city}, ${city} Valet, Valet Service, Valet Attendants ${city}`;
 
     return (
-        <div className="city-container">
+        <div>
             <MetaData title={`${city} - Premiere Valet Services, Inc.`} keywords={helmetData} />
-            <div className="city-section-1 header-1"></div>
-            <div className="city-section-2">
+            <div className="city__section-1 header-1" />
+            <div className="city__section-2">
                 <hr />
                 <h1>{city} Valet Services</h1>
                 <hr />

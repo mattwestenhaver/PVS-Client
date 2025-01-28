@@ -23,21 +23,20 @@ const Services = () => {
     }, []);
 
     return (
-        <div className="services-container">
+        <div>
             <MetaData
                 title="Our Services - Premiere Valet Services, Inc."
                 keywords="los angeles valet parking, valet services, valet service company, valet company los angeles, valet companies, private valet, valet, valet attendants, beverly hills valet, bel air valet, valet service"
             />
-            <div className="services-header header-1"></div>
-            <div className="services-section-1">
+            <div className="services__header header-1"></div>
+            <div className="services__body">
                 <div className="page-header">
                     <hr />
                     <h1>OUR SERVICES</h1>
                     <hr />
                 </div>
-                <br />
-                <div className="services-column-container">
-                    <div className="services-column">
+                <div className="services__column-container">
+                    <div className="services__column">
                         <div className="header-2">
                             <h3>Valet for Private Parties</h3>
                         </div>
@@ -48,9 +47,13 @@ const Services = () => {
                             of any city permit requirements. It does not matter how challenging your event location
                             might be, we will provide you with the best solution.
                         </p>
-                        <img src={chineseNY} className="services-private-img" alt="Valet in Chinese New Year Uniform" />
+                        <img
+                            src={chineseNY}
+                            className="services__private-img"
+                            alt="Valet in Chinese New Year Uniform"
+                        />
                     </div>
-                    <div className="services-column">
+                    <div className="services__column">
                         <div className="header-2">
                             <h3>Business Solutions and Commercial Services</h3>
                         </div>
@@ -65,7 +68,7 @@ const Services = () => {
                             attendants for Disney Studios in Burbank for their busier production days. We can adjust to
                             fit any demand.
                         </p>
-                        <img src={hondaIMG} className="services-business-img" alt="Valet With Honda Parking Sign" />
+                        <img src={hondaIMG} className="services__business-img" alt="Valet With Honda Parking Sign" />
                     </div>
                 </div>
             </div>

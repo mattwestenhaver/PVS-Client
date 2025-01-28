@@ -25,20 +25,20 @@ const Staff = () => {
     }, []);
 
     return (
-        <div className="staff-container">
+        <div>
             <MetaData title="Our Staff - Premiere Valet Services, Inc." />
-            <div className="staff-header">
-                <img src={logo} alt="PVS White Logo" />
+            <div className="staff__header">
+                <img src={logo} alt="Premiere Valet Services White Logo" />
             </div>
-            <div className="staff-main-section">
+            <div className="staff__main-section">
                 <hr />
-                <h1 className="staff-title">Management Team</h1>
+                <h1 className="staff__title">Management Team</h1>
                 <hr />
-                <div className="staff-wrap">
-                    <div className="staff-image">
+                <div className="staff__wrap">
+                    <div className="staff__image">
                         <img src={Ryan} alt="Ryan Petakoff Headshot" />
                     </div>
-                    <div className="staff-information">
+                    <div className="staff__information">
                         <h2>Ryan Petakoff</h2>
                         <h3>President and Owner</h3>
                         <p>
@@ -58,11 +58,11 @@ const Staff = () => {
                     </div>
                 </div>
                 <hr />
-                <div className="staff-wrap">
-                    <div className="staff-image">
+                <div className="staff__wrap">
+                    <div className="staff__image">
                         <img src={Mark} alt="Mark Ramirez Headshot" />
                     </div>
-                    <div className="staff-information">
+                    <div className="staff__information">
                         <h2>Mark Ramirez</h2>
                         <h3>CFO and Owner</h3>
                         <p>
@@ -88,11 +88,11 @@ const Staff = () => {
                     </div>
                 </div>
                 <hr />
-                <div className="staff-wrap">
-                    <div className="staff-image">
+                <div className="staff__wrap">
+                    <div className="staff__image">
                         <img src={Joel} alt="Joel Ocampo Headshot" />
                     </div>
-                    <div className="staff-information">
+                    <div className="staff__information">
                         <h2>Joel Ocampo</h2>
                         <h3>Director of Operations</h3>
                         <p>
@@ -118,8 +118,8 @@ const Staff = () => {
                     </div>
                 </div>
                 <hr />
-                <div className="staff-wrap">
-                    <div className="staff-information">
+                <div className="staff__wrap">
+                    <div className="staff__information">
                         <h2>Warren Gordon</h2>
                         <h3>Scheduling Manager</h3>
                         <p>

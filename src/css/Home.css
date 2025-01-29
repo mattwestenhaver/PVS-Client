@@ -35,10 +35,10 @@
     letter-spacing: 0.02em;
     opacity: 0;
     -webkit-transition-property: opacity transform -webkit-transform opacity;
-    -webkit-transition-duration: 1.4s;
+    -webkit-transition-duration: 1s;
     -webkit-transition-timing-function: ease-in-out;
     transition-property: opacity transform -webkit-transformv opacity;
-    transition-duration: 1.4s;
+    transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
 

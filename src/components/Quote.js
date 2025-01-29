@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import { Form, Button } from 'semantic-ui-react';
 import { Navigate } from 'react-router-dom';
@@ -19,158 +19,165 @@ export const logPageView = () => {
     ReactGA.pageview(window.location.pathname);
 };
 
-class Quote extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            redirect: false,
-        };
-    }
+const Quote = () => {
+    const [redirect, setRedirect] = useState(false);
+    const name = useRef(null);
+    const email = useRef(null);
+    const phone = useRef(null);
+    const address = useRef(null);
+    const city = useRef(null);
+    const zipcode = useRef(null);
+    const eventDate = useRef(null);
+    const eventType = useRef(null);
+    const guests = useRef(null);
+    const cars = useRef(null);
+    const arrival = useRef(null);
+    const departure = useRef(null);
+    const comments = useRef(null);
+    const reference = useRef(null);
 
-    formSubmit() {
-        if (
-            this.refs.name.value === '' ||
-            this.refs.email.value === '' ||
-            this.refs.phone.value === '' ||
-            this.refs.address.value === '' ||
-            this.refs.city.value === '' ||
-            this.refs.zipcode.value === '' ||
-            this.refs.eventDate.value === '' ||
-            this.refs.eventType.value === '' ||
-            this.refs.guests.value === '' ||
-            this.refs.cars.value === '' ||
-            this.refs.arrival.value === '' ||
-            this.refs.departure.value === '' ||
-            this.refs.comments.value === '' ||
-            this.refs.reference.value === '' ||
-            this.refs.arrival.value === '' ||
-            this.refs.departure.value === ''
-        ) {
-            toast.error('Fill out all the fields before submitting.', {
-                position: toast.POSITION.TOP_CENTER,
-            });
-        } else {
-            const quoteData = {
-                name: this.refs.name.value,
-                email: this.refs.email.value,
-                phone: this.refs.phone.value,
-                address: this.refs.address.value,
-                city: this.refs.city.value,
-                zipcode: this.refs.zipcode.value,
-                arrival: this.refs.arrival.value,
-                departure: this.refs.departure.value,
-                eventDate: this.refs.eventDate.value,
-                eventType: this.refs.eventType.value,
-                guests: this.refs.guests.value,
-                cars: this.refs.cars.value,
-                comments: this.refs.comments.value,
-                reference: this.refs.reference.value,
-            };
-            auth.quoteEmail(quoteData).then(success => {
-                toast.success('Your request has been submitted.', {
-                    position: toast.POSITION.TOP_CENTER,
-                });
-                setTimeout(() => {
-                    this.setState({ redirect: true });
-                }, 5000);
-                this.refs.name.value = '';
-                this.refs.email.value = '';
-                this.refs.phone.value = '';
-                this.refs.address.value = '';
-                this.refs.city.value = '';
-                this.refs.zipcode.value = '';
-                this.refs.eventDate.value = '';
-                this.refs.eventType.value = '';
-                this.refs.arrival.value = '';
-                this.refs.departure.value = '';
-                this.refs.guests.value = '';
-                this.refs.cars.value = '';
-                this.refs.comments.value = '';
-                this.refs.reference.value = '';
-            });
-        }
-    }
-
-    componentDidMount() {
+    useEffect(() => {
         window.scrollTo(0, 0);
         initGA();
         logPageView();
         auth.load().then(success => {
             console.log(success);
         });
-    }
+    }, []);
 
-    render() {
-        return this.state.redirect ? (
-            <Navigate to="/confirmation" />
-        ) : (
-            <div>
-                <MetaData title="Request A Quote - Premiere Valet Services, Inc." />
-                <div className="request__section-1">
-                    <div className="request__form-wrap">
-                        <h2>Request A Quote</h2>
-                        <Form onSubmit={this.formSubmit.bind(this)}>
-                            <Form.Field>
-                                <input type="text" ref="name" placeholder="Your Name" />
-                            </Form.Field>
+    const formSubmit = () => {
+        if (
+            name.current.value === '' ||
+            email.current.value === '' ||
+            phone.current.value === '' ||
+            address.current.value === '' ||
+            city.current.value === '' ||
+            zipcode.current.value === '' ||
+            eventDate.current.value === '' ||
+            eventType.current.value === '' ||
+            guests.current.value === '' ||
+            cars.current.value === '' ||
+            arrival.current.value === '' ||
+            departure.current.value === '' ||
+            comments.current.value === '' ||
+            reference.current.value === ''
+        ) {
+            toast.error('Fill out all the fields before submitting.', {
+                position: toast.POSITION.TOP_CENTER,
+            });
+        } else {
+            const quoteData = {
+                name: name.current.value,
+                email: email.current.value,
+                phone: phone.current.value,
+                address: address.current.value,
+                city: city.current.value,
+                zipcode: zipcode.current.value,
+                arrival: arrival.current.value,
+                departure: departure.current.value,
+                eventDate: eventDate.current.value,
+                eventType: eventType.current.value,
+                guests: guests.current.value,
+                cars: cars.current.value,
+                comments: comments.current.value,
+                reference: reference.current.value,
+            };
 
-                            <Form.Field>
-                                <input type="text" ref="email" placeholder="Email Address" />
-                            </Form.Field>
+            auth.quoteEmail(quoteData).then(success => {
+                console.log(success);
 
-                            <Form.Field>
-                                <input type="text" ref="phone" placeholder="Phone Number" />
-                            </Form.Field>
+                toast.success('Your request has been submitted.', {
+                    position: toast.POSITION.TOP_CENTER,
+                });
 
-                            <Form.Field>
-                                <input type="text" ref="address" placeholder="Event Address" />
-                            </Form.Field>
+                setTimeout(() => setRedirect(true), 5000);
+                name.current.value = '';
+                email.current.value = '';
+                phone.current.value = '';
+                address.current.value = '';
+                city.current.value = '';
+                zipcode.current.value = '';
+                eventDate.current.value = '';
+                eventType.current.value = '';
+                arrival.current.value = '';
+                departure.current.value = '';
+                guests.current.value = '';
+                cars.current.value = '';
+                comments.current.value = '';
+                reference.current.value = '';
+            });
+        }
+    };
 
-                            <Form.Group>
-                                <input type="text" ref="city" placeholder="City of Event" />
-                                <input type="number" ref="zipcode" placeholder="Event Zipcode" />
-                            </Form.Group>
+    return redirect ? (
+        <Navigate to="/confirmation" />
+    ) : (
+        <div>
+            <MetaData title="Request A Quote - Premiere Valet Services, Inc." />
+            <div className="request__section-1">
+                <div className="request__form-wrap">
+                    <h2>Request A Quote</h2>
+                    <Form onSubmit={formSubmit}>
+                        <Form.Field>
+                            <input type="text" ref={name} placeholder="Your Name" />
+                        </Form.Field>
 
-                            <Form.Group>
-                                <input type="text" ref="eventDate" placeholder="Date of Event" />
-                                <input type="text" ref="eventType" placeholder="Type of Event" />
-                            </Form.Group>
+                        <Form.Field>
+                            <input type="text" ref={email} placeholder="Email Address" />
+                        </Form.Field>
 
-                            <Form.Group>
-                                <input type="number" ref="guests" placeholder="Number of Guests" />
-                                <input type="number" ref="cars" placeholder="Number of Cars" />
-                            </Form.Group>
+                        <Form.Field>
+                            <input type="text" ref={phone} placeholder="Phone Number" />
+                        </Form.Field>
 
-                            <Form.Group>
-                                <input type="text" ref="arrival" placeholder="Guest Arrival Time" />
-                                <input type="text" ref="departure" placeholder="Guest Departure Time" />
-                            </Form.Group>
+                        <Form.Field>
+                            <input type="text" ref={address} placeholder="Event Address" />
+                        </Form.Field>
 
-                            <Form.Field>
-                                <textarea
-                                    ref="comments"
-                                    rows="4"
-                                    placeholder="What are the parking conditions like? Any other comments or questions?"
-                                />
-                            </Form.Field>
+                        <Form.Group>
+                            <input type="text" ref={city} placeholder="City of Event" />
+                            <input type="number" ref={zipcode} placeholder="Event Zipcode" />
+                        </Form.Group>
 
-                            <Form.Field>
-                                <input type="text" ref="reference" placeholder="How did you hear about us?" />
-                            </Form.Field>
+                        <Form.Group>
+                            <input type="text" ref={eventDate} placeholder="Date of Event" />
+                            <input type="text" ref={eventType} placeholder="Type of Event" />
+                        </Form.Group>
 
-                            <Form.Field>
-                                <Button color="black" size="massive">
-                                    Submit
-                                </Button>
-                            </Form.Field>
+                        <Form.Group>
+                            <input type="number" ref={guests} placeholder="Number of Guests" />
+                            <input type="number" ref={cars} placeholder="Number of Cars" />
+                        </Form.Group>
 
-                            <ToastContainer />
-                        </Form>
-                    </div>
+                        <Form.Group>
+                            <input type="text" ref={arrival} placeholder="Guest Arrival Time" />
+                            <input type="text" ref={departure} placeholder="Guest Departure Time" />
+                        </Form.Group>
+
+                        <Form.Field>
+                            <textarea
+                                ref={comments}
+                                rows="4"
+                                placeholder="What are the parking conditions like? Any other comments or questions?"
+                            />
+                        </Form.Field>
+
+                        <Form.Field>
+                            <input type="text" ref={reference} placeholder="How did you hear about us?" />
+                        </Form.Field>
+
+                        <Form.Field>
+                            <Button color="black" size="massive">
+                                Submit
+                            </Button>
+                        </Form.Field>
+
+                        <ToastContainer />
+                    </Form>
                 </div>
             </div>
-        );
-    }
-}
+        </div>
+    );
+};
 
 export default Quote;

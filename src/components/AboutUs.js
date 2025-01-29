@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import ReactGA from 'react-ga';
 
 import MetaData from './common/MetaData';
@@ -34,7 +34,7 @@ const AboutUs = () => {
                     <hr />
                 </div>
                 <div className="header-2">
-                    <h3>Premiere Valet's Pledge</h3>
+                    <h3>Premiere Valet&apos;s Pledge</h3>
                 </div>
                 <p>
                     While our business continues to grow each year, our objective has never changed: to provide the

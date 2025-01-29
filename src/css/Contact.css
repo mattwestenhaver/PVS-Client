@@ -20,6 +20,10 @@
     background-color: rgba(201, 201, 201, 0.9);
 }
 
+.contact__mobile-button {
+    display: none;
+}
+
 .contact__section-1 {
     padding: 6% 3%;
     width: 100%;
@@ -89,7 +93,12 @@
         font-size: 1.1em;
     }
 
+    .contact__header .ui.black.button {
+        display: none;
+    }
+
     .contact__mobile-button {
+        display: block;
         font-family: 'Lato', sans-serif;
         letter-spacing: 0.02em;
         font-weight: 700;

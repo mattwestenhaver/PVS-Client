@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'semantic-ui-react';
 import MetaData from './common/MetaData';
@@ -59,7 +59,7 @@ const Home = () => {
                 <p>
                     Premiere Valet Services, Inc., provides the highest standard of private valet parking and valet
                     parking management services. We provide valet parking service to private events with as few as 25-30
-                    guests to movie studio and industry events for 1,000’s of guests. If you are looking for a Los
+                    guests to movie studio and industry events for 1,000&apos;s of guests. If you are looking for a Los
                     Angeles valet parking services, Hollywood valet parking services, Beverly Hills valet parking
                     services, Orange County valet parking services or Ventura County valet parking services we are ready
                     to meet your valet parking service needs.
@@ -127,9 +127,9 @@ const Home = () => {
 export default Home;
 
 function fadeOutEffect(target) {
-    var fadeTarget = document.querySelector(target);
+    const fadeTarget = document.querySelector(target);
     if (fadeTarget) {
-        var fadeEffect = setInterval(function () {
+        const fadeEffect = setInterval(function () {
             if (!fadeTarget.style.opacity) {
                 fadeTarget.style.opacity = 1;
             }

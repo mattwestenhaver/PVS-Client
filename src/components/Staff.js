@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import ReactGA from 'react-ga';
 
 import MetaData from './common/MetaData';
@@ -52,8 +52,8 @@ const Staff = () => {
                             the company remains true to its ethos: “Only the best…for the best.” His journey—from valet
                             attendant to executive leadership—demonstrates a deep mastery of the industry and an
                             unwavering commitment to excellence. Under his leadership, the team delivers exceptional
-                            precision and care for every event, reinforcing Premiere Valet Services' position as
-                            Southern California's premier valet service provider.
+                            precision and care for every event, reinforcing Premiere Valet Services&apos; position as
+                            Southern California&apos;s premier valet service provider.
                         </p>
                     </div>
                 </div>
@@ -80,10 +80,10 @@ const Staff = () => {
                             demonstrating his deep understanding of both financial and operational systems.
                         </p>
                         <p>
-                            From his early days as a valet attendant to his current leadership role, Mark's relentless
-                            focus on quality and efficiency has been a cornerstone of the company's success. Under his
-                            guidance, Premiere Valet continues to excel as Southern California's trusted valet partner,
-                            delivering service rooted in decades of industry expertise.
+                            From his early days as a valet attendant to his current leadership role, Mark&apos;s
+                            relentless focus on quality and efficiency has been a cornerstone of the company&apos;s
+                            success. Under his guidance, Premiere Valet continues to excel as Southern California&apos;s
+                            trusted valet partner, delivering service rooted in decades of industry expertise.
                         </p>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ const Staff = () => {
                             his role as Director of Operations at Premiere Valet Services, Inc. Before joining Premiere
                             Valet, he specialized in delivering technological solutions to streamline financial
                             reporting and optimize daily operations for his clients. A proud graduate of San Diego State
-                            University, home of the Aztecs, Joel's diverse background equips him with a unique
+                            University, home of the Aztecs, Joel&apos;s diverse background equips him with a unique
                             perspective on efficiency and client service.
                         </p>
                         <p>
@@ -111,9 +111,9 @@ const Staff = () => {
                         </p>
                         <p>
                             With a focus on operational excellence and client satisfaction, Joel plays a critical role
-                            in upholding the company's reputation as Southern California's trusted valet partner. His
-                            extensive experience and commitment to innovation make him an indispensable part of the PVS
-                            leadership team.
+                            in upholding the company&apos;s reputation as Southern California&apos;s trusted valet
+                            partner. His extensive experience and commitment to innovation make him an indispensable
+                            part of the PVS leadership team.
                         </p>
                     </div>
                 </div>
@@ -127,11 +127,11 @@ const Staff = () => {
                             assumed in 2024. Since joining the company in 2019, Warren quickly rose through the ranks,
                             starting as a valet attendant and advancing to Valet Supervisor. His previous experience
                             includes supervising events ranging from intimate gatherings of 25 guests to large-scale
-                            events with over 1,000 attendees. Warren's portfolio includes providing valet services for
-                            NFL teams, major movie studios, and world-renowned celebrities.
+                            events with over 1,000 attendees. Warren&apos;s portfolio includes providing valet services
+                            for NFL teams, major movie studios, and world-renowned celebrities.
                         </p>
                         <p>
-                            Warren's extensive field experience has equipped him with valuable insight into event
+                            Warren&apos;s extensive field experience has equipped him with valuable insight into event
                             logistics and personnel management. He now channels this expertise into overseeing the
                             scheduling of over 200 employees, ensuring efficient and reliable coverage for every client
                             and event. His dedication to precision and organization ensures Premiere Valet Services

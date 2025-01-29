@@ -55,6 +55,7 @@ const Home = () => {
                     </Button>
                 </Link>
             </div>
+            <div className="home__established">Established 1988</div>
             <div className="home__section-2">
                 <p>
                     Premiere Valet Services, Inc., provides the highest standard of private valet parking and valet
@@ -81,7 +82,6 @@ const Home = () => {
                     parking service or a Thousand Oaks valet parking company to provide Thousand Oaks Valet Parking
                     Service, Premiere Valet Services, Inc., is ready to assist with all of your valet parking needs.
                 </p>
-                <hr />
             </div>
             <div className="home__section-3">
                 <div>

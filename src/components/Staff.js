@@ -5,6 +5,7 @@ import MetaData from './common/MetaData';
 import Ryan from '../images/ryan-petakoff.jpg';
 import Mark from '../images/mark-ramirez.jpg';
 import Joel from '../images/joel-ocampo.jpg';
+import Warren from '../images/warren-gordon.jpg';
 import logo from '../images/logo-white.png';
 
 export const initGA = () => {
@@ -119,6 +120,9 @@ const Staff = () => {
                 </div>
                 <hr />
                 <div className="staff__wrap">
+                    <div className="staff__image">
+                        <img src={Warren} alt="Warren Gordon Headshot" />
+                    </div>
                     <div className="staff__information">
                         <h2>Warren Gordon</h2>
                         <h3>Scheduling Manager</h3>

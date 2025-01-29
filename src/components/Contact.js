@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Responsive } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
 import ReactGA from 'react-ga';
 import MetaData from './common/MetaData';
 
@@ -29,19 +29,15 @@ class Contact extends React.Component {
             <div>
                 <MetaData title="Contact Us - Premiere Valet Services, Inc." />
                 <div className="contact__header">
-                    <Responsive minWidth={769}>
-                        <Button color="black" size="massive" onClick={this.scrollDown.bind(this)}>
-                            Contact Us
-                        </Button>
-                    </Responsive>
-                    <Responsive maxWidth={768}>
-                        <a className="contact__mobile-button" href="tel:+13238765816">
-                            Contact Us
-                        </a>
-                    </Responsive>
+                    <Button color="black" size="massive" onClick={this.scrollDown.bind(this)}>
+                        Contact Us
+                    </Button>
+                    <a className="contact__mobile-button" href="tel:+13238765816">
+                        Contact Us
+                    </a>
                 </div>
                 <div ref="section1" className="contact__section-1">
-                    <div className="contact__blurb">
+                    <div className="contact__information">
                         <div className="header-2 centered">
                             <h3>Questions? Give Us A Call</h3>
                         </div>

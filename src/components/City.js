@@ -37,7 +37,7 @@ const City = ({ city }) => {
                     can.
                 </p>
                 <p>
-                    With over 30 years in the valet business, Premiere Valet Services, Inc. is the number one valet
+                    With over 40 years in the valet business, Premiere Valet Services, Inc. is the number one valet
                     service in all of Southern California. We are the first choice valet company for all private events;
                     from pre-Oscar private parties to small home gatherings. Parking in {city} can be difficult, but
                     with Premiere Valet Services, Inc. you and your guests can enjoy your next private event with peace

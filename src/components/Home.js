@@ -24,10 +24,11 @@ const Home = () => {
         initGA();
         logPageView();
         if (window.location.pathname === '/') {
-            setTimeout(() => fadeOutEffect('.home__section-1 img'), 3000);
+            setTimeout(() => fadeOutEffect('.home__logo'), 3000);
             setTimeout(() => {
-                const button = document.querySelector('.home__section-1 .ui.grey.button');
+                const button = document.querySelector('.home__quote-button');
                 if (button) {
+                    button.style.display = 'inline-block';
                     button.style.opacity = 1;
                 }
             }, 5200);
@@ -47,14 +48,14 @@ const Home = () => {
                 keywords="valet parking, Los Angeles valet services, valet, valet companies, los angeles valet company, los angeles valet companies, valet, valet companies los angeles, valet parking service, valet parking"
             />
             <div className="home__section-1">
-                <img src={logo} alt="PVS Logo" />
-                <br />
-                <Link to="/quote">
+                <img className="home__logo" src={logo} alt="PVS Logo" />
+                <Link className="home__quote-button" to="/quote">
                     <Button color="grey" size="massive">
                         Request A Quote
                     </Button>
                 </Link>
             </div>
+            <div className="home__established">Established 1988</div>
             <div className="home__section-2">
                 <p>
                     Premiere Valet Services, Inc., provides the highest standard of private valet parking and valet
@@ -81,7 +82,6 @@ const Home = () => {
                     parking service or a Thousand Oaks valet parking company to provide Thousand Oaks Valet Parking
                     Service, Premiere Valet Services, Inc., is ready to assist with all of your valet parking needs.
                 </p>
-                <hr />
             </div>
             <div className="home__section-3">
                 <div>

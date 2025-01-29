@@ -37,7 +37,7 @@ class Contact extends React.Component {
                     </a>
                 </div>
                 <div ref="section1" className="contact__section-1">
-                    <div className="contact__blurb">
+                    <div className="contact__information">
                         <div className="header-2 centered">
                             <h3>Questions? Give Us A Call</h3>
                         </div>

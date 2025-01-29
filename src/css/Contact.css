@@ -32,7 +32,10 @@
     background-color: var(--background);
 }
 
-.contact__blurb {
+.contact__information {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     font-family: 'PT Sans', sans-serif;
     width: 60%;
     margin: 0 auto;
@@ -40,18 +43,17 @@
     border-radius: 0 12px 0 12px;
 }
 
-.contact__blurb p {
+.contact__information p {
     font-size: 1.2em;
-    margin-top: 18px;
     text-align: center;
 }
 
-.contact__blurb a {
+.contact__information a {
     color: whitesmoke;
     text-decoration: none;
 }
 
-.contact__blurb a:hover {
+.contact__information a:hover {
     color: rgb(180, 180, 180);
     text-decoration: underline;
 }
@@ -76,7 +78,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .contact__blurb {
+    .contact__information {
         width: 95%;
         font-size: 1.1em;
     }
@@ -89,9 +91,8 @@
         font-family: 'Lato', sans-serif;
         letter-spacing: 0.02em;
         font-weight: 700;
-        line-height: 22px;
+        line-height: 20px;
         font-size: 1.6em;
-        width: fit-content;
         height: 60px;
         color: rgb(39, 39, 39);
         background-color: rgba(241, 241, 241, 0.9);

@@ -3,13 +3,12 @@
 }
 
 .home__section-1 {
+    position: relative;
     height: 80vh;
     padding-top: 8vw;
     background-color: black;
     background-size: cover;
     background-image: url('../images/all-black.jpg');
-    -webkit-transition: background-image 2s ease-in-out;
-    -moz-transition: background-image 2s ease-in-out;
     transition: background-image 2s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -17,40 +16,39 @@
     justify-content: center;
 }
 
+.home__section-1::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 35%;
+    background: linear-gradient(to bottom, rgba(14, 14, 15, 0), var(--background));
+    pointer-events: none;
+}
+
 .home__picture-fade {
     background-image: url('../images/lineup-3.jpeg');
     background-size: cover;
     background-position: center;
-    -webkit-transition: background-image 2.5s cubic-bezier(0.47, 0, 0.745, 0.715);
-    -moz-transition: background-image 2.5s cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: background-image 2.5s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .home__logo {
+    position: relative;
+    z-index: 1;
     width: 60%;
 }
 
 .home__quote-button {
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 0.02em;
+    position: relative;
+    z-index: 1;
     opacity: 0;
-    -webkit-transition-property: opacity transform -webkit-transform opacity;
-    -webkit-transition-duration: 1s;
-    -webkit-transition-timing-function: ease-in-out;
-    transition-property: opacity transform -webkit-transformv opacity;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
-.home__section-1 .ui.grey.button {
-    font-size: 1.5em;
-    color: rgb(39, 39, 39);
-    background-color: rgba(241, 241, 241, 0.9);
-    width: 240px;
-}
-
-.home__section-1 .ui.grey.button:hover {
-    background-color: rgba(201, 201, 201, 0.9);
+.home__section-1 .ui.grey.button,
+.home__section-4 .ui.grey.button {
+    font-size: 1.25em;
+    box-shadow: var(--shadow);
 }
 
 .home__established {
@@ -58,77 +56,73 @@
     font-weight: 400;
     font-style: normal;
     font-size: 2.5em;
-    color: white;
+    color: var(--accent);
     padding-top: 25px;
 }
 
 .home__section-2 {
-    color: white;
-    padding: 20px 25px 40px 25px;
-    width: 65%;
+    color: var(--text-muted);
+    padding: 20px 0 56px 0;
+    width: 90%;
+    max-width: var(--content-width);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
 }
 
 .home__section-2 p {
-    font-family: 'Lato', sans-serif;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.15em;
+    line-height: 1.75;
 }
 
 .home__section-3 {
-    font-family: 'Lato', sans-serif;
-    color: white;
+    color: var(--text);
     text-align: left;
-    width: 65%;
-    margin: 40px auto;
+    width: 90%;
+    max-width: 1100px;
+    margin: 64px auto;
     display: grid;
     grid-template-columns: 1fr 0.9fr;
     align-items: center;
-    gap: 20px;
+    gap: 48px;
 }
 
 .home__section-3 .header-2 {
-    margin-left: 0;
-}
-
-.home__section-3 h3 {
-    font-size: 1.3em;
+    width: auto;
+    margin: 0 0 24px 0;
 }
 
 .home__section-3 h4 {
-    font-size: 1.2em;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: 20px;
 }
 
 .home__section-3 ul {
     margin-bottom: 20px;
+    padding-left: 1.2em;
     font-size: 1.1em;
+    line-height: 1.8;
+    color: var(--text-muted);
 }
 
 .home__section-3 img {
     width: 100%;
-    border: 2px solid white;
-    border-radius: 5px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
 }
 
 .home__section-4 {
     width: 100%;
+    padding-bottom: 64px;
     background-color: var(--background);
-}
-
-.home__section-4 .ui.grey.button {
-    background-color: rgba(241, 241, 241, 0.9);
-    color: rgb(39, 39, 39);
-    margin-bottom: 40px;
-    font-size: 1.4em;
-}
-
-.home__section-4 .ui.grey.button:hover {
-    background-color: rgba(201, 201, 201, 0.9);
 }
 
 @media (max-width: 1024px) {
@@ -159,21 +153,14 @@
         width: 80%;
     }
 
-    .home__section-2 {
-        width: 90%;
-        padding: 20px 0px 40px 0px;
-    }
-
     .home__section-2 p {
-        width: 95%;
-    }
-
-    .home__section-2 hr {
-        width: 90%;
+        font-size: 1.05em;
     }
 
     .home__section-3 {
-        width: 80%;
+        width: 85%;
+        margin: 48px auto;
         grid-template-columns: 1fr;
+        gap: 32px;
     }
 }

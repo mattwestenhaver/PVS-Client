@@ -1,4 +1,5 @@
 .contact__header {
+    position: relative;
     background: linear-gradient(rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.3)), url('../images/louis-vuitton-2.jpg');
     background-size: cover;
     background-position: center;
@@ -11,15 +12,14 @@
 }
 
 .contact__header .ui.black.button {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 1.6em;
-    color: rgb(39, 39, 39);
-    background-color: rgba(241, 241, 241, 0.9);
+    font-size: 1.3em;
+    color: var(--text-dark);
+    background-color: var(--text);
+    box-shadow: var(--shadow);
 }
 
 .contact__header .ui.black.button:hover {
-    background-color: rgba(201, 201, 201, 0.9);
+    background-color: var(--accent);
 }
 
 .contact__mobile-button {
@@ -27,7 +27,7 @@
 }
 
 .contact__section-1 {
-    padding: 6% 3%;
+    padding: 64px 3%;
     width: 100%;
     background-color: var(--background);
 }
@@ -35,52 +35,41 @@
 .contact__information {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    font-family: 'PT Sans', sans-serif;
-    width: 60%;
+    gap: 6px;
+    width: 100%;
+    max-width: 640px;
     margin: 0 auto;
-    color: white;
-    border-radius: 0 12px 0 12px;
+    padding: 40px 32px;
+    color: var(--text);
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
 }
 
 .contact__information p {
-    font-size: 1.2em;
+    font-size: 1.15em;
+    line-height: 1.6;
     text-align: center;
+    color: var(--text-muted);
 }
 
 .contact__information a {
-    color: whitesmoke;
+    color: var(--text);
+    font-weight: 500;
     text-decoration: none;
+    transition: color 0.15s ease;
 }
 
 .contact__information a:hover {
-    color: rgb(180, 180, 180);
+    color: var(--accent);
     text-decoration: underline;
-}
-
-.ui.form input:not([type]),
-.ui.form input[type='date'],
-.ui.form input[type='datetime-local'],
-.ui.form input[type='email'],
-.ui.form input[type='file'],
-.ui.form input[type='number'],
-.ui.form input[type='password'],
-.ui.form input[type='search'],
-.ui.form input[type='tel'],
-.ui.form input[type='text'],
-.ui.form input[type='time'],
-.ui.form input[type='url'] {
-    font-size: 1.4em;
-}
-
-.ui.form textarea {
-    font-size: 1.4em;
 }
 
 @media only screen and (max-width: 768px) {
     .contact__information {
         width: 95%;
-        font-size: 1.1em;
+        padding: 32px 20px;
+        font-size: 1em;
     }
 
     .contact__header .ui.black.button {
@@ -88,17 +77,22 @@
     }
 
     .contact__mobile-button {
-        font-family: 'Lato', sans-serif;
-        letter-spacing: 0.02em;
-        font-weight: 700;
-        line-height: 20px;
-        font-size: 1.6em;
-        height: 60px;
-        color: rgb(39, 39, 39);
-        background-color: rgba(241, 241, 241, 0.9);
-        padding: 20px;
         display: inline-block;
-        border-radius: 3px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        font-size: 1.3em;
+        color: var(--text-dark);
+        background-color: var(--text);
+        padding: 0.9em 2.2em;
+        border-radius: 999px;
+        box-shadow: var(--shadow);
+    }
+
+    .contact__mobile-button:hover,
+    .contact__mobile-button:focus {
+        color: var(--text-dark);
+        background-color: var(--accent);
+        text-decoration: none;
     }
 }
 

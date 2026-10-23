@@ -5,73 +5,94 @@
 
 .staff__header img {
     width: 50%;
-}
-
-.staff__title {
-    font-family: 'PT Sans', sans-serif;
-    color: white;
+    max-width: 560px;
 }
 
 .staff__main-section {
     width: 100%;
     background-color: var(--background);
-    padding: 50px;
+    padding: 24px 50px 64px 50px;
+}
+
+/* Title dividers are replaced by the accent rule on .staff__title */
+.staff__main-section > hr:first-child,
+.staff__title + hr {
+    display: none;
 }
 
 .staff__main-section hr {
-    width: 75%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    width: 70%;
+    max-width: 1000px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.staff__main-section .staff__title {
+    margin-bottom: 48px;
 }
 
 .staff__wrap {
     width: 70%;
-    overflow: auto;
+    max-width: 1000px;
     display: flex;
+    align-items: flex-start;
+    gap: 48px;
     margin: 0 auto;
+    text-align: left;
+}
+
+.staff__wrap h2 {
+    margin: 0 0 6px 0;
+    font-weight: 600;
 }
 
 .staff__wrap h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
+    font-size: 0.95em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
 }
 
 .staff__wrap p {
-    width: 90%;
-    margin: 0 auto 10px auto;
-    padding-left: 10px;
+    margin: 0 0 14px 0;
+    color: var(--text-muted);
+    font-size: 1.1em;
+    line-height: 1.75;
 }
 
 .staff__image {
-    width: 40%;
+    width: 35%;
+    flex-shrink: 0;
 }
 
 .staff__image img {
     width: 100%;
-    border: 1px solid white;
-    border-radius: 4px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
 }
 
 .staff__information {
-    font-family: 'Lato', sans-serif;
-    width: 60%;
-    color: white;
+    color: var(--text);
     flex-grow: 1;
 }
 
 @media only screen and (max-width: 768px) {
     .staff__main-section {
-        padding: 20px;
+        padding: 20px 20px 48px 20px;
     }
 
     .staff__main-section hr {
         width: 90%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .staff__wrap {
         flex-direction: column;
+        align-items: center;
+        gap: 24px;
         width: 85%;
     }
 
@@ -79,29 +100,21 @@
         font-size: 1.5em;
     }
 
-    .staff__information h3 {
-        font-size: 1.3em;
-    }
-
     .staff__image {
-        width: 50%;
-        margin: 0 auto 20px auto;
+        width: 60%;
     }
 
     .staff__information {
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 450px) {
     .staff__image {
         width: 80%;
-        margin: 0 auto 10px auto;
     }
 
-    .staff__information {
+    .staff__wrap {
         width: 100%;
-        margin: 0 auto;
     }
 }

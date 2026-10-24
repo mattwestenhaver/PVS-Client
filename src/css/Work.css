@@ -50,7 +50,7 @@ label {
 }
 
 .ui.dropdown {
-    font-size: 1.1em;
+    font-size: 14px;
 }
 
 .ui.selection.dropdown .menu > .item {
@@ -62,7 +62,7 @@ label {
 }
 
 .ui.form .field > label {
-    font-size: 1.05em;
+    font-size: 13px;
     font-weight: 600;
     padding-left: 2px;
     margin-bottom: 6px;

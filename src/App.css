@@ -199,7 +199,8 @@ hr {
 input,
 textarea {
     font-family: var(--font-sans) !important;
-    font-size: 1.1em !important;
+    /* Fixed size: Bootstrap's 10px root makes em/rem sizes tiny */
+    font-size: 14px !important;
 }
 
 .ui.form input:not([type]),
@@ -234,6 +235,13 @@ textarea {
 }
 
 @media only screen and (max-width: 767px) {
+    /* iOS zooms into inputs smaller than 16px when they're focused */
+    input,
+    textarea,
+    .ui.dropdown {
+        font-size: 16px !important;
+    }
+
     .header-1 {
         height: 100vh;
     }

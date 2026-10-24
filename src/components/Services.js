@@ -1,25 +1,12 @@
 import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
 
 import MetaData from './common/MetaData';
 import hondaIMG from '../images/honda.jpg';
 import chineseNY from '../images/chinese-new-year.jpg';
 
-export const initGA = () => {
-    console.log('GA init');
-    ReactGA.initialize('UA-122997893-1');
-};
-
-export const logPageView = () => {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-};
-
 const Services = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        initGA();
-        logPageView();
     }, []);
 
     return (

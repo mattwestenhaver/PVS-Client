@@ -5,19 +5,8 @@ import { Navigate } from 'react-router-dom';
 
 import auth from '../auth.js';
 import 'react-toastify/dist/ReactToastify.css';
-import ReactGA from 'react-ga';
 
 import MetaData from './common/MetaData.jsx';
-
-export const initGA = () => {
-    console.log('GA init');
-    ReactGA.initialize('UA-122997893-1');
-};
-
-export const logPageView = () => {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-};
 
 const initialValues = {
     name: '',
@@ -44,8 +33,6 @@ const Quote = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        initGA();
-        logPageView();
         auth.load().then(success => {
             console.log(success);
         });

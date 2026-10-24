@@ -1,24 +1,11 @@
 import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
 
 import insurance from '../images/coi.jpg';
 import MetaData from './common/MetaData';
 
-export const initGA = () => {
-    console.log('GA init');
-    ReactGA.initialize('UA-122997893-1');
-};
-
-export const logPageView = () => {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-};
-
 const Insurance = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        initGA();
-        logPageView();
     }, []);
 
     return (

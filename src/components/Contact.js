@@ -1,25 +1,12 @@
 import React, { useRef, useEffect } from 'react';
 import { Button } from 'semantic-ui-react';
-import ReactGA from 'react-ga';
 import MetaData from './common/MetaData';
-
-export const initGA = () => {
-    console.log('GA init');
-    ReactGA.initialize('UA-122997893-1');
-};
-
-export const logPageView = () => {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-};
 
 const Contact = () => {
     const contactRef = useRef(null);
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        initGA();
-        logPageView();
     }, []);
 
     const scrollDown = () => contactRef.current.scrollIntoView({ block: 'end', behavior: 'smooth' });

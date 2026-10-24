@@ -1,23 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import ReactGA from 'react-ga';
 import MetaData from './common/MetaData';
-
-export const initGA = () => {
-    console.log('GA init');
-    ReactGA.initialize('UA-122997893-1');
-};
-
-export const logPageView = () => {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-};
 
 const City = ({ city }) => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        initGA();
-        logPageView();
     }, []);
 
     const helmetData = `${city} Valet Parking, Valet Parking ${city}, ${city} Valet Service, Valet Service ${city}, ${city} Valet, Valet Service, Valet Attendants ${city}`;

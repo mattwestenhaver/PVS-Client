@@ -6,23 +6,9 @@ import MetaData from './common/MetaData';
 import logo from '../images/logo-white.png';
 import section3Image from '../images/aston-martin.jpg';
 
-import ReactGA from 'react-ga';
-
-export const initGA = () => {
-    console.log('GA init');
-    ReactGA.initialize('UA-122997893-1');
-};
-
-export const logPageView = () => {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-};
-
 const Home = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        initGA();
-        logPageView();
         if (window.location.pathname === '/') {
             setTimeout(() => fadeOutEffect('.home__logo'), 3000);
             setTimeout(() => {

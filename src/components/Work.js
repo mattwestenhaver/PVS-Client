@@ -1,21 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import ReactGA from 'react-ga';
 import { Form, Button } from 'semantic-ui-react';
 import { toast, ToastContainer } from 'react-toastify';
 
 import MetaData from './common/MetaData.jsx';
 import auth from '../auth.js';
 import 'react-toastify/dist/ReactToastify.css';
-
-export const initGA = () => {
-    console.log('GA init');
-    ReactGA.initialize('UA-122997893-1');
-};
-
-export const logPageView = () => {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-};
 
 const locationOptions = [
     { key: 0, text: 'Los Angeles County', value: 'Los Angeles County' },
@@ -43,8 +32,6 @@ const Work = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        initGA();
-        logPageView();
         auth.load().then(success => {
             console.log(success);
         });

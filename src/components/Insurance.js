@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
 
-import insurance from '../images/insurance2.jpg';
+import insurance from '../images/coi.jpg';
 import MetaData from './common/MetaData';
 
 export const initGA = () => {

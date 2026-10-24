@@ -64,7 +64,7 @@ const Work = () => {
 
         setSubmitting(true);
         auth.workEmail(values)
-            .then(success => {
+            .then(() => {
                 toast.success('Your information has been successfully submitted.');
                 setValues(initialValues);
             })

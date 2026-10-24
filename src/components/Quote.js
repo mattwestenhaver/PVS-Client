@@ -65,7 +65,7 @@ const Quote = () => {
 
         setSubmitting(true);
         auth.quoteEmail(values)
-            .then(success => {
+            .then(() => {
                 toast.success('Your request has been submitted.');
                 redirectTimeout.current = setTimeout(() => setRedirect(true), 5000);
                 setValues(initialValues);

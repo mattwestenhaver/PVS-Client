@@ -40,7 +40,10 @@
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 56px 32px 28px 32px;
-    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .testimonials__wrap::before {
@@ -84,8 +87,8 @@
 
 @media only screen and (max-width: 768px) {
     .testimonials__header {
-        background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)),
-            url('../images/rain-crop-3.JPG');
+        background:
+            linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url('../images/rain-crop-3.JPG');
         background-position: center;
         background-size: cover;
     }

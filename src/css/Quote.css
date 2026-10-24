@@ -1,21 +1,25 @@
 .request__section-1 {
     background-color: var(--background);
     width: 100%;
-    padding: 60px 50px 50px 50px;
+    padding: 100px 20px 64px 20px;
 }
 
 .request__form-wrap {
-    width: 60%;
-    margin: 40px auto;
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
     height: fit-content;
-    background-color: rgb(177, 177, 177);
-    color: black;
-    padding: 2%;
-    border-radius: 8px;
+    background-color: white;
+    color: var(--text-dark);
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
 }
 
 .request__form-wrap h2 {
-    font-family: 'PT Sans', sans-serif !important;
+    margin-bottom: 28px;
+    font-size: 2em;
+    font-weight: 600;
 }
 
 .fields input {
@@ -23,55 +27,32 @@
     margin-right: 5px !important;
 }
 
-input,
-textarea {
-    font-family: 'PT Sans', sans-serif !important;
-    font-size: 1.5em !important;
-}
-
-::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: rgb(60, 60, 60) !important;
-}
-::-moz-placeholder {
-    /* Firefox 19+ */
-    color: rgb(60, 60, 60) !important;
-}
-:-ms-input-placeholder {
-    /* IE 10+ */
-    color: rgb(60, 60, 60) !important;
-}
-:-moz-placeholder {
-    /* Firefox 18- */
-    color: rgb(60, 60, 60) !important;
-}
-
 .confirmation__container {
     width: 100%;
     background-color: var(--background);
-    height: 90vh;
     padding: 140px 20px 90px 20px;
 }
 
 .confirmation__container h3 {
-    font-family: 'PT Sans', sans-serif !important;
-    font-size: 1.9em;
-    color: white;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text);
 }
 
 .confirmation__container img {
     width: 550px;
+    max-width: 100%;
     margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 768px) {
     .request__section-1 {
-        padding: 50px 20px 20px 20px;
+        padding: 80px 12px 32px 12px;
     }
 
     .request__form-wrap {
-        width: 100%;
-        margin: 10px auto;
+        padding: 24px 16px;
     }
 
     .fields input {
@@ -87,6 +68,6 @@ textarea {
     }
 
     .confirmation__container h3 {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 }

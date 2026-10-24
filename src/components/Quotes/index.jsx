@@ -15,9 +15,7 @@ const Quotes = () => {
         if (passwordRef.current.value === 'Cahuenga818!') {
             setIsLoggedIn(true);
         } else {
-            toast.error('Incorrect password. Please try again.', {
-                position: toast.POSITION.TOP_CENTER,
-            });
+            toast.error('Incorrect password. Please try again.');
         }
     };
 
@@ -34,7 +32,7 @@ const Quotes = () => {
                             Log In
                         </Button>
                     </Form>
-                    <ToastContainer />
+                    <ToastContainer position={toast.POSITION.TOP_RIGHT} />
                 </>
             ) : (
                 <QuotesAccordion />

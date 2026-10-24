@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
 
 import MetaData from './common/MetaData';
 import Ryan from '../images/ryan-petakoff.jpg';
@@ -8,21 +7,9 @@ import Joel from '../images/joel-ocampo.jpg';
 import Warren from '../images/warren-gordon.jpg';
 import logo from '../images/logo-white.png';
 
-export const initGA = () => {
-    console.log('GA init');
-    ReactGA.initialize('UA-122997893-1');
-};
-
-export const logPageView = () => {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-};
-
 const Staff = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        initGA();
-        logPageView();
     }, []);
 
     return (

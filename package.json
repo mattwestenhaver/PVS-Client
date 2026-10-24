@@ -7,7 +7,6 @@
         "react": "^16.14.0",
         "react-bootstrap": "^0.32.4",
         "react-dom": "^16.14.0",
-        "react-ga": "^2.7.0",
         "react-helmet": "^5.2.0",
         "react-router-bootstrap": "^0.26.1",
         "react-router-dom": "^6.0.0",
@@ -19,7 +18,10 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "lint": "eslint .",
+        "format": "prettier --write .",
+        "format:check": "prettier --check ."
     },
     "proxy": "http://localhost:3001/",
     "browserslist": [
@@ -29,6 +31,16 @@
         "not op_mini all"
     ],
     "devDependencies": {
-        "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "@eslint/js": "^9.39.5",
+        "eslint": "^9.39.5",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-react": "^7.37.5",
+        "eslint-plugin-react-hooks": "^7.1.1",
+        "globals": "^17.13.0",
+        "prettier": "^3.9.10"
+    },
+    "engines": {
+        "node": ">=24"
     }
 }

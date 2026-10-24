@@ -7,42 +7,32 @@
 .services__body {
     width: 100%;
     background-color: var(--background);
-    padding: 3% 2%;
+    padding: 2% 2% 64px 2%;
     overflow: auto;
 }
 
-.services__body hr {
-    width: 80%;
-}
-
-.services__body h3 {
-    font-family: 'PT Sans', sans-serif;
-    text-align: left;
-    margin: 2% auto 0 auto;
-    font-size: 1.5em;
-    text-decoration: underline;
-}
-
 .services__body p {
-    font-family: 'PT Sans', sans-serif;
-    color: white;
+    color: var(--text-muted);
     width: 70%;
     margin: 0 auto;
     text-align: left;
-    padding: 15px 5px;
-    font-size: 1.2em;
+    padding: 8px 0 15px 0;
+    font-size: 1.15em;
+    line-height: 1.75;
 }
 
 .services__body img {
-    width: 35vw;
-    border: 2px solid white;
-    border-radius: 4px;
+    width: 70%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     margin: 20px auto;
 }
 
 .services__column-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -50,16 +40,13 @@
         background-position: center;
     }
 
-    .services__body {
-        padding: 2% 1%;
-    }
-
     .services__body p {
-        width: 80%;
+        width: 85%;
+        font-size: 1.05em;
     }
 
     .services__body img {
-        width: 75vw;
+        width: 85%;
     }
 
     .services__column-container {

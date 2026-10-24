@@ -1,22 +1,21 @@
 .navbar {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-sans);
     font-weight: 500;
-    background-color: rgba(15, 15, 15, 0.9);
-    color: white;
+    background-color: rgba(14, 14, 15, 0.75);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    backdrop-filter: saturate(180%) blur(14px);
+    color: var(--text);
     border-radius: 0;
     border: 0;
+    border-bottom: 1px solid var(--border);
     margin-bottom: 0;
     position: fixed;
     right: 0;
     left: 0;
     z-index: 1030;
-    font-size: 1.1em;
-    -webkit-transition-property: background-color transform -webkit-transform background-color;
-    -webkit-transition-duration: 0.25s;
-    -webkit-transition-timing-function: ease-in-out;
-    transition-property: background-color transform -webkit-transformv background-color;
-    transition-duration: 0.25s;
-    transition-timing-function: ease-in-out;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+    transition: background-color 0.25s ease-in-out;
 }
 
 .navbar-logo {
@@ -40,9 +39,19 @@
     color: black;
 }
 
+.navbar-inverse .navbar-collapse {
+    border-color: var(--border);
+}
+
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a {
-    color: whitesmoke;
+    color: var(--text);
+    transition: color 0.15s ease;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: var(--accent);
 }
 
 .dropdown-menu > .dropdown-menu {
@@ -50,47 +59,60 @@
 }
 
 .dropdown-menu {
-    background-color: rgba(20, 20, 20, 0.8);
-    border: 0;
+    background-color: rgba(24, 24, 27, 0.97);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 6px;
     margin: 0;
 }
 
 .nav .open > a,
 .nav .open > a:focus,
 .nav .open > a:hover {
-    background-color: gray;
-    color: whitesmoke;
+    background-color: transparent;
+    color: var(--accent);
+}
+
+.dropdown-menu > li > a {
+    color: var(--text-muted);
+    font-size: 1.05em;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
 }
 
 .dropdown-menu > li > a:focus,
 .dropdown-menu > li > a:hover {
-    background-color: gray;
-    color: whitesmoke;
-}
-
-.dropdown-menu > li > a {
-    color: lightgray;
-    font-size: 1.1em;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--text);
 }
 
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:focus,
 .navbar-inverse .navbar-nav > .open > a:hover {
-    background-color: rgba(65, 65, 65, 0.7);
+    background-color: transparent;
+    color: var(--accent);
 }
 
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:focus,
 .dropdown-menu > .active > a:hover {
-    background-color: rgba(65, 65, 65, 0.7);
+    background-color: rgba(201, 169, 110, 0.15);
+    color: var(--accent);
 }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
 .navbar-inverse .navbar-nav > .active > a:hover {
-    background-color: rgba(53, 53, 53, 0);
-    color: white;
+    background-color: transparent;
+    color: var(--text);
     text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
 }
 
 .second-dropdown > .dropdown-menu {

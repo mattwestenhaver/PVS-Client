@@ -1,0 +1,39 @@
+# Begin EnforceSSL premierevaletparking.com
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www.)?premierevaletparking.com$
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L]
+</IfModule>
+# End EnforceSSL
+
+
+# Begin EnforceSSL aclassactvalet.com
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www.)?aclassactvalet.com$
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L]
+</IfModule>
+# End EnforceSSL
+
+
+# The EnforceSSL blocks above are managed by the hosting control panel; keep them first and unchanged.
+
+Options -MultiViews
+RewriteEngine On
+
+# Serve real files (JS, CSS, images) as-is, and send every other path to the React app.
+# Limited to this domain so other sites on the same hosting aren't affected.
+RewriteCond %{HTTP_HOST} ^(www\.)?premierevaletparking\.com$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]
+
+# Always check for a new index.html and service worker so deploys show up right away.
+# Files in static/ have hashed names, so they can stay cached.
+<IfModule mod_headers.c>
+    <FilesMatch "^(index\.html|service-worker\.js)$">
+        Header set Cache-Control "no-cache"
+    </FilesMatch>
+</IfModule>

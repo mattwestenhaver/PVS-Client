@@ -28,6 +28,10 @@ module.exports = [
         },
     },
     {
+        files: ['public/service-worker.js'],
+        languageOptions: { globals: globals.serviceworker },
+    },
+    {
         files: ['eslint.config.js'],
         languageOptions: { sourceType: 'commonjs', globals: globals.node },
     },

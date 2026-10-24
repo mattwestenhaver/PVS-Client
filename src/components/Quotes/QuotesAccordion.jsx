@@ -35,13 +35,9 @@ class QuotesAccordion extends React.Component {
         auth.archiveQuote(quote).then(response => {
             if (response.data.success) {
                 this.getQuotes();
-                toast.success('Quote archived successfully.', {
-                    position: toast.POSITION.TOP_CENTER,
-                });
+                toast.success('Quote archived successfully.');
             } else {
-                toast.error('Error while archiving quote.', {
-                    position: toast.POSITION.TOP_CENTER,
-                });
+                toast.error('Error while archiving quote.');
             }
         });
     }
@@ -50,13 +46,9 @@ class QuotesAccordion extends React.Component {
         auth.activateQuote(quote).then(response => {
             if (response.data.success) {
                 this.getQuotes();
-                toast.success('Quote re-activated successfully.', {
-                    position: toast.POSITION.TOP_CENTER,
-                });
+                toast.success('Quote re-activated successfully.');
             } else {
-                toast.error('Error while activating quote.', {
-                    position: toast.POSITION.TOP_CENTER,
-                });
+                toast.error('Error while activating quote.');
             }
         });
     }
@@ -179,7 +171,7 @@ class QuotesAccordion extends React.Component {
                         <h3>No quotes available</h3>
                     )}
                 </div>
-                <ToastContainer />
+                <ToastContainer position={toast.POSITION.TOP_RIGHT} />
             </div>
         );
     }

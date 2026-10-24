@@ -249,3 +249,8 @@ textarea {
         height: 45vh;
     }
 }
+
+/* Keep toasts below the fixed navbar */
+.Toastify__toast-container--top-right {
+    top: 70px;
+}

@@ -1,31 +1,82 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'semantic-ui-react';
 import MetaData from './common/MetaData';
 
 import logo from '../images/logo-white.png';
+import heroPhoto from '../images/lineup-3.jpeg';
+import heroPhotoMobile from '../images/lineup-mobile.jpeg';
 import section3Image from '../images/aston-martin.jpg';
 
+const INTRO_SEEN_KEY = 'pvs-home-intro-seen';
+
+// The hero intro (logo, then photo, then quote button) plays once per browser session,
+// and never for visitors who have reduced motion turned on.
+const shouldPlayIntro = () => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return false;
+    }
+    try {
+        return !sessionStorage.getItem(INTRO_SEEN_KEY);
+    } catch {
+        return true;
+    }
+};
+
+const markIntroSeen = () => {
+    try {
+        sessionStorage.setItem(INTRO_SEEN_KEY, 'true');
+    } catch {
+        // Storage can be unavailable (e.g. some private browsing modes); the intro just plays again
+    }
+};
+
+// Resolves once the hero photo has downloaded (or failed to), so the fade never plays over a blank hero.
+// Uses the same image as the CSS for this screen size, so the browser only downloads it once.
+const loadHeroPhoto = () =>
+    new Promise(resolve => {
+        const image = new Image();
+        image.onload = resolve;
+        image.onerror = resolve;
+        image.src = window.matchMedia('(max-width: 768px)').matches ? heroPhotoMobile : heroPhoto;
+    });
+
+// Intro stages, in order: logo -> logoFading -> photo -> ready
 const Home = () => {
+    const [playIntro] = useState(shouldPlayIntro);
+    const [stage, setStage] = useState(playIntro ? 'logo' : 'ready');
+
     useEffect(() => {
         window.scrollTo(0, 0);
-        if (window.location.pathname === '/') {
-            setTimeout(() => fadeOutEffect('.home__logo'), 3000);
-            setTimeout(() => {
-                const button = document.querySelector('.home__quote-button');
-                if (button) {
-                    button.style.display = 'inline-block';
-                    button.style.opacity = 1;
-                }
-            }, 5200);
-            setTimeout(() => {
-                const picture = document.querySelector('.home__section-1');
-                if (picture) {
-                    picture.classList.add('home__picture-fade');
-                }
-            }, 3400);
+        if (!playIntro) {
+            return;
         }
-    }, []);
+        markIntroSeen();
+
+        let cancelled = false;
+        const timeouts = [];
+        const after = (ms, callback) => timeouts.push(setTimeout(callback, ms));
+
+        after(2900, () => setStage('logoFading'));
+
+        // Show the photo at 3.2s, or later if it's still downloading
+        const minimumWait = new Promise(resolve => after(3200, resolve));
+        Promise.all([minimumWait, loadHeroPhoto()]).then(() => {
+            if (cancelled) {
+                return;
+            }
+            setStage('photo');
+            after(1300, () => setStage('ready'));
+        });
+
+        return () => {
+            cancelled = true;
+            timeouts.forEach(clearTimeout);
+        };
+    }, [playIntro]);
+
+    const showLogo = stage === 'logo' || stage === 'logoFading';
+    const showPhoto = stage === 'photo' || stage === 'ready';
 
     return (
         <div className="home__container">
@@ -33,9 +84,18 @@ const Home = () => {
                 title="Premiere Valet Services, Inc."
                 keywords="valet parking, Los Angeles valet services, valet, valet companies, los angeles valet company, los angeles valet companies, valet, valet companies los angeles, valet parking service, valet parking"
             />
-            <div className="home__section-1">
-                <img className="home__logo" src={logo} alt="PVS Logo" />
-                <Link className="home__quote-button" to="/quote">
+            <div className={`home__section-1${showPhoto ? ' home__picture-fade' : ''}`}>
+                {showLogo && (
+                    <img
+                        className={`home__logo${stage === 'logoFading' ? ' home__logo--fading' : ''}`}
+                        src={logo}
+                        alt="PVS Logo"
+                    />
+                )}
+                <Link
+                    className={`home__quote-button${stage === 'ready' ? ' home__quote-button--visible' : ''}`}
+                    to="/quote"
+                >
                     <Button color="grey" size="massive">
                         Request A Quote
                     </Button>
@@ -111,20 +171,3 @@ const Home = () => {
 };
 
 export default Home;
-
-function fadeOutEffect(target) {
-    var fadeTarget = document.querySelector(target);
-    if (fadeTarget) {
-        var fadeEffect = setInterval(function () {
-            if (!fadeTarget.style.opacity) {
-                fadeTarget.style.opacity = 1;
-            }
-            if (fadeTarget.style.opacity > 0) {
-                fadeTarget.style.opacity -= 0.04;
-            } else {
-                clearInterval(fadeEffect);
-                fadeTarget.style.display = 'none';
-            }
-        }, 20);
-    }
-}

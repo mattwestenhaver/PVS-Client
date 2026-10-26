@@ -14,7 +14,7 @@ npm start
 
 The site runs at http://localhost:3000.
 
-> **Heads up:** the quote and employment forms post to the live server (`https://pvs-server.herokuapp.com`, set in `src/auth.js`) even when running locally, so submitting them sends real emails. To test against a local server, switch the `baseURL` in `src/auth.js` to `http://localhost:3001/`.
+> **Heads up:** the quote and employment forms post to the live server (`https://pvs-server.herokuapp.com`, set in `src/lib/api.js`) even when running locally, so submitting them sends real emails. To test against a local server, switch the `baseURL` in `src/lib/api.js` to `http://localhost:3001/`.
 
 ## Scripts
 
@@ -38,20 +38,21 @@ public/               Copied as-is into the build
   service-worker.js   Removes the service worker older builds installed
 src/
   App.jsx             All routes
-  auth.js             API client for form submissions
-  analytics.js        Google Analytics 4 setup and event helper
-  components/         One component per page, plus Navbar/Footer
-    common/MetaData   Per-page <title> and meta tags
-  css/                One stylesheet per page, imported through App.css
+  pages/              One folder per page: index.jsx and styles.css
+  components/         Navbar and Footer (same folder layout), MetaData (per-page <title> and meta tags)
+  data/cities.js      Service-area cities, grouped by county
+  lib/api.js          Form submissions to the server
+  lib/events.js       Google Analytics 4 setup and event helper
+  styles/global.css   Design tokens and site-wide styles (headers, buttons, forms)
   images/             Site photos and logos
 ```
 
-Styling comes from the Semantic UI (buttons, forms, icons) and Bootstrap 3 (navbar) stylesheets loaded from CDNs in `index.html`, used through plain class names like `ui black massive button`; there are no React UI libraries. Shared colors, spacing and widths are CSS variables in `src/App.css`.
+Styling comes from the Semantic UI (buttons, forms, icons) and Bootstrap 3 (navbar) stylesheets loaded from CDNs in `index.html`, used through plain class names like `ui black massive button`; there are no React UI libraries. Shared colors, spacing and widths are CSS variables in `src/styles/global.css`.
 
 ## Pages
 
 - **Main pages:** Home, About, Services, Insurance, Testimonials, Staff, Contact, Employment (`/employment`), Request a Quote (`/quote`) and its confirmation page.
-- **City pages:** `/losangeles`, `/malibu`, `/newportbeach`, etc. These all render the same `City` component with a different `city` prop. To add one, add a `<Route>` in `App.jsx` and a link in the `areas` list in `Navbar.jsx`.
+- **City pages:** `/losangeles`, `/malibu`, `/newportbeach`, etc. These all render the same `City` page. To add one, add it to its county in `src/data/cities.js`; the route, navbar link and phone number come from there.
 - **Legacy redirects:** URLs from the old static site (e.g. `/malibu_valet_parking.html`) redirect to the matching city page so old links and search results still work.
 
 ## Forms
@@ -67,7 +68,7 @@ Google Analytics 4 (measurement ID `G-9M7N51GPH9`) loads only in production buil
 | `generate_lead`   | A quote request is sent           | `event_type` |
 | `job_application` | An employment application is sent | `location`   |
 
-Use `trackEvent(name, params)` from `src/analytics.js` to add more.
+Use `trackEvent(name, params)` from `src/lib/events.js` to add more.
 
 ## Deploying
 

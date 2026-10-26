@@ -1,0 +1,103 @@
+.contact__header {
+    position: relative;
+    background: linear-gradient(rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.3)), url('../../images/contact-header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.contact__header .ui.black.button {
+    font-size: 1.3em;
+    color: var(--text-dark);
+    background-color: var(--text);
+    box-shadow: var(--shadow);
+}
+
+.contact__header .ui.black.button:hover {
+    background-color: var(--accent);
+}
+
+.contact__mobile-button {
+    display: none;
+}
+
+.contact__section-1 {
+    padding: 64px 3%;
+    width: 100%;
+    background-color: var(--background);
+}
+
+.contact__information {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 40px 32px;
+    color: var(--text);
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.contact__information p {
+    font-size: 1.15em;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.contact__information a {
+    color: var(--text);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.contact__information a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact__information {
+        width: 95%;
+        padding: 32px 20px;
+        font-size: 1em;
+    }
+
+    .contact__header .ui.black.button {
+        display: none;
+    }
+
+    .contact__mobile-button {
+        display: inline-block;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        font-size: 1.3em;
+        color: var(--text-dark);
+        background-color: var(--text);
+        padding: 0.9em 2.2em;
+        border-radius: 999px;
+        box-shadow: var(--shadow);
+    }
+
+    .contact__mobile-button:hover,
+    .contact__mobile-button:focus {
+        color: var(--text-dark);
+        background-color: var(--accent);
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .contact__header {
+        height: 45vh;
+    }
+}

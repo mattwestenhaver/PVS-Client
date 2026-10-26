@@ -1,0 +1,294 @@
+/* Site-wide styles: design tokens, base elements, and the headers, buttons and forms shared across pages.
+   Page and component styles live next to their .jsx files. */
+
+:root {
+    --background: rgb(14, 14, 15);
+    --surface: rgb(24, 24, 27);
+    --surface-raised: rgb(32, 32, 36);
+    --border: rgba(255, 255, 255, 0.1);
+    --text: rgb(244, 244, 245);
+    --text-muted: rgb(180, 180, 188);
+    --text-dark: rgb(24, 24, 27);
+    --accent: rgb(201, 169, 110);
+    --accent-hover: rgb(222, 194, 140);
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --radius-sm: 8px;
+    --radius: 14px;
+    --shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.55);
+    --content-width: 760px;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: var(--background);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-sans);
+    letter-spacing: -0.01em;
+}
+
+.App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.App-Body {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+}
+
+.App-Body > * {
+    flex: 1 0 auto;
+}
+
+.footer-container {
+    flex-shrink: 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+}
+
+/* Hero image banner shared by most pages */
+.header-1 {
+    position: relative;
+    height: 55vh;
+    padding-top: 24vh;
+}
+
+.header-1::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 40%;
+    background: linear-gradient(to bottom, rgba(14, 14, 15, 0), var(--background));
+    pointer-events: none;
+}
+
+.header-1 h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* Section heading with a short accent rule above it */
+.header-2 {
+    width: 70%;
+    margin: 48px auto 8px auto;
+    text-align: left;
+}
+
+.header-2::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin-bottom: 14px;
+    background-color: var(--accent);
+}
+
+.header-2 h2,
+.header-2 h3 {
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.header-2.centered {
+    text-align: center;
+}
+
+.header-2.centered::before {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Page titles */
+.page-header,
+.city__section-2 h1,
+.staff__title {
+    margin: 0 auto;
+    padding: 24px 0 8px 0;
+    border: 0;
+    color: var(--text);
+}
+
+.page-header hr,
+.city__section-2 > hr {
+    display: none;
+}
+
+.page-header h1,
+.city__section-2 h1,
+.staff__title {
+    font-size: 2.4em;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.page-header h1::after,
+.city__section-2 h1::after,
+.staff__title::after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 2px;
+    margin: 20px auto 0 auto;
+    background-color: var(--accent);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.centered {
+    margin: 0 auto 10px auto;
+}
+
+/* Bootstrap outlines links on any focus; only show the ring for keyboard focus, not after a mouse click */
+a:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Buttons */
+.ui.grey.button,
+.ui.black.button {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    border-radius: 999px;
+    padding: 0.9em 2.2em;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.ui.grey.button {
+    color: var(--text-dark);
+    background-color: var(--text);
+}
+
+.ui.black.button {
+    color: var(--text);
+    background-color: var(--text-dark);
+}
+
+.ui.grey.button:hover,
+.ui.grey.button:focus,
+.ui.black.button:hover,
+.ui.black.button:focus {
+    color: var(--text-dark);
+    background-color: var(--accent);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px -8px rgba(201, 169, 110, 0.5);
+}
+
+/* Forms. These selectors match Semantic UI's own form selectors, so they take precedence by coming later
+   rather than needing !important. */
+.ui.form input:not([type]),
+.ui.form input[type='email'],
+.ui.form input[type='number'],
+.ui.form input[type='password'],
+.ui.form input[type='tel'],
+.ui.form input[type='text'],
+.ui.form textarea,
+.ui.form select {
+    font-family: var(--font-sans);
+    /* Fixed size: Bootstrap's 10px root makes em/rem sizes tiny */
+    font-size: 14px;
+    padding: 0.8em 1em;
+    border: 1px solid rgb(212, 212, 216);
+    border-radius: var(--radius-sm);
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.ui.form input:not([type]):focus,
+.ui.form input[type='email']:focus,
+.ui.form input[type='number']:focus,
+.ui.form input[type='password']:focus,
+.ui.form input[type='tel']:focus,
+.ui.form input[type='text']:focus,
+.ui.form textarea:focus,
+.ui.form select:focus {
+    border-color: var(--accent);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.25);
+}
+
+.ui.form ::placeholder,
+.ui.form :focus::placeholder {
+    color: rgb(113, 113, 122);
+}
+
+.Toastify__toast-body {
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 767px) {
+    /* iOS zooms into inputs smaller than 16px when they're focused */
+    .ui.form input:not([type]),
+    .ui.form input[type='email'],
+    .ui.form input[type='number'],
+    .ui.form input[type='password'],
+    .ui.form input[type='tel'],
+    .ui.form input[type='text'],
+    .ui.form textarea,
+    .ui.form select {
+        font-size: 16px;
+    }
+
+    .header-1 {
+        height: 100vh;
+    }
+
+    .header-2 {
+        width: 85%;
+    }
+
+    .page-header h1,
+    .city__section-2 h1,
+    .staff__title {
+        font-size: 1.8em;
+        letter-spacing: 0.08em;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .header-1 {
+        height: 45vh;
+    }
+}
+
+/* Keep toasts below the fixed navbar */
+.Toastify__toast-container--top-right {
+    top: 70px;
+}

@@ -1,0 +1,43 @@
+.request__section-1 {
+    background-color: var(--background);
+    width: 100%;
+    padding: 100px 20px 64px 20px;
+}
+
+.request__form-wrap {
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    height: fit-content;
+    background-color: white;
+    color: var(--text-dark);
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.request__form-wrap h2 {
+    margin-bottom: 28px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Scoped to the form so it outranks Semantic UI's margin: 0 on inputs */
+.request__form-wrap .ui.form .fields input {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .request__section-1 {
+        padding: 80px 12px 32px 12px;
+    }
+
+    .request__form-wrap {
+        padding: 24px 16px;
+    }
+
+    .request__form-wrap .ui.form .fields input {
+        margin-bottom: 10px;
+    }
+}

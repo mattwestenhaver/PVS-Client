@@ -1,0 +1,47 @@
+import React, { useEffect } from 'react';
+import { Link } from 'react-router';
+import MetaData from '../../components/MetaData';
+import './styles.css';
+
+// `city` is an entry from data/cities.js
+const City = ({ city: { name: city, county } }) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    const helmetData = `${city} Valet Parking, Valet Parking ${city}, ${city} Valet Service, Valet Service ${city}, ${city} Valet, Valet Service, Valet Attendants ${city}`;
+
+    return (
+        <div>
+            <MetaData title={`${city} - Premiere Valet Services, Inc.`} keywords={helmetData} />
+            <div className="city__section-1 header-1" />
+            <div className="city__section-2">
+                <hr />
+                <h1>{city} Valet Services</h1>
+                <hr />
+                <p>
+                    There are many {city} Valet Companies, but Premiere Valet Services, Inc. is proudly the number one
+                    in {city}. If you are hosting an event in {city} and need valet, Premiere Valet Services, Inc. can
+                    offer you first class valet services and a level of service that no other valet company in the area
+                    can.
+                </p>
+                <p>
+                    With over 40 years in the valet business, Premiere Valet Services, Inc. is the number one valet
+                    service in all of Southern California. We are the first choice valet company for all private events;
+                    from pre-Oscar private parties to small home gatherings. Parking in {city} can be difficult, but
+                    with Premiere Valet Services, Inc. you and your guests can enjoy your next private event with peace
+                    of mind.
+                </p>
+                <p>
+                    Our <span className="italic">premiere</span> valet parking staff is the most qualified, experienced
+                    and reliable valet parking staff you will find in any {city} valet company. Contact us any time at
+                    <a href={`tel:${county.phone.tel}`}> {county.phone.display} </a>
+                    or click <Link to="/quote">here</Link> and let us make the best of your next valet parking
+                    experience.
+                </p>
+            </div>
+        </div>
+    );
+};
+
+export default City;

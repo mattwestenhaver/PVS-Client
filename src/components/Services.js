@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 
 import MetaData from './common/MetaData';
-import hondaIMG from '../images/honda.jpg';
-import chineseNY from '../images/chinese-new-year.jpg';
+import hondaIMG from '../images/services-honda.jpg';
+import chineseNY from '../images/services-chinese-new-year.jpg';
 
 const Services = () => {
     useEffect(() => {

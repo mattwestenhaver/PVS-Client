@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import insurance from '../images/coi.jpg';
+import insurance from '../images/insurance-certificate.jpg';
 import MetaData from './common/MetaData';
 
 const Insurance = () => {

@@ -4,9 +4,10 @@ import { Button } from 'semantic-ui-react';
 import MetaData from './common/MetaData';
 
 import logo from '../images/logo-white.png';
-import heroPhoto from '../images/lineup-3.jpeg';
-import heroPhotoMobile from '../images/lineup-mobile.jpeg';
-import section3Image from '../images/aston-martin.jpg';
+import heroPhoto from '../images/home-hero.jpg';
+import heroPhotoMobile from '../images/home-hero-mobile.jpg';
+import yachtClubImage from '../images/home-yacht-club.jpg';
+import bmwImage from '../images/home-bmw.jpg';
 
 const INTRO_SEEN_KEY = 'pvs-home-intro-seen';
 
@@ -129,6 +130,7 @@ const Home = () => {
                     Service, Premiere Valet Services, Inc., is ready to assist with all of your valet parking needs.
                 </p>
             </div>
+            <img className="home__banner" src={bmwImage} alt="Premiere Valet attendants at Crevier BMW" />
             <div className="home__section-3">
                 <div>
                     <div className="header-2">
@@ -156,7 +158,7 @@ const Home = () => {
                     </ul>
                 </div>
                 <div>
-                    <img src={section3Image} alt="" />
+                    <img src={yachtClubImage} alt="Premiere Valet attendants at Balboa Yacht Club" />
                 </div>
             </div>
             <div className="home__section-4">

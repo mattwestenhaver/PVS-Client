@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 
 import MetaData from './common/MetaData';
-import Ryan from '../images/ryan-petakoff.jpg';
-import Mark from '../images/mark-ramirez.jpg';
-import Joel from '../images/joel-ocampo.jpg';
-import Warren from '../images/warren-gordon.jpg';
+import Ryan from '../images/staff-ryan-petakoff.jpg';
+import Mark from '../images/staff-mark-ramirez.jpg';
+import Joel from '../images/staff-joel-ocampo.jpg';
+import Warren from '../images/staff-warren-gordon.jpg';
 import logo from '../images/logo-white.png';
 
 const Staff = () => {

@@ -1,7 +1,7 @@
 .city__section-1 {
     height: 70vh;
     width: 100%;
-    background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url('../images/plane-crop.jpeg');
+    background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url('../images/employment-city-header.jpg');
     background-size: cover;
 }
 

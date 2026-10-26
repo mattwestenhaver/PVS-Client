@@ -1,6 +1,6 @@
 .contact__header {
     position: relative;
-    background: linear-gradient(rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.3)), url('../images/louis-vuitton-2.jpg');
+    background: linear-gradient(rgba(24, 24, 24, 0.3), rgba(24, 24, 24, 0.3)), url('../images/contact-header.jpg');
     background-size: cover;
     background-position: center;
     height: 70vh;

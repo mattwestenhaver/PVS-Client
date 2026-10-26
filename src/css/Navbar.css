@@ -31,10 +31,6 @@
     width: 70px;
 }
 
-.invert-logo {
-    content: url('../images/logo-2.png') !important;
-}
-
 .navbar-header > .active {
     color: black;
 }

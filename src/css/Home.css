@@ -7,13 +7,26 @@
     height: 80vh;
     padding-top: 8vw;
     background-color: black;
-    background-size: cover;
-    background-image: url('../images/all-black.jpg');
-    transition: background-image 2s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.home__section-1::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/lineup-3.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out;
+    pointer-events: none;
+}
+
+.home__section-1.home__picture-fade::before {
+    opacity: 1;
 }
 
 .home__section-1::after {
@@ -25,24 +38,38 @@
     pointer-events: none;
 }
 
-.home__picture-fade {
-    background-image: url('../images/lineup-3.jpeg');
-    background-size: cover;
-    background-position: center;
-    transition: background-image 2.5s cubic-bezier(0.47, 0, 0.745, 0.715);
-}
-
 .home__logo {
     position: relative;
     z-index: 1;
     width: 60%;
+    transition: opacity 0.4s ease-in-out;
 }
 
+.home__logo--fading {
+    opacity: 0;
+}
+
+/* Hidden (not just transparent) until it fades in, so it can't be clicked or focused early */
 .home__quote-button {
     position: relative;
     z-index: 1;
+    display: inline-block;
     opacity: 0;
+    visibility: hidden;
+}
+
+.home__quote-button--visible {
+    opacity: 1;
+    visibility: visible;
     transition: opacity 1s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home__section-1::before,
+    .home__logo,
+    .home__quote-button {
+        transition: none;
+    }
 }
 
 .home__section-1 .ui.grey.button,
@@ -125,19 +152,8 @@
     background-color: var(--background);
 }
 
-@media (max-width: 1024px) {
-    .home__section-1 {
-        background-position: center;
-    }
-
-    .home__picture-fade {
-        background-image: url('../images/lineup-3.jpeg');
-        background-position: center;
-    }
-}
-
 @media only screen and (max-width: 768px) {
-    .home__picture-fade {
+    .home__section-1::before {
         background-image: url('../images/lineup-mobile.jpeg');
     }
 

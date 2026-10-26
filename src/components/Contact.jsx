@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from 'react';
-import { Button } from 'semantic-ui-react';
 import MetaData from './common/MetaData';
 
 const Contact = () => {
@@ -15,9 +14,9 @@ const Contact = () => {
         <div>
             <MetaData title="Contact Us - Premiere Valet Services, Inc." />
             <div className="contact__header">
-                <Button color="black" size="massive" onClick={scrollDown}>
+                <button className="ui black massive button" onClick={scrollDown}>
                     Contact Us
-                </Button>
+                </button>
                 <a className="contact__mobile-button" href="tel:+13238765816">
                     Contact Us
                 </a>

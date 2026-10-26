@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Form, Button } from 'semantic-ui-react';
 import { toast, ToastContainer } from 'react-toastify';
 
 import MetaData from './common/MetaData.jsx';
 import auth from '../auth.js';
 import { trackEvent } from '../analytics.js';
-import 'react-toastify/dist/ReactToastify.css';
 
-const locationOptions = [
-    { key: 0, text: 'Los Angeles County', value: 'Los Angeles County' },
-    { key: 1, text: 'Ventura County', value: 'Ventura County' },
-    { key: 2, text: 'Orange County', value: 'Orange County' },
-    { key: 3, text: 'South Bay', value: 'South Bay' },
-];
+const locations = ['Los Angeles County', 'Ventura County', 'Orange County', 'South Bay'];
 
 const initialValues = {
     firstName: '',
@@ -23,7 +16,7 @@ const initialValues = {
     education: '',
     skills: '',
     about: '',
-    location: null,
+    location: '',
     resume: '',
 };
 
@@ -38,13 +31,13 @@ const Work = () => {
         });
     }, []);
 
-    // Native inputs pass only the event; Semantic's Form.Select passes { name, value } as well
-    const handleChange = (e, data) => {
-        const { name, value } = data || e.target;
+    const handleChange = e => {
+        const { name, value } = e.target;
         setValues(prev => ({ ...prev, [name]: value }));
     };
 
-    const workSubmit = () => {
+    const workSubmit = e => {
+        e.preventDefault();
         if (Object.values(values).some(value => !value)) {
             toast.error('Fill out all the fields before submitting.');
             return;
@@ -87,83 +80,94 @@ const Work = () => {
                     <h3>Please fill out the form below if you are interested in working with us.</h3>
 
                     <div className="work__form-wrap">
-                        <Form onSubmit={workSubmit}>
-                            <Form.Field>
+                        <form className="ui form" onSubmit={workSubmit}>
+                            <div className="field">
                                 <label>First Name</label>
                                 <input type="text" {...inputProps('firstName')} placeholder="John" />
-                            </Form.Field>
+                            </div>
 
-                            <Form.Field>
+                            <div className="field">
                                 <label>Last Name</label>
                                 <input type="text" {...inputProps('lastName')} placeholder="Smith" />
-                            </Form.Field>
+                            </div>
 
-                            <Form.Field>
+                            <div className="field">
                                 <label>Email Address</label>
                                 <input type="text" {...inputProps('email')} placeholder="example@gmail.com" />
-                            </Form.Field>
+                            </div>
 
-                            <Form.Field>
+                            <div className="field">
                                 <label>Cell Phone Number</label>
                                 <input type="text" {...inputProps('phone')} placeholder="(310) 555-1234" />
-                            </Form.Field>
+                            </div>
 
-                            <Form.Field>
+                            <div className="field">
                                 <label>How did you hear about us?</label>
                                 <input
                                     type="text"
                                     {...inputProps('reference')}
                                     placeholder="Put employee's name if an employee referred you"
                                 />
-                            </Form.Field>
+                            </div>
 
-                            <Form.Field>
+                            <div className="field">
                                 <label>Education Level</label>
                                 <input type="text" {...inputProps('education')} placeholder="High School, GED, etc." />
-                            </Form.Field>
+                            </div>
 
-                            <Form.Field>
+                            <div className="field">
                                 <label>Special Skills</label>
                                 <input
                                     type="text"
                                     {...inputProps('skills')}
                                     placeholder="List any skills you think we should know about"
                                 />
-                            </Form.Field>
+                            </div>
 
-                            <Form.Field>
+                            <div className="field">
                                 <label>Tell us about yourself</label>
                                 <textarea
                                     {...inputProps('about')}
                                     rows="4"
                                     placeholder="Put anything you think we should know"
                                 />
-                            </Form.Field>
+                            </div>
 
-                            <Form.Field>
-                                <Form.Select
-                                    label="What location are you applying for?"
-                                    name="location"
-                                    value={values.location}
-                                    options={locationOptions}
-                                    placeholder="Choose Location"
-                                    onChange={handleChange}
-                                />
-                            </Form.Field>
+                            <div className="field">
+                                <label htmlFor="work-location">What location are you applying for?</label>
+                                <select
+                                    id="work-location"
+                                    className={values.location ? '' : 'placeholder'}
+                                    {...inputProps('location')}
+                                >
+                                    <option value="" disabled>
+                                        Choose Location
+                                    </option>
+                                    {locations.map(location => (
+                                        <option key={location} value={location}>
+                                            {location}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
 
-                            <Form.Field>
+                            <div className="field">
                                 <label>Copy and paste your resume below</label>
                                 <textarea {...inputProps('resume')} rows="4" placeholder="Resume here" />
-                            </Form.Field>
+                            </div>
 
-                            <Form.Field>
-                                <Button color="black" size="massive" loading={submitting} disabled={submitting}>
+                            <div className="field">
+                                <button
+                                    type="submit"
+                                    className={`ui black massive button${submitting ? ' loading disabled' : ''}`}
+                                    disabled={submitting}
+                                >
                                     Apply
-                                </Button>
-                            </Form.Field>
+                                </button>
+                            </div>
 
-                            <ToastContainer position={toast.POSITION.TOP_RIGHT} />
-                        </Form>
+                            <ToastContainer position="top-right" />
+                        </form>
                     </div>
                 </div>
             </div>

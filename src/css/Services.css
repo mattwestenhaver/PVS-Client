@@ -1,5 +1,6 @@
 .services__header {
-    background: linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url('../images/services-header.jpg');
+    background:
+        linear-gradient(rgba(224, 224, 224, 0.1), rgba(224, 224, 224, 0.1)), url('../images/services-header.jpg');
     background-size: cover;
     position: relative;
 }

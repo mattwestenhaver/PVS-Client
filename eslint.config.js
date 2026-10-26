@@ -1,10 +1,10 @@
-const js = require('@eslint/js');
-const globals = require('globals');
-const react = require('eslint-plugin-react');
-const reactHooks = require('eslint-plugin-react-hooks');
-const prettier = require('eslint-config-prettier');
+import js from '@eslint/js';
+import globals from 'globals';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import prettier from 'eslint-config-prettier';
 
-module.exports = [
+export default [
     { ignores: ['build/**'] },
     js.configs.recommended,
     {
@@ -12,7 +12,7 @@ module.exports = [
         languageOptions: {
             ...react.configs.flat.recommended.languageOptions,
             sourceType: 'module',
-            globals: { ...globals.browser, ...globals.jest, process: 'readonly' },
+            globals: globals.browser,
         },
         plugins: { react, 'react-hooks': reactHooks },
         settings: { react: { version: 'detect' } },
@@ -32,8 +32,8 @@ module.exports = [
         languageOptions: { globals: globals.serviceworker },
     },
     {
-        files: ['eslint.config.js'],
-        languageOptions: { sourceType: 'commonjs', globals: globals.node },
+        files: ['*.config.js'],
+        languageOptions: { globals: globals.node },
     },
     prettier,
 ];

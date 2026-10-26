@@ -1,6 +1,6 @@
 # Premiere Valet Services — Website
 
-The public website for [Premiere Valet Services, Inc.](https://premierevaletparking.com), a Southern California valet parking company. It's a React single-page app built with Create React App.
+The public website for [Premiere Valet Services, Inc.](https://premierevaletparking.com), a Southern California valet parking company. It's a React 19 single-page app built with [Vite](https://vite.dev).
 
 ## Getting started
 
@@ -22,7 +22,8 @@ The site runs at http://localhost:3000.
 | ---------------------- | ---------------------------------------- |
 | `npm start`            | Dev server with hot reload               |
 | `npm run build`        | Production build into `build/`           |
-| `npm test`             | Runs tests                               |
+| `npm run preview`      | Serves the production build locally      |
+| `npm test`             | Runs tests (Vitest)                      |
 | `npm run lint`         | ESLint                                   |
 | `npm run format`       | Formats everything with Prettier         |
 | `npm run format:check` | Checks formatting without changing files |
@@ -30,26 +31,27 @@ The site runs at http://localhost:3000.
 ## Project structure
 
 ```
-public/
-  index.html          Page shell, default meta tags, fonts and CSS from CDNs
+index.html            Page shell, default meta tags, fonts and CSS from CDNs
+vite.config.js        Build and dev server config
+public/               Copied as-is into the build
   .htaccess           Apache config: HTTPS redirect, SPA routing, caching
   service-worker.js   Removes the service worker older builds installed
 src/
-  App.js              All routes
+  App.jsx             All routes
   auth.js             API client for form submissions
   analytics.js        Google Analytics 4 setup and event helper
   components/         One component per page, plus Navbar/Footer
-    common/MetaData   Per-page <title> and meta tags (react-helmet)
+    common/MetaData   Per-page <title> and meta tags
   css/                One stylesheet per page, imported through App.css
   images/             Site photos and logos
 ```
 
-UI comes from Semantic UI React and React Bootstrap. Shared colors, spacing and widths are CSS variables in `src/App.css`.
+Styling comes from the Semantic UI (buttons, forms, icons) and Bootstrap 3 (navbar) stylesheets loaded from CDNs in `index.html`, used through plain class names like `ui black massive button`; there are no React UI libraries. Shared colors, spacing and widths are CSS variables in `src/App.css`.
 
 ## Pages
 
 - **Main pages:** Home, About, Services, Insurance, Testimonials, Staff, Contact, Employment (`/employment`), Request a Quote (`/quote`) and its confirmation page.
-- **City pages:** `/losangeles`, `/malibu`, `/newportbeach`, etc. These all render the same `City` component with a different `city` prop. To add one, add a `<Route>` in `App.js`.
+- **City pages:** `/losangeles`, `/malibu`, `/newportbeach`, etc. These all render the same `City` component with a different `city` prop. To add one, add a `<Route>` in `App.jsx` and a link in the `areas` list in `Navbar.jsx`.
 - **Legacy redirects:** URLs from the old static site (e.g. `/malibu_valet_parking.html`) redirect to the matching city page so old links and search results still work.
 
 ## Forms

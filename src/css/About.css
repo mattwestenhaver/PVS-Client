@@ -1,5 +1,6 @@
 .about__header {
-    background: linear-gradient(rgba(224, 224, 224, 0.05), rgba(224, 224, 224, 0.05)), url('../images/about-header.jpg');
+    background:
+        linear-gradient(rgba(224, 224, 224, 0.05), rgba(224, 224, 224, 0.05)), url('../images/about-header.jpg');
     background-size: cover;
     background-position: center;
 }

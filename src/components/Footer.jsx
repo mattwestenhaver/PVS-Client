@@ -1,5 +1,4 @@
 import React from 'react';
-import { Icon } from 'semantic-ui-react';
 
 const Footer = () => {
     return (
@@ -11,15 +10,26 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.yelp.com/biz/premiere-valet-service-los-angeles-3"
+                aria-label="Yelp"
             >
-                <Icon name="yelp" size="big" />
+                <i aria-hidden="true" className="yelp big icon" />
             </a>
-            {/* <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/company/premiere-valet-services-inc./'><Icon name='linkedin' size='big' /></a> */}
-            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/premierevaletservices/">
-                <Icon name="facebook" size="big" />
+            {/* <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/company/premiere-valet-services-inc./'><i aria-hidden='true' className='linkedin big icon' /></a> */}
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/premierevaletservices/"
+                aria-label="Facebook"
+            >
+                <i aria-hidden="true" className="facebook big icon" />
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/premierevalet/">
-                <Icon name="instagram" size="big" />
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/premierevalet/"
+                aria-label="Instagram"
+            >
+                <i aria-hidden="true" className="instagram big icon" />
             </a>
             <h5>
                 <a href="mailto:info@premierevaletparking.com">info@premierevaletparking.com</a>

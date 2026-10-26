@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from 'semantic-ui-react';
+import { Link } from 'react-router';
 import MetaData from './common/MetaData';
 
 import logo from '../images/logo-white.png';
@@ -97,9 +96,7 @@ const Home = () => {
                     className={`home__quote-button${stage === 'ready' ? ' home__quote-button--visible' : ''}`}
                     to="/quote"
                 >
-                    <Button color="grey" size="massive">
-                        Request A Quote
-                    </Button>
+                    <button className="ui grey massive button">Request A Quote</button>
                 </Link>
             </div>
             <div className="home__established">Established 1988</div>
@@ -163,9 +160,7 @@ const Home = () => {
             </div>
             <div className="home__section-4">
                 <Link to="/quote">
-                    <Button className="request-home-2" color="grey" size="massive">
-                        Request A Quote
-                    </Button>
+                    <button className="ui grey massive button request-home-2">Request A Quote</button>
                 </Link>
             </div>
         </div>

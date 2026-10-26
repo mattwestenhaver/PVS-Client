@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
-import { Form, Button } from 'semantic-ui-react';
-import { Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router';
 
 import auth from '../auth.js';
 import { trackEvent } from '../analytics.js';
-import 'react-toastify/dist/ReactToastify.css';
 
 import MetaData from './common/MetaData.jsx';
 
@@ -45,7 +43,8 @@ const Quote = () => {
         setValues(prev => ({ ...prev, [name]: value }));
     };
 
-    const formSubmit = () => {
+    const formSubmit = e => {
+        e.preventDefault();
         if (Object.values(values).some(value => value === '')) {
             toast.error('Fill out all the fields before submitting.');
             return;
@@ -75,63 +74,67 @@ const Quote = () => {
             <div className="request__section-1">
                 <div className="request__form-wrap">
                     <h2>Request A Quote</h2>
-                    <Form onSubmit={formSubmit}>
-                        <Form.Field>
+                    <form className="ui form" onSubmit={formSubmit}>
+                        <div className="field">
                             <input type="text" placeholder="Your Name" {...inputProps('name')} />
-                        </Form.Field>
+                        </div>
 
-                        <Form.Field>
+                        <div className="field">
                             <input type="text" placeholder="Email Address" {...inputProps('email')} />
-                        </Form.Field>
+                        </div>
 
-                        <Form.Field>
+                        <div className="field">
                             <input type="text" placeholder="Phone Number" {...inputProps('phone')} />
-                        </Form.Field>
+                        </div>
 
-                        <Form.Field>
+                        <div className="field">
                             <input type="text" placeholder="Event Address" {...inputProps('address')} />
-                        </Form.Field>
+                        </div>
 
-                        <Form.Group>
+                        <div className="fields">
                             <input type="text" placeholder="City of Event" {...inputProps('city')} />
                             <input type="number" placeholder="Event Zipcode" {...inputProps('zipcode')} />
-                        </Form.Group>
+                        </div>
 
-                        <Form.Group>
+                        <div className="fields">
                             <input type="text" placeholder="Date of Event" {...inputProps('eventDate')} />
                             <input type="text" placeholder="Type of Event" {...inputProps('eventType')} />
-                        </Form.Group>
+                        </div>
 
-                        <Form.Group>
+                        <div className="fields">
                             <input type="number" placeholder="Number of Guests" {...inputProps('guests')} />
                             <input type="number" placeholder="Number of Cars" {...inputProps('cars')} />
-                        </Form.Group>
+                        </div>
 
-                        <Form.Group>
+                        <div className="fields">
                             <input type="text" placeholder="Guest Arrival Time" {...inputProps('arrival')} />
                             <input type="text" placeholder="Guest Departure Time" {...inputProps('departure')} />
-                        </Form.Group>
+                        </div>
 
-                        <Form.Field>
+                        <div className="field">
                             <textarea
                                 rows="4"
                                 placeholder="What are the parking conditions like? Any other comments or questions?"
                                 {...inputProps('comments')}
                             />
-                        </Form.Field>
+                        </div>
 
-                        <Form.Field>
+                        <div className="field">
                             <input type="text" placeholder="How did you hear about us?" {...inputProps('reference')} />
-                        </Form.Field>
+                        </div>
 
-                        <Form.Field>
-                            <Button color="black" size="massive" loading={submitting} disabled={submitting}>
+                        <div className="field">
+                            <button
+                                type="submit"
+                                className={`ui black massive button${submitting ? ' loading disabled' : ''}`}
+                                disabled={submitting}
+                            >
                                 Submit
-                            </Button>
-                        </Form.Field>
+                            </button>
+                        </div>
 
-                        <ToastContainer position={toast.POSITION.TOP_RIGHT} />
-                    </Form>
+                        <ToastContainer position="top-right" />
+                    </form>
                 </div>
             </div>
         </div>

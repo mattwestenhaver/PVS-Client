@@ -31,7 +31,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [QSA,L]
 
 # Always check for a new index.html and service worker so deploys show up right away.
-# Files in static/ have hashed names, so they can stay cached.
+# Files in assets/ have hashed names, so they can stay cached.
 <IfModule mod_headers.c>
     <FilesMatch "^(index\.html|service-worker\.js)$">
         Header set Cache-Control "no-cache"

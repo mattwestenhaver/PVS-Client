@@ -36,18 +36,6 @@ class AuthClient {
             .then(response => response.data.success)
             .catch(toSubmissionError);
     }
-
-    getQuotes() {
-        return this.request({ method: 'Get', url: '/quotes' }).then(response => response);
-    }
-
-    archiveQuote(quote) {
-        return this.request({ method: 'Patch', url: `/quotes/${quote._id}/archive` }).then(response => response);
-    }
-
-    activateQuote(quote) {
-        return this.request({ method: 'Patch', url: `/quotes/${quote._id}/activate` }).then(response => response);
-    }
 }
 
 export default new AuthClient();

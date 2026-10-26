@@ -15,7 +15,6 @@ import QuoteConfirmation from './components/QuoteConfirmation';
 import Footer from './components/Footer';
 import City from './components/City';
 import Work from './components/Work';
-import Quotes from './components/Quotes';
 
 const App = () => {
     return (
@@ -35,7 +34,6 @@ const App = () => {
                         <Route path="/quote" element={<Quote />} />
                         <Route path="/confirmation" element={<QuoteConfirmation />} />
                         <Route path="/employment" element={<Work />} />
-                        <Route path="/view-quotes" element={<Quotes />} />
                         <Route path="/losangeles" element={<City city="Los Angeles" />} />
                         <Route path="/pasadena" element={<City city="Pasadena" />} />
                         <Route path="/sanmarino" element={<City city="San Marino" />} />

@@ -4,6 +4,7 @@ import { toast, ToastContainer } from 'react-toastify';
 
 import MetaData from './common/MetaData.jsx';
 import auth from '../auth.js';
+import { trackEvent } from '../analytics.js';
 import 'react-toastify/dist/ReactToastify.css';
 
 const locationOptions = [
@@ -53,6 +54,7 @@ const Work = () => {
         auth.workEmail(values)
             .then(() => {
                 toast.success('Your information has been successfully submitted.');
+                trackEvent('job_application', { location: values.location });
                 setValues(initialValues);
             })
             .catch(error => {

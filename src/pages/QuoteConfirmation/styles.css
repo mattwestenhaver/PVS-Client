@@ -1,0 +1,32 @@
+.confirmation__container {
+    width: 100%;
+    background-color: var(--background);
+    padding: 140px 20px 90px 20px;
+}
+
+.confirmation__container h3 {
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.confirmation__container img {
+    width: 550px;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .confirmation__container {
+        padding: 120px 20px 80px 20px;
+    }
+
+    .confirmation__container img {
+        width: 300px;
+    }
+
+    .confirmation__container h3 {
+        font-size: 1.3em;
+    }
+}

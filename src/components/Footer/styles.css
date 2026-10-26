@@ -1,0 +1,47 @@
+.footer-container {
+    width: 100%;
+    background-color: rgb(10, 10, 11);
+    border-top: 1px solid var(--border);
+    padding: 40px 20px;
+    clear: both;
+}
+
+.footer-container h5 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: var(--font-sans);
+    font-size: 0.95em;
+    font-weight: 400;
+    line-height: 1.7em;
+    color: var(--text-muted);
+}
+
+.footer-container h5:first-child {
+    color: var(--text);
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.footer-container a {
+    color: var(--text);
+    transition: color 0.15s ease;
+}
+
+.footer-container a:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.footer-work a {
+    color: var(--accent);
+}
+
+.footer-work a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.footer-container .icon {
+    margin: 20px 10px 24px 10px;
+}

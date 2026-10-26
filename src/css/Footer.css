@@ -38,7 +38,7 @@
 }
 
 .footer-work a:hover {
-    color: var(--accent-hover) !important;
+    color: var(--accent-hover);
     text-decoration: underline;
 }
 

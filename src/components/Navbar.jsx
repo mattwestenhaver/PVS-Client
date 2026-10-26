@@ -143,8 +143,8 @@ const NavBar = () => {
         <nav ref={navRef} className="navbar navbar-inverse">
             <div className="container">
                 <div className="navbar-header">
-                    <Link to="/" onClick={closeAll}>
-                        <img className="navbar-brand navbar-logo" src={smallLogo} alt="PVS logo" />
+                    <Link to="/" className="navbar-brand" onClick={closeAll}>
+                        <img className="navbar-logo" src={smallLogo} alt="PVS logo" />
                     </Link>
                     <button
                         type="button"

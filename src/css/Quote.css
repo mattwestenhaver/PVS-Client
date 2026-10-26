@@ -22,9 +22,10 @@
     font-weight: 600;
 }
 
-.fields input {
-    margin-left: 5px !important;
-    margin-right: 5px !important;
+/* Scoped to the form so it outranks Semantic UI's margin: 0 on inputs */
+.request__form-wrap .ui.form .fields input {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .confirmation__container {
@@ -55,8 +56,8 @@
         padding: 24px 16px;
     }
 
-    .fields input {
-        margin-bottom: 10px !important;
+    .request__form-wrap .ui.form .fields input {
+        margin-bottom: 10px;
     }
 
     .confirmation__container {

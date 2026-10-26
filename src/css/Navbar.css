@@ -22,13 +22,28 @@
     cursor: pointer;
 }
 
+/* Even padding keeps the logo centered in its focus outline; the margin sets its distance from the edge */
 .navbar-brand {
-    padding: 8px 8px 8px 30px;
+    padding: 8px;
+    margin-left: 22px;
     font-size: 1.3em;
 }
 
+@media only screen and (min-width: 768px) {
+    /* Overrides Bootstrap's -15px */
+    .navbar > .container .navbar-brand {
+        margin-left: 7px;
+    }
+}
+
 .navbar-brand img {
-    width: 70px;
+    height: 100%;
+}
+
+.navbar-brand:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+    border-radius: 8px;
 }
 
 .navbar-header > .active {

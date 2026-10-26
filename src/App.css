@@ -159,6 +159,11 @@ hr {
     margin: 0 auto 10px auto;
 }
 
+/* Bootstrap outlines links on any focus; only show the ring for keyboard focus, not after a mouse click */
+a:focus:not(:focus-visible) {
+    outline: none;
+}
+
 /* Buttons */
 .ui.grey.button,
 .ui.black.button {
@@ -194,15 +199,8 @@ hr {
     box-shadow: 0 10px 24px -8px rgba(201, 169, 110, 0.5);
 }
 
-/* Forms */
-input,
-textarea,
-select {
-    font-family: var(--font-sans) !important;
-    /* Fixed size: Bootstrap's 10px root makes em/rem sizes tiny */
-    font-size: 14px !important;
-}
-
+/* Forms. These selectors match Semantic UI's own form selectors, so they take precedence by coming later
+   rather than needing !important. */
 .ui.form input:not([type]),
 .ui.form input[type='email'],
 .ui.form input[type='number'],
@@ -211,6 +209,9 @@ select {
 .ui.form input[type='text'],
 .ui.form textarea,
 .ui.form select {
+    font-family: var(--font-sans);
+    /* Fixed size: Bootstrap's 10px root makes em/rem sizes tiny */
+    font-size: 14px;
     padding: 0.8em 1em;
     border: 1px solid rgb(212, 212, 216);
     border-radius: var(--radius-sm);
@@ -219,16 +220,22 @@ select {
         box-shadow 0.15s ease;
 }
 
-.ui.form input:focus,
+.ui.form input:not([type]):focus,
+.ui.form input[type='email']:focus,
+.ui.form input[type='number']:focus,
+.ui.form input[type='password']:focus,
+.ui.form input[type='tel']:focus,
+.ui.form input[type='text']:focus,
 .ui.form textarea:focus,
 .ui.form select:focus {
-    border-color: var(--accent) !important;
-    border-radius: var(--radius-sm) !important;
-    box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.25) !important;
+    border-color: var(--accent);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.25);
 }
 
-::placeholder {
-    color: rgb(113, 113, 122) !important;
+.ui.form ::placeholder,
+.ui.form :focus::placeholder {
+    color: rgb(113, 113, 122);
 }
 
 .Toastify__toast-body {
@@ -237,10 +244,15 @@ select {
 
 @media only screen and (max-width: 767px) {
     /* iOS zooms into inputs smaller than 16px when they're focused */
-    input,
-    textarea,
-    select {
-        font-size: 16px !important;
+    .ui.form input:not([type]),
+    .ui.form input[type='email'],
+    .ui.form input[type='number'],
+    .ui.form input[type='password'],
+    .ui.form input[type='tel'],
+    .ui.form input[type='text'],
+    .ui.form textarea,
+    .ui.form select {
+        font-size: 16px;
     }
 
     .header-1 {

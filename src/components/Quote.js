@@ -4,6 +4,7 @@ import { Form, Button } from 'semantic-ui-react';
 import { Navigate } from 'react-router-dom';
 
 import auth from '../auth.js';
+import { trackEvent } from '../analytics.js';
 import 'react-toastify/dist/ReactToastify.css';
 
 import MetaData from './common/MetaData.jsx';
@@ -54,6 +55,7 @@ const Quote = () => {
         auth.quoteEmail(values)
             .then(() => {
                 toast.success('Your request has been submitted.');
+                trackEvent('generate_lead', { form: 'quote', event_type: values.eventType });
                 redirectTimeout.current = setTimeout(() => setRedirect(true), 5000);
                 setValues(initialValues);
             })

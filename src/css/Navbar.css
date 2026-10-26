@@ -111,14 +111,49 @@
     text-underline-offset: 8px;
 }
 
-.second-dropdown > .dropdown-menu {
-    left: 186px !important;
-    top: 0px !important;
-    width: 180px !important;
+/* County submenus open to the right of their row on desktop. On mobile they stay inline (Bootstrap default). */
+@media only screen and (min-width: 768px) {
+    .second-dropdown > .dropdown-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .second-dropdown > .dropdown-toggle .caret {
+        transform: rotate(-90deg);
+    }
+
+    /* Sit just outside the parent menu, with the first item lined up with the county row */
+    .second-dropdown > .dropdown-menu {
+        top: -7px;
+        left: calc(100% + 10px);
+        min-width: 180px;
+    }
+
+    /* Invisible bridge across the gap so moving the mouse into the submenu doesn't close it */
+    .second-dropdown > .dropdown-menu::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -12px;
+        width: 12px;
+    }
 }
 
 @media only screen and (min-width: 1025px) {
     .dropdown:hover > .dropdown-menu {
         display: block;
+    }
+}
+
+/* Bootstrap's mobile menu gives active items a solid black background; use the desktop highlight instead */
+@media only screen and (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover {
+        background-color: rgba(201, 169, 110, 0.15);
+        color: var(--accent);
     }
 }

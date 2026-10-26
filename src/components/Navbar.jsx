@@ -118,8 +118,11 @@ const NavBar = () => {
         </li>
     );
 
-    const dropdown = (label, isOpen, onToggle, children, className = '') => (
-        <li className={`${className} dropdown${isOpen ? ' open' : ''}`.trim()}>
+    const isCurrent = links => links.some(link => link.to === pathname);
+
+    // isActive marks the section containing the current page, e.g. "Areas of Service" on a city page
+    const dropdown = ({ label, isOpen, onToggle, isActive, className = '' }, children) => (
+        <li className={[className, 'dropdown', isOpen && 'open', isActive && 'active'].filter(Boolean).join(' ')}>
             <a
                 href="#"
                 role="button"
@@ -159,31 +162,43 @@ const NavBar = () => {
                     <ul className="nav navbar-nav navbar-right">
                         {navLink({ to: '/', label: 'Home' })}
                         {dropdown(
-                            'About Us',
-                            openMenu === 'about',
-                            toggleMenu('about'),
+                            {
+                                label: 'About Us',
+                                isOpen: openMenu === 'about',
+                                onToggle: toggleMenu('about'),
+                                isActive: isCurrent(aboutLinks),
+                            },
                             aboutLinks.map(link => navLink(link, true)),
                         )}
                         {dropdown(
-                            'Areas of Service',
-                            openMenu === 'areas',
-                            toggleMenu('areas'),
+                            {
+                                label: 'Areas of Service',
+                                isOpen: openMenu === 'areas',
+                                onToggle: toggleMenu('areas'),
+                                isActive: areas.some(area => isCurrent(area.links)),
+                            },
                             areas.map(area => (
                                 <React.Fragment key={area.label}>
                                     {dropdown(
-                                        area.label,
-                                        openSubmenu === area.label,
-                                        toggleSubmenu(area.label),
+                                        {
+                                            label: area.label,
+                                            isOpen: openSubmenu === area.label,
+                                            onToggle: toggleSubmenu(area.label),
+                                            isActive: isCurrent(area.links),
+                                            className: 'second-dropdown',
+                                        },
                                         area.links.map(link => navLink(link, true)),
-                                        'second-dropdown',
                                     )}
                                 </React.Fragment>
                             )),
                         )}
                         {dropdown(
-                            'Contact Us',
-                            openMenu === 'contact',
-                            toggleMenu('contact'),
+                            {
+                                label: 'Contact Us',
+                                isOpen: openMenu === 'contact',
+                                onToggle: toggleMenu('contact'),
+                                isActive: isCurrent(contactLinks),
+                            },
                             contactLinks.map(link => navLink(link, true)),
                         )}
                         {navLink({ to: '/quote', label: 'Request A Quote' })}

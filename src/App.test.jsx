@@ -55,3 +55,11 @@ it('closes an open dropdown on an outside click', () => {
     click(document.body);
     expect(about.parentElement.classList.contains('open')).toBe(false);
 });
+
+it('marks the section and county containing the current page as active', () => {
+    click(findByText('a', 'Malibu'));
+    expect(findByText('.dropdown-toggle', 'Areas of Service').parentElement.classList.contains('active')).toBe(true);
+    expect(findByText('.dropdown-toggle', 'Ventura County').parentElement.classList.contains('active')).toBe(true);
+    expect(findByText('.dropdown-toggle', 'Orange County').parentElement.classList.contains('active')).toBe(false);
+    expect(findByText('.dropdown-toggle', 'About Us').parentElement.classList.contains('active')).toBe(false);
+});

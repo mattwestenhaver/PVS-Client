@@ -4,8 +4,8 @@
 // To add a city, add it to its county below: `path` is its URL, `name` is how it's displayed, and `legacyPath`
 // is only needed if the old site had a page for it.
 
-const laVentura = { display: '(323) 876-5816', tel: '+13238765816' };
-const orangeCounty = { display: '(949) 497-8811', tel: '+19494978811' };
+export const laVentura = { display: '(323) 876-5816', tel: '+13238765816' };
+export const orangeCounty = { display: '(949) 497-8811', tel: '+19494978811' };
 
 export const counties = [
     {

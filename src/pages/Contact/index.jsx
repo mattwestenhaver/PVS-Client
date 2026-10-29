@@ -30,7 +30,7 @@ const Contact = () => {
                     <p>Our office is open Monday to Friday 9:00am - 5:30pm</p>
                     <p>We have a manager available and on call 24 hours a day, seven days a week.</p>
                     <p>
-                        Los Angeles and Ventura County: <a href="tel:+13238765816">(323) 876-5816</a>
+                        Los Angeles / Ventura Counties: <a href="tel:+13238765816">(323) 876-5816</a>
                     </p>
                     <p>
                         Orange County: <a href="tel:+19494978811">(949) 497-8811</a>

@@ -36,7 +36,7 @@ const Footer = () => {
                 <a href="mailto:info@premierevaletparking.com">info@premierevaletparking.com</a>
             </h5>
             <h5>
-                Los Angeles and Ventura County: <a href="tel:+13238765816">(323) 876-5816</a>
+                Los Angeles / Ventura Counties: <a href="tel:+13238765816">(323) 876-5816</a>
             </h5>
             <h5>
                 Orange County: <a href="tel:+19494978811">(949) 497-8811</a>

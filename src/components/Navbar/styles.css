@@ -172,3 +172,96 @@
         color: var(--accent);
     }
 }
+
+/* Phone bar above the main navbar: right-aligned on desktop, two equal tap targets on mobile */
+.navbar-phones {
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9em;
+}
+
+.navbar-phones__inner {
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+}
+
+/* Line the last number up with the menu text, which sits inside 15px of link padding */
+@media only screen and (min-width: 768px) {
+    .navbar-phones__inner {
+        padding-right: 30px;
+    }
+}
+
+/* Bootstrap's clearfix pseudo-elements on .container would become flex items and add a gap at the edges */
+.navbar-phones__inner::before,
+.navbar-phones__inner::after {
+    display: none;
+}
+
+.navbar-phones__link {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 6px 0;
+    color: var(--text-muted);
+    white-space: nowrap;
+    transition: color 0.15s ease;
+}
+
+.navbar-phones__number {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+}
+
+.navbar-phones__number .icon {
+    margin-right: 4px;
+}
+
+.navbar-phones__link:hover,
+.navbar-phones__link:focus {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.navbar-phones__link:hover .navbar-phones__number,
+.navbar-phones__link:focus .navbar-phones__number {
+    color: var(--accent-hover);
+}
+
+.navbar-phones__link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-phones__inner {
+        padding: 0;
+        gap: 0;
+    }
+
+    .navbar-phones__link {
+        flex: 1 1 50%;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        min-height: 48px;
+        justify-content: center;
+        padding: 6px 4px;
+        line-height: 1.2;
+    }
+
+    .navbar-phones__link + .navbar-phones__link {
+        border-left: 1px solid var(--border);
+    }
+
+    .navbar-phones__label {
+        font-size: 0.85em;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .navbar-phones__number {
+        font-size: 1.05em;
+    }
+}

@@ -58,16 +58,16 @@ const Home = () => {
         const timeouts = [];
         const after = (ms, callback) => timeouts.push(setTimeout(callback, ms));
 
-        after(2900, () => setStage('logoFading'));
+        after(2500, () => setStage('logoFading'));
 
-        // Show the photo at 3.2s, or later if it's still downloading
-        const minimumWait = new Promise(resolve => after(3200, resolve));
+        // Show the photo at 3.1s, or later if it's still downloading
+        const minimumWait = new Promise(resolve => after(3100, resolve));
         Promise.all([minimumWait, loadHeroPhoto()]).then(() => {
             if (cancelled) {
                 return;
             }
             setStage('photo');
-            after(1300, () => setStage('ready'));
+            after(650, () => setStage('ready'));
         });
 
         return () => {

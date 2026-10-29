@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router';
 
 import smallLogo from '../../images/logo-white-small.png';
 import './styles.css';
-import { counties } from '../../data/cities';
+import { counties, laVentura, orangeCounty } from '../../data/cities';
 
 // Renders Bootstrap 3 navbar markup, styled by the Bootstrap CSS in index.html and styles.css.
 // On desktop (1025px+) dropdowns also open on hover through CSS.
@@ -24,6 +24,12 @@ const areas = counties.map(county => ({
 const contactLinks = [
     { to: '/contact', label: 'Contact Information' },
     { to: '/employment', label: 'Employment' },
+];
+
+// Click-to-call numbers in the bar above the main navbar
+const phoneLinks = [
+    { label: 'Los Angeles / Ventura Counties', phone: laVentura },
+    { label: 'Orange County', phone: orangeCounty },
 ];
 
 const NavBar = () => {
@@ -97,6 +103,19 @@ const NavBar = () => {
 
     return (
         <nav ref={navRef} className="navbar navbar-inverse">
+            <div className="navbar-phones">
+                <div className="container navbar-phones__inner">
+                    {phoneLinks.map(({ label, phone }) => (
+                        <a key={phone.tel} className="navbar-phones__link" href={`tel:${phone.tel}`}>
+                            <span className="navbar-phones__label">{label}</span>
+                            <span className="navbar-phones__number">
+                                <i className="phone icon" aria-hidden="true" />
+                                {phone.display}
+                            </span>
+                        </a>
+                    ))}
+                </div>
+            </div>
             <div className="container">
                 <div className="navbar-header">
                     <Link to="/" className="navbar-brand" onClick={closeAll}>

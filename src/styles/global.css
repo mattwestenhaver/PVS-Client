@@ -288,7 +288,7 @@ a:focus:not(:focus-visible) {
     }
 }
 
-/* Keep toasts below the fixed navbar */
+/* Keep toasts below the fixed navbar and its phone bar */
 .Toastify__toast-container--top-right {
-    top: 70px;
+    top: 110px;
 }
